@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="referrer" content="no-referrer">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucknow Real Estate Developers | Live Showcase Portfolio</title>
@@ -143,6 +144,30 @@
             font-size: 1.15rem;
             max-width: 720px;
             margin: 0 auto 36px;
+        }
+
+        
+        .card-image-wrap {
+            height: 190px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            position: relative;
+            background: #111827;
+            border: 1px solid var(--border-glass);
+        }
+
+        .card-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+
+        .site-card:hover .card-image-wrap img {
+            transform: scale(1.06);
         }
 
         /* Grid */
@@ -365,6 +390,7 @@
 
             <!-- Card 1 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/rvd-construction.jpg" alt="RVD Construction & Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#01</span>
                     <span class="rating-badge">★ 4.8 (129 Reviews)</span>
@@ -384,6 +410,7 @@
 
             <!-- Card 2 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/metro-estate.jpg" alt="Metro Estate Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#02</span>
                     <span class="rating-badge">★ 5.0 (15 Reviews)</span>
@@ -403,6 +430,7 @@
 
             <!-- Card 3 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/grah-builders.jpg" alt="Grah Builders & Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#03</span>
                     <span class="rating-badge">★ 4.7 (62 Reviews)</span>
@@ -422,6 +450,7 @@
 
             <!-- Card 4 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/azhan-developers.jpg" alt="Azhan Developers Private Limited" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#04</span>
                     <span class="rating-badge">★ 4.9 (High Rating)</span>
@@ -441,6 +470,7 @@
 
             <!-- Card 5 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/jindal-infra.jpg" alt="Jindal Infra Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#05</span>
                     <span class="rating-badge">★ 4.6 (40 Reviews)</span>
@@ -460,6 +490,7 @@
 
             <!-- Card 6 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/vir-infrastructure.jpg" alt="Vir Infrastructure & Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#06</span>
                     <span class="rating-badge">★ 4.7 (22 Reviews)</span>
@@ -479,6 +510,7 @@
 
             <!-- Card 7 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/lucknow-home-developers.jpg" alt="Lucknow Home Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#07</span>
                     <span class="rating-badge">★ 4.5 (Verified)</span>
@@ -498,6 +530,7 @@
 
             <!-- Card 8 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/reda-association.jpg" alt="REDA Developers & Builders" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#08</span>
                     <span class="rating-badge">★ 4.8 (11 Reviews)</span>
@@ -517,6 +550,7 @@
 
             <!-- Card 9 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/shilanyaas-realtors.jpg" alt="Shilanyaas Realtors & Developers" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#09</span>
                     <span class="rating-badge">★ 4.8 (44 Reviews)</span>
@@ -536,6 +570,7 @@
 
             <!-- Card 10 -->
             <div class="site-card">
+                <div class="card-image-wrap"><img src="images/showcase/benesom-realtors.jpg" alt="Benesom Realtors Pvt Ltd" loading="lazy"></div>
                 <div class="card-top">
                     <span class="card-number">#10</span>
                     <span class="rating-badge">★ 4.9 (161 Reviews)</span>
@@ -560,5 +595,19 @@
         <p>© 2026 Lucknow Real Estate Showcase. Crafted for high-conversion web development client acquisition.</p>
     </footer>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('img').forEach(function(img) {
+                img.setAttribute('referrerpolicy', 'no-referrer');
+                img.addEventListener('error', function() {
+                    if (!img.dataset.fallbackTried) {
+                        img.dataset.fallbackTried = 'true';
+                        img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%230A1128%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22260%22%20fill%3D%22%23D4AF37%22%20font-size%3D%2224%22%20font-family%3D%22sans-serif%22%20text-anchor%3D%22middle%22%3ELucknow%20Real%20Estate%3C%2Ftext%3E%3C%2Fsvg%3E";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

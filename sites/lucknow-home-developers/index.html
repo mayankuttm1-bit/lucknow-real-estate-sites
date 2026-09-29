@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="referrer" content="no-referrer">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Lucknow Home Developers | Ready-to-Move Flats in Vibhuti Khand, Gomti Nagar</title>
@@ -493,7 +494,7 @@
       height: 100%;
       background: 
         linear-gradient(to right, rgba(7, 11, 20, 0.95) 0%, rgba(7, 11, 20, 0.82) 50%, rgba(7, 11, 20, 0.7) 100%),
-        url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat;
+        url('./images/hero-bg.jpg') center/cover no-repeat;
       z-index: 1;
     }
 
@@ -2479,7 +2480,7 @@
         <!-- Property 1: Lucknow Heights Phase 1 - 2 BHK -->
         <article class="prop-card">
           <div class="prop-image-wrap">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Lucknow Heights Phase 1 - 2 BHK Ready Homes" class="prop-image" loading="lazy" />
+            <img src="./images/heights-phase1.jpg" alt="Lucknow Heights Phase 1 - 2 BHK Ready Homes" class="prop-image" loading="lazy" />
             <span class="prop-badge-ready">
               <i class="fa-solid fa-check"></i> Ready to Move
             </span>
@@ -2535,7 +2536,7 @@
         <!-- Property 2: Lucknow Heights Phase 2 - 3 BHK -->
         <article class="prop-card">
           <div class="prop-image-wrap">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Lucknow Heights Phase 2 - 3 BHK Premium Residences" class="prop-image" loading="lazy" />
+            <img src="./images/heights-phase2.jpg" alt="Lucknow Heights Phase 2 - 3 BHK Premium Residences" class="prop-image" loading="lazy" />
             <span class="prop-badge-ready">
               <i class="fa-solid fa-check"></i> Ready to Move
             </span>
@@ -2591,7 +2592,7 @@
         <!-- Property 3: Lucknow Heights Commercial Retail & Suites -->
         <article class="prop-card">
           <div class="prop-image-wrap">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Lucknow Heights Commercial Plaza" class="prop-image" loading="lazy" />
+            <img src="./images/commercial-plaza.jpg" alt="Lucknow Heights Commercial Plaza" class="prop-image" loading="lazy" />
             <span class="prop-badge-ready">
               <i class="fa-solid fa-check"></i> Immediate Fit-outs
             </span>
@@ -3841,6 +3842,20 @@
         if (link.getAttribute('href') === `#${currentSectionId}`) {
           link.classList.add('active');
         }
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('img').forEach(function(img) {
+        img.setAttribute('referrerpolicy', 'no-referrer');
+        img.addEventListener('error', function() {
+          if (!img.dataset.fallbackTried) {
+            img.dataset.fallbackTried = 'true';
+            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+          }
+        });
       });
     });
   </script>

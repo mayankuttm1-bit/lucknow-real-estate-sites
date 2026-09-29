@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="referrer" content="no-referrer">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Azhan Developers | Prime Commercial & Residential Spaces in Lucknow</title>
@@ -1585,7 +1586,7 @@
         <article class="property-card" id="commercial">
           <div class="property-media">
             <!-- High quality architectural commercial image -->
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Azhan Commercial Square Lucknow" loading="lazy" />
+            <img src="./images/commercial-square.jpg" alt="Azhan Commercial Square Lucknow" loading="lazy" />
             <span class="property-tag-badge">Commercial Retail Hub</span>
             <span class="yield-badge">Yield: Up to 10.2% p.a.</span>
           </div>
@@ -1642,7 +1643,7 @@
         <article class="property-card">
           <div class="property-media">
             <!-- Modern residential architectural image -->
-            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Azhan Residency Lucknow" loading="lazy" />
+            <img src="./images/residency.jpg" alt="Azhan Residency Lucknow" loading="lazy" />
             <span class="property-tag-badge">Modern Residential</span>
             <span class="yield-badge">Appreciation: 14% p.a.</span>
           </div>
@@ -2293,6 +2294,20 @@
         body.style.maxHeight = body.scrollHeight + 30 + "px";
       }
     }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('img').forEach(function(img) {
+        img.setAttribute('referrerpolicy', 'no-referrer');
+        img.addEventListener('error', function() {
+          if (!img.dataset.fallbackTried) {
+            img.dataset.fallbackTried = 'true';
+            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+          }
+        });
+      });
+    });
   </script>
 </body>
 </html>
