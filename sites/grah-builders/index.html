@@ -1,0 +1,3326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Grah Builders & Developers | Modern Living Communities Along Shaheed Path Lucknow</title>
+  <meta name="description" content="Discover premium 2 & 3 BHK luxury apartments and independent row houses along Amar Shaheed Path, Eldeco Udyan II, Lucknow by Grah Builders & Developers. RERA Approved & 90% Bank Loan Approved.">
+  <meta name="keywords" content="Grah Builders, Shaheed Path flats Lucknow, Eldeco Udyan II apartments, row houses Lucknow, luxury 2 BHK 3 BHK Lucknow, property in Lucknow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231A2238'/><path d='M50 20L18 48L24 54L50 31L76 54L82 48Z' fill='%23C86D51'/><path d='M28 50V78H72V50' fill='none' stroke='%23C86D51' stroke-width='6'/><rect x='42' y='58' width='16' height='20' rx='2' fill='%23C86D51'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Reset & Root Variables */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary-navy: #1A2238;
+      --navy-dark: #101626;
+      --navy-deep: #0B0E17;
+      --navy-card: #222C46;
+      --navy-light: #2A3654;
+      --copper: #C86D51;
+      --copper-hover: #D87D61;
+      --copper-dark: #A9553B;
+      --copper-subtle: rgba(200, 109, 81, 0.12);
+      --copper-glow: rgba(200, 109, 81, 0.25);
+      --white: #FFFFFF;
+      --off-white: #F8FAFC;
+      --slate-50: #F4F6F9;
+      --slate-100: #E9ECEF;
+      --slate-200: #DEE2E6;
+      --slate-400: #94A3B8;
+      --slate-600: #64748B;
+      --slate-800: #334155;
+      --gold: #F59E0B;
+      --whatsapp-green: #25D366;
+      --whatsapp-hover: #20BA5A;
+      --call-blue: #0284C7;
+      
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 40px rgba(26, 34, 56, 0.2);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-pill: 9999px;
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--slate-800);
+      background-color: var(--off-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Container Utility */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--primary-navy);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    p {
+      color: var(--slate-600);
+      font-size: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    button, input, select {
+      font-family: inherit;
+    }
+
+    /* Section Headers */
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 52px;
+    }
+
+    .badge-sub {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--copper-subtle);
+      color: var(--copper);
+      font-size: 0.825rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 14px;
+      border: 1px solid rgba(200, 109, 81, 0.25);
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 16px;
+      color: var(--primary-navy);
+    }
+
+    .section-head.dark h2 {
+      color: var(--white);
+    }
+
+    .section-head p {
+      font-size: 1.05rem;
+      color: var(--slate-600);
+    }
+
+    .section-head.dark p {
+      color: var(--slate-400);
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      outline: none;
+      white-space: nowrap;
+    }
+
+    .btn-copper {
+      background: linear-gradient(135deg, var(--copper) 0%, #B45B41 100%);
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(200, 109, 81, 0.35);
+    }
+
+    .btn-copper:hover {
+      background: linear-gradient(135deg, var(--copper-hover) 0%, var(--copper) 100%);
+      box-shadow: 0 8px 24px rgba(200, 109, 81, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .btn-navy {
+      background: var(--primary-navy);
+      color: var(--white);
+    }
+
+    .btn-navy:hover {
+      background: var(--navy-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(26, 34, 56, 0.25);
+    }
+
+    .btn-outline-white {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--white);
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline-white:hover {
+      background: var(--white);
+      color: var(--primary-navy);
+      border-color: var(--white);
+    }
+
+    .btn-outline-copper {
+      background: transparent;
+      color: var(--copper);
+      border: 1.5px solid var(--copper);
+    }
+
+    .btn-outline-copper:hover {
+      background: var(--copper);
+      color: var(--white);
+    }
+
+    /* 1. STRICT REQUIREMENT: HEADER IS VERY FIRST ELEMENT IN BODY */
+    .site-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(26, 34, 56, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      transition: var(--transition);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 78px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--copper) 0%, #A9553B 100%);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(200, 109, 81, 0.35);
+      flex-shrink: 0;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .brand-name span {
+      color: var(--copper-hover);
+    }
+
+    .brand-sub {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--slate-400);
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--copper);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-link:hover {
+      color: var(--white);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .header-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .header-phone-quick {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .header-phone-quick:hover {
+      color: var(--copper-hover);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--white);
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      display: none;
+      position: fixed;
+      top: 78px;
+      left: 0;
+      width: 100%;
+      background: var(--primary-navy);
+      border-bottom: 2px solid var(--copper);
+      padding: 24px;
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.4);
+      z-index: 999;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .mobile-drawer.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .mobile-nav-list a {
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: block;
+      padding: 6px 0;
+    }
+
+    .mobile-nav-list a:hover {
+      color: var(--copper-hover);
+    }
+
+    /* 2. HERO SECTION */
+    .hero-section {
+      position: relative;
+      background-color: var(--navy-deep);
+      background-image: 
+        linear-gradient(135deg, rgba(16, 22, 38, 0.94) 0%, rgba(26, 34, 56, 0.88) 50%, rgba(11, 14, 23, 0.95) 100%),
+        url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      padding: 90px 0 110px;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(200, 109, 81, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      background: rgba(200, 109, 81, 0.18);
+      border: 1px solid rgba(200, 109, 81, 0.45);
+      border-radius: var(--radius-pill);
+      color: #FFB199;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-badge-tag svg {
+      color: var(--copper-hover);
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+      line-height: 1.12;
+      color: var(--white);
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #FFAC94 0%, var(--copper) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      color: #CBD5E1;
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    /* Trust Pill Badges */
+    .hero-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--white);
+      backdrop-filter: blur(6px);
+    }
+
+    .trust-pill svg {
+      color: var(--copper);
+    }
+
+    .trust-pill.highlight {
+      background: rgba(200, 109, 81, 0.22);
+      border-color: rgba(200, 109, 81, 0.5);
+      color: #FFD5CC;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    /* Hero Lead Box */
+    .hero-card-box {
+      background: rgba(26, 34, 56, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      position: relative;
+    }
+
+    .hero-card-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--copper), transparent);
+    }
+
+    .hero-card-head {
+      margin-bottom: 22px;
+    }
+
+    .hero-card-head h3 {
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .hero-card-head p {
+      font-size: 0.88rem;
+      color: var(--slate-400);
+    }
+
+    /* Fast Unit Quick Selector */
+    .quick-selector-label {
+      font-size: 0.825rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #CBD5E1;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .unit-pill-selector {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .unit-pill-opt {
+      text-align: center;
+      padding: 10px 6px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.9);
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 600;
+      transition: var(--transition);
+      line-height: 1.2;
+    }
+
+    .unit-pill-opt span {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--slate-400);
+      font-weight: 400;
+      margin-top: 3px;
+    }
+
+    .unit-pill-opt.active, .unit-pill-opt:hover {
+      border-color: var(--copper);
+      background: rgba(200, 109, 81, 0.25);
+      color: var(--white);
+    }
+
+    .unit-pill-opt.active span {
+      color: #FFC0B0;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: var(--white);
+      font-size: 0.92rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-input::placeholder {
+      color: #94A3B8;
+    }
+
+    .form-input:focus {
+      border-color: var(--copper);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 0 3px rgba(200, 109, 81, 0.25);
+    }
+
+    .form-micro-text {
+      font-size: 0.75rem;
+      color: var(--slate-400);
+      margin-top: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* 3. METRICS / STATS STRIP */
+    .metrics-strip {
+      background: var(--primary-navy);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      z-index: 5;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      padding: 34px 0;
+    }
+
+    .metric-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0 12px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .metric-item:last-child {
+      border-right: none;
+    }
+
+    .metric-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--copper-subtle);
+      border: 1px solid rgba(200, 109, 81, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper);
+      flex-shrink: 0;
+    }
+
+    .metric-val {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      font-family: var(--font-heading);
+    }
+
+    .metric-lbl {
+      font-size: 0.825rem;
+      color: var(--slate-400);
+      font-weight: 500;
+    }
+
+    /* 4. PROPERTY SHOWCASE (RESIDENCES) */
+    .residences-section {
+      padding: 95px 0;
+      background: var(--off-white);
+    }
+
+    .project-card-featured {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--slate-200);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 48px;
+      transition: var(--transition);
+    }
+
+    .project-card-featured:hover {
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(200, 109, 81, 0.35);
+      transform: translateY(-4px);
+    }
+
+    .project-card-featured.reversed {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .project-visual {
+      position: relative;
+      min-height: 420px;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .project-visual-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: var(--primary-navy);
+      color: var(--white);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .project-visual-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+    }
+
+    .project-price-tag {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(26, 34, 56, 0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      color: var(--white);
+    }
+
+    .project-price-tag .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--slate-400);
+      letter-spacing: 0.8px;
+    }
+
+    .project-price-tag .amount {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #FFB199;
+      font-family: var(--font-heading);
+    }
+
+    .project-info-wrap {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-meta-head {
+      margin-bottom: 20px;
+    }
+
+    .project-category {
+      font-size: 0.82rem;
+      color: var(--copper);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .project-title {
+      font-size: 2rem;
+      color: var(--primary-navy);
+      margin-bottom: 12px;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* Specs Highlights Grid */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 24px 0;
+      padding: 18px;
+      background: var(--slate-50);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--slate-100);
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .spec-item svg {
+      color: var(--copper);
+      flex-shrink: 0;
+    }
+
+    .spec-item-content .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--slate-400);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .spec-item-content .value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary-navy);
+    }
+
+    /* Floor Plan Interactive Switcher */
+    .floorplan-toggle-box {
+      margin-bottom: 24px;
+    }
+
+    .floorplan-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .fp-tab-btn {
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--slate-200);
+      background: var(--white);
+      color: var(--slate-600);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .fp-tab-btn.active {
+      background: var(--primary-navy);
+      color: var(--white);
+      border-color: var(--primary-navy);
+    }
+
+    .fp-details-view {
+      padding: 12px 16px;
+      background: rgba(200, 109, 81, 0.06);
+      border-left: 3px solid var(--copper);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: var(--slate-800);
+    }
+
+    .project-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* 5. INTERACTIVE LEAD GENERATION & EMI SYSTEM */
+    .lead-system-section {
+      background: var(--primary-navy);
+      padding: 90px 0;
+      position: relative;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .lead-system-section::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(200, 109, 81, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .lead-system-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .lead-info-col h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      margin-bottom: 18px;
+    }
+
+    .lead-info-col p {
+      color: var(--slate-400);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .lead-perks-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .perk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .perk-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--copper);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .perk-text h4 {
+      color: var(--white);
+      font-size: 0.98rem;
+      margin-bottom: 2px;
+    }
+
+    .perk-text p {
+      font-size: 0.85rem;
+      color: var(--slate-400);
+      margin-bottom: 0;
+    }
+
+    /* Interactive Lead Form Box */
+    .lead-interactive-card {
+      background: var(--navy-card);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-xl);
+      position: relative;
+    }
+
+    .lead-card-title {
+      font-size: 1.35rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .lead-card-sub {
+      font-size: 0.85rem;
+      color: var(--slate-400);
+      margin-bottom: 22px;
+    }
+
+    /* Unit Option Cards (Selectable) */
+    .unit-options-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .unit-radio-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .unit-radio-card:hover {
+      border-color: rgba(200, 109, 81, 0.5);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .unit-radio-card.selected {
+      border-color: var(--copper);
+      background: rgba(200, 109, 81, 0.15);
+    }
+
+    .unit-radio-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .unit-radio-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .unit-radio-card.selected .unit-radio-check {
+      border-color: var(--copper);
+      background: var(--copper);
+    }
+
+    .unit-radio-check::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--white);
+      display: none;
+    }
+
+    .unit-radio-card.selected .unit-radio-check::after {
+      display: block;
+    }
+
+    .unit-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .unit-size {
+      font-size: 0.78rem;
+      color: var(--slate-400);
+    }
+
+    .unit-price-badge {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #FFB199;
+      font-family: var(--font-heading);
+    }
+
+    /* Live EMI Mini Calculation */
+    .mini-emi-display {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border: 1px dashed rgba(200, 109, 81, 0.4);
+    }
+
+    .emi-text {
+      font-size: 0.8rem;
+      color: var(--slate-400);
+    }
+
+    .emi-amount {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #FFB199;
+      font-family: var(--font-heading);
+    }
+
+    /* 6. LIFESTYLE & AMENITIES */
+    .amenities-section {
+      padding: 95px 0;
+      background: var(--white);
+    }
+
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .amenity-card {
+      background: var(--off-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      border: 1px solid var(--slate-200);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .amenity-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--copper), #E38D73);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .amenity-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(200, 109, 81, 0.35);
+      background: var(--white);
+    }
+
+    .amenity-card:hover::before {
+      opacity: 1;
+    }
+
+    .amenity-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--radius-md);
+      background: var(--copper-subtle);
+      border: 1px solid rgba(200, 109, 81, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper);
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+
+    .amenity-card:hover .amenity-icon-box {
+      background: var(--copper);
+      color: var(--white);
+      transform: scale(1.05);
+    }
+
+    .amenity-title {
+      font-size: 1.25rem;
+      color: var(--primary-navy);
+      margin-bottom: 10px;
+    }
+
+    .amenity-desc {
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+    }
+
+    /* 7. MASTER PLAN & ARCHITECTURAL SPECS */
+    .masterplan-section {
+      padding: 95px 0;
+      background: var(--slate-50);
+    }
+
+    .masterplan-box {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 44px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--slate-200);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .masterplan-diagram-wrap {
+      background: var(--navy-deep);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .masterplan-svg-visual {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .specs-list-group {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .spec-block {
+      display: flex;
+      gap: 14px;
+    }
+
+    .spec-block-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--copper-subtle);
+      color: var(--copper);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .spec-block-text h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+      color: var(--primary-navy);
+    }
+
+    .spec-block-text p {
+      font-size: 0.88rem;
+      color: var(--slate-600);
+    }
+
+    /* 8. GOOGLE REVIEWS & SOCIAL PROOF */
+    .reviews-section {
+      padding: 95px 0;
+      background: var(--off-white);
+    }
+
+    .google-badge-hero {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 24px 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 28px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 44px;
+    }
+
+    .google-logo-side {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #4285F4;
+    }
+
+    .google-score-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-left: 2px solid var(--slate-200);
+      padding-left: 28px;
+    }
+
+    .score-number {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary-navy);
+      font-family: var(--font-heading);
+      line-height: 1;
+    }
+
+    .score-details .stars {
+      color: #F59E0B;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 2px;
+    }
+
+    .score-details .count {
+      font-size: 0.85rem;
+      color: var(--slate-600);
+      font-weight: 600;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(200, 109, 81, 0.3);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-navy) 0%, var(--navy-light) 100%);
+      color: var(--white);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+    }
+
+    .reviewer-name {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--primary-navy);
+    }
+
+    .reviewer-tag {
+      font-size: 0.75rem;
+      color: var(--slate-400);
+    }
+
+    .google-verified-icon {
+      color: #10B981;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+    }
+
+    .review-stars {
+      color: #F59E0B;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .review-content {
+      font-size: 0.92rem;
+      color: var(--slate-600);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .review-date {
+      margin-top: 18px;
+      font-size: 0.75rem;
+      color: var(--slate-400);
+      font-weight: 500;
+    }
+
+    /* 9. LOCATION & GOOGLE MAPS */
+    .location-section {
+      padding: 95px 0;
+      background: var(--white);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-info-pane h3 {
+      font-size: 1.8rem;
+      color: var(--primary-navy);
+      margin-bottom: 12px;
+    }
+
+    .location-address-box {
+      display: flex;
+      gap: 14px;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      padding: 18px;
+      border-radius: var(--radius-md);
+      margin-bottom: 26px;
+    }
+
+    .location-pin-icon {
+      color: var(--copper);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .location-address-text {
+      font-size: 0.92rem;
+      color: var(--slate-800);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .proximity-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .proximity-item {
+      background: var(--off-white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+    }
+
+    .proximity-item:hover {
+      border-color: var(--copper);
+      transform: translateX(3px);
+    }
+
+    .proximity-time {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--copper);
+      font-family: var(--font-heading);
+      white-space: nowrap;
+    }
+
+    .proximity-desc {
+      font-size: 0.8rem;
+      color: var(--slate-800);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .map-frame-wrapper {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--slate-200);
+      height: 480px;
+      background: var(--slate-100);
+    }
+
+    .map-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* 10. FAQ SECTION (ACCORDION) */
+    .faq-section {
+      padding: 95px 0;
+      background: var(--slate-50);
+    }
+
+    .faq-accordion-wrap {
+      max-width: 840px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--copper);
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 20px 24px;
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      text-align: left;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-navy);
+      gap: 16px;
+      transition: var(--transition);
+    }
+
+    .faq-question:hover {
+      color: var(--copper);
+    }
+
+    .faq-item.active .faq-question {
+      color: var(--copper);
+    }
+
+    .faq-icon-chevron {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--slate-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-navy);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon-chevron {
+      transform: rotate(180deg);
+      background: var(--copper-subtle);
+      color: var(--copper);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+      color: var(--slate-600);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 24px 22px;
+    }
+
+    /* 11. FOOTER */
+    .site-footer {
+      background: var(--navy-dark);
+      color: var(--white);
+      padding: 80px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand-col p {
+      color: var(--slate-400);
+      font-size: 0.92rem;
+      margin-top: 18px;
+      line-height: 1.65;
+      max-width: 320px;
+    }
+
+    .footer-title {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 22px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--copper);
+      border-radius: 2px;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links-list a {
+      color: var(--slate-400);
+      font-size: 0.9rem;
+    }
+
+    .footer-links-list a:hover {
+      color: var(--copper-hover);
+      padding-left: 4px;
+    }
+
+    .footer-contact-info {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 12px;
+      color: var(--slate-400);
+      font-size: 0.88rem;
+    }
+
+    .footer-contact-item svg {
+      color: var(--copper);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.82rem;
+      color: var(--slate-400);
+    }
+
+    .rera-disclaimer {
+      font-size: 0.76rem;
+      color: var(--slate-400);
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      line-height: 1.6;
+    }
+
+    /* 10. STRICT REQUIREMENT: FLOATING ACTION BUTTONS (BOTTOM-RIGHT, VERTICALLY STACKED)
+       - Upper circular button: Call (+91 522 356 0051)
+       - Lower circular button: WhatsApp (https://wa.me/915223560051)
+    */
+    .floating-actions-container {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 1050;
+    }
+
+    .fab-btn {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      transition: var(--transition);
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .fab-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Upper Circular Button: Call */
+    .fab-call {
+      background: linear-gradient(135deg, var(--call-blue) 0%, #0369A1 100%);
+      box-shadow: 0 8px 22px rgba(2, 132, 199, 0.4);
+    }
+
+    .fab-call::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: inherit;
+      animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      z-index: -1;
+    }
+
+    /* Lower Circular Button: WhatsApp */
+    .fab-whatsapp {
+      background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-hover) 100%);
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+    }
+
+    .fab-whatsapp::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: inherit;
+      animation: pulse-ring 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s infinite;
+      z-index: -1;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+      50% {
+        transform: scale(1.35);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1.35);
+        opacity: 0;
+      }
+    }
+
+    .fab-tooltip {
+      position: absolute;
+      right: 68px;
+      background: var(--primary-navy);
+      color: var(--white);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: var(--transition);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .fab-btn:hover .fab-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* MODAL: Request Callback */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 14, 23, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: var(--white);
+      width: 100%;
+      max-width: 500px;
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-xl);
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-backdrop.active .modal-card {
+      transform: translateY(0);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--slate-100);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate-600);
+      transition: var(--transition);
+    }
+
+    .modal-close-btn:hover {
+      background: var(--copper);
+      color: var(--white);
+    }
+
+    .modal-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .modal-card p {
+      font-size: 0.9rem;
+      color: var(--slate-600);
+      margin-bottom: 24px;
+    }
+
+    .modal-form .form-input {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      color: var(--slate-800);
+      margin-bottom: 14px;
+    }
+
+    .modal-form .form-input:focus {
+      border-color: var(--copper);
+      background: var(--white);
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      background: var(--primary-navy);
+      color: var(--white);
+      padding: 16px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-xl);
+      border-left: 4px solid var(--copper);
+      z-index: 3000;
+      transform: translateX(120%);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .toast-notice.show {
+      transform: translateX(0);
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .metric-item:nth-child(2) {
+        border-right: none;
+      }
+      .project-card-featured, .project-card-featured.reversed {
+        grid-template-columns: 1fr;
+      }
+      .project-visual {
+        min-height: 320px;
+      }
+      .lead-system-grid {
+        grid-template-columns: 1fr;
+      }
+      .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .masterplan-box {
+        grid-template-columns: 1fr;
+      }
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .header-phone-quick {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .mobile-drawer {
+        display: block;
+      }
+      .hero-section {
+        padding: 50px 0 70px;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .metric-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 14px;
+      }
+      .metric-item:last-child {
+        border-bottom: none;
+      }
+      .amenities-grid {
+        grid-template-columns: 1fr;
+      }
+      .proximity-list {
+        grid-template-columns: 1fr;
+      }
+      .google-badge-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .google-score-box {
+        border-left: none;
+        padding-left: 0;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .floating-actions-container {
+        bottom: 20px;
+        right: 20px;
+      }
+      .fab-btn {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. STRICT REQUIREMENT: HEADER IS THE VERY FIRST ELEMENT IN BODY -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Grah Builders & Developers Home">
+          <div class="logo-mark">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="logo-text-group">
+            <div class="brand-name">GRAH <span>BUILDERS</span></div>
+            <div class="brand-sub">DEVELOPERS PVT LTD • LUCKNOW</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="#residences" class="nav-link">Residences</a></li>
+            <li><a href="#lifestyle" class="nav-link">Lifestyle</a></li>
+            <li><a href="#masterplan" class="nav-link">Master Plan</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#location" class="nav-link">Location</a></li>
+          </ul>
+        </nav>
+
+        <!-- CTA & Quick Contacts -->
+        <div class="header-cta-group">
+          <a href="tel:+915223560051" class="header-phone-quick" title="Call Sales Office">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 522 356 0051</span>
+          </a>
+          <button type="button" class="btn btn-copper" onclick="openCallbackModal()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Request Callback</span>
+          </button>
+          <!-- Mobile Menu Trigger -->
+          <button type="button" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#residences" onclick="toggleMobileMenu()">Residences</a></li>
+        <li><a href="#lifestyle" onclick="toggleMobileMenu()">Lifestyle & Amenities</a></li>
+        <li><a href="#masterplan" onclick="toggleMobileMenu()">Master Plan</a></li>
+        <li><a href="#reviews" onclick="toggleMobileMenu()">Google Reviews (4.7★)</a></li>
+        <li><a href="#faq" onclick="toggleMobileMenu()">FAQs</a></li>
+        <li><a href="#location" onclick="toggleMobileMenu()">Location & Map</a></li>
+      </ul>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <a href="tel:+915223560051" class="btn btn-navy" style="width:100%; border:1px solid rgba(255,255,255,0.2);">
+          📞 Call Sales: +91 522 356 0051
+        </a>
+        <button type="button" class="btn btn-copper" style="width:100%;" onclick="toggleMobileMenu(); openCallbackModal();">
+          Request Callback
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content-col">
+          <div class="hero-badge-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>Modern Living Along Shaheed Path</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Modern Living Communities Along <span>Shaheed Path</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Grah Builders & Developers brings you contemporary 2 & 3 BHK luxury apartments and independent row houses inside peaceful gated communities at Eldeco Udyan II, Lucknow.
+          </p>
+
+          <!-- Key Trust Badges -->
+          <div class="hero-trust-row">
+            <div class="trust-pill highlight">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>UP RERA Approved</span>
+            </div>
+            <div class="trust-pill highlight">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>90% Bank Loan Approved</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>4.7★ (62 Google Reviews)</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#residences" class="btn btn-copper">
+              <span>Explore Residences</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#location" class="btn btn-outline-white">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>View Location on Map</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Fast Lead System Card -->
+        <div class="hero-lead-col">
+          <div class="hero-card-box">
+            <div class="hero-card-head">
+              <h3>Fast-Track Your Site Visit</h3>
+              <p>Select your preferred configuration for instant brochure & price details via WhatsApp.</p>
+            </div>
+
+            <!-- Quick Unit Selector Pills -->
+            <label class="quick-selector-label">Select Property Type</label>
+            <div class="unit-pill-selector" id="heroUnitSelector">
+              <div class="unit-pill-opt active" onclick="selectHeroUnit(this, '2 BHK Luxury')">
+                2 BHK Luxury
+                <span>1,285 Sq.Ft</span>
+              </div>
+              <div class="unit-pill-opt" onclick="selectHeroUnit(this, '3 BHK Premium')">
+                3 BHK Premium
+                <span>1,840 Sq.Ft</span>
+              </div>
+              <div class="unit-pill-opt" onclick="selectHeroUnit(this, 'Independent Row House')">
+                Row House
+                <span>2,150 Sq.Ft</span>
+              </div>
+            </div>
+
+            <form onsubmit="handleHeroLeadSubmit(event)" id="heroLeadForm">
+              <input type="hidden" id="heroSelectedUnit" value="2 BHK Luxury">
+              
+              <div class="form-group">
+                <input type="text" id="heroLeadName" class="form-input" placeholder="Your Full Name" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="heroLeadPhone" class="form-input" placeholder="Mobile Number (e.g. 9876543210)" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number" required>
+              </div>
+
+              <button type="submit" class="btn btn-copper" style="width:100%; margin-top: 6px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 2L11 13"></path>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Instant WhatsApp Inquiry</span>
+              </button>
+
+              <div class="form-micro-text">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>100% Privacy • Direct Official Developer Connect</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. METRICS / CONNECTIVITY STRIP -->
+  <section class="metrics-strip">
+    <div class="container">
+      <div class="metrics-grid">
+        <!-- Metric 1 -->
+        <div class="metric-item">
+          <div class="metric-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-val">12 Mins</div>
+            <div class="metric-lbl">To CCS Int'l Airport</div>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="metric-item">
+          <div class="metric-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-val">8 Mins</div>
+            <div class="metric-lbl">To Medanta Super Hospital</div>
+          </div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="metric-item">
+          <div class="metric-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-val">4.7 / 5.0</div>
+            <div class="metric-lbl">62 Verified Google Reviews</div>
+          </div>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="metric-item">
+          <div class="metric-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-val">90% Loan</div>
+            <div class="metric-lbl">SBI, HDFC, PNB, ICICI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROPERTY SHOWCASE (RESIDENCES) -->
+  <section class="residences-section" id="residences">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-sub">Premier Developments</span>
+        <h2>Signature Communities By Grah</h2>
+        <p>Architecturally planned for ample natural light, high cross-ventilation, and peaceful gated living along the bustling Shaheed Path corridor.</p>
+      </div>
+
+      <!-- Property 1: Grah Heights -->
+      <article class="project-card-featured">
+        <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80');">
+          <div class="project-visual-badge">
+            <span class="dot"></span>
+            <span>RERA Registered • Under Final Handover</span>
+          </div>
+          <div class="project-price-tag">
+            <div class="label">Starting From</div>
+            <div class="amount">₹58.50 Lakh*</div>
+          </div>
+        </div>
+
+        <div class="project-info-wrap">
+          <div class="project-meta-head">
+            <span class="project-category">Contemporary High-Rise Living</span>
+            <h3 class="project-title">Grah Heights</h3>
+            <p class="project-desc">
+              Towering luxury with unobstructed views of Eldeco Udyan II greens. Features spacious 2 & 3 BHK flats crafted with high ceilings, European bath fittings, and expansive sunlit balconies.
+            </p>
+          </div>
+
+          <!-- Specs Highlights -->
+          <div class="specs-grid">
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Super Area</div>
+                <div class="value">1,285 – 1,840 Sq.Ft.</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Configurations</div>
+                <div class="value">2 & 3 BHK Luxury</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Possession</div>
+                <div class="value">Dec 2025 / Ready</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Security & Elevators</div>
+                <div class="value">High Speed + 3-Tier</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floor Plan Preview Switcher -->
+          <div class="floorplan-toggle-box">
+            <div class="floorplan-tabs">
+              <button type="button" class="fp-tab-btn active" onclick="switchFloorplan(this, 'heights-2bhk')">2 BHK Plan (1,285 sq.ft)</button>
+              <button type="button" class="fp-tab-btn" onclick="switchFloorplan(this, 'heights-3bhk')">3 BHK Plan (1,840 sq.ft)</button>
+            </div>
+            <div id="heights-2bhk" class="fp-details-view">
+              <strong>2 BHK Luxury:</strong> Master Bedroom (12x14 ft) with attached bath + Guest Bed (11x12 ft) + Large Living & Dining + Modular Kitchen with utility terrace + 2 balconies.
+            </div>
+            <div id="heights-3bhk" class="fp-details-view" style="display:none;">
+              <strong>3 BHK Premium:</strong> Master Suite with walk-in wardrobe + 2 Guest Bedrooms + 3 Bathrooms + Expansive Drawing/Dining + 3 Sunlit Balconies + Separate Foyer.
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button type="button" class="btn btn-copper" onclick="openCallbackModal('Grah Heights - Floor Plan & Cost Sheet')">
+              Download Cost Sheet
+            </button>
+            <a href="https://wa.me/915223560051?text=Hi%20Grah%20Builders,%20I%20am%20interested%20in%20Grah%20Heights%20apartments.%20Please%20share%20floor%20plans%20and%20pricing." target="_blank" rel="noopener noreferrer" class="btn btn-outline-copper">
+              WhatsApp Details
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 2: Grah Enclave -->
+      <article class="project-card-featured reversed">
+        <div class="project-info-wrap">
+          <div class="project-meta-head">
+            <span class="project-category">Exclusive Gated Villa Living</span>
+            <h3 class="project-title">Grah Enclave</h3>
+            <p class="project-desc">
+              Experience independent row house privacy with complete gated community privileges. Each duplex row house comes with a private rooftop terrace, dedicated car porch, and customizable interior floor layouts.
+            </p>
+          </div>
+
+          <!-- Specs Highlights -->
+          <div class="specs-grid">
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Built-up Area</div>
+                <div class="value">1,950 – 2,450 Sq.Ft.</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Typology</div>
+                <div class="value">Duplex Row Houses</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Handover</div>
+                <div class="value">Ready for Fit-out</div>
+              </div>
+            </div>
+
+            <div class="spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div class="spec-item-content">
+                <div class="label">Structure</div>
+                <div class="value">RCC Frame Earthquake Res.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floor Plan Preview Switcher -->
+          <div class="floorplan-toggle-box">
+            <div class="floorplan-tabs">
+              <button type="button" class="fp-tab-btn active" onclick="switchFloorplan(this, 'enclave-duplex1')">Ground Floor Plan</button>
+              <button type="button" class="fp-tab-btn" onclick="switchFloorplan(this, 'enclave-duplex2')">First Floor & Terrace</button>
+            </div>
+            <div id="enclave-duplex1" class="fp-details-view">
+              <strong>Ground Floor:</strong> Dedicated Covered Porch + Front Garden + Expansive Living & Family Lounge + Dining Hall + Modular Kitchen + Guest Bedroom with En-suite Bath.
+            </div>
+            <div id="enclave-duplex2" class="fp-details-view" style="display:none;">
+              <strong>Upper Levels:</strong> 2 Master Bedrooms with attached luxury bathrooms + Private sit-out balcony + Private open terrace for gazebo or rooftop gardening.
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button type="button" class="btn btn-copper" onclick="openCallbackModal('Grah Enclave - Row House Site Visit')">
+              Schedule Villa Tour
+            </button>
+            <a href="https://wa.me/915223560051?text=Hi%20Grah%20Builders,%20I%20am%20interested%20in%20Grah%20Enclave%20Row%20Houses.%20Please%20share%20brochure." target="_blank" rel="noopener noreferrer" class="btn btn-outline-copper">
+              WhatsApp Details
+            </a>
+          </div>
+        </div>
+
+        <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80');">
+          <div class="project-visual-badge">
+            <span class="dot"></span>
+            <span>Freehold Plots & Row Houses</span>
+          </div>
+          <div class="project-price-tag">
+            <div class="label">Starting From</div>
+            <div class="amount">₹89.00 Lakh*</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 5. INTERACTIVE LEAD GENERATION & EMI SYSTEM -->
+  <section class="lead-system-section" id="booking">
+    <div class="container">
+      <div class="lead-system-grid">
+        <!-- Left: Perks & Information -->
+        <div class="lead-info-col">
+          <span class="badge-sub" style="background:rgba(200,109,81,0.2); color:#FFB199;">Transparent Homebuying</span>
+          <h2>Calculate & Reserve Your Dream Residence</h2>
+          <p>
+            Zero brokerage, straightforward legal documentation, and on-spot home loan sanction support with top nationalized and private banks.
+          </p>
+
+          <ul class="lead-perks-list">
+            <li class="perk-item">
+              <div class="perk-icon">✓</div>
+              <div class="perk-text">
+                <h4>Up to 90% Bank Loan Sanction</h4>
+                <p>Partnered with SBI, HDFC, PNB, and ICICI for lowest floating interest rates.</p>
+              </div>
+            </li>
+            <li class="perk-item">
+              <div class="perk-icon">✓</div>
+              <div class="perk-text">
+                <h4>Free Pick & Drop for Site Visits</h4>
+                <p>Complimentary air-conditioned transport arranged from anywhere in Lucknow.</p>
+              </div>
+            </li>
+            <li class="perk-item">
+              <div class="perk-icon">✓</div>
+              <div class="perk-text">
+                <h4>Guaranteed Possession Timelines</h4>
+                <p>Backed by UP RERA regulations with escrow-managed construction funding.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Interactive Lead Generation Card -->
+        <div class="lead-card-col">
+          <div class="lead-interactive-card">
+            <h3 class="lead-card-title">Interactive Unit Booking Inquiry</h3>
+            <p class="lead-card-sub">Select your unit below to view dynamic EMI estimates and get customized quote.</p>
+
+            <form onsubmit="handleMainBookingSubmit(event)" id="mainBookingForm">
+              <!-- Selectable Radio Cards -->
+              <div class="unit-options-container">
+                <!-- Unit Option 1 -->
+                <div class="unit-radio-card selected" onclick="selectBookingUnit(this, '2 BHK Luxury Apartment', '58.5', '1285', '36,400')">
+                  <div class="unit-radio-info">
+                    <div class="unit-radio-check"></div>
+                    <div>
+                      <div class="unit-name">2 BHK Luxury Apartment</div>
+                      <div class="unit-size">1,285 Sq.Ft • Grah Heights</div>
+                    </div>
+                  </div>
+                  <div class="unit-price-badge">₹58.50 L*</div>
+                </div>
+
+                <!-- Unit Option 2 -->
+                <div class="unit-radio-card" onclick="selectBookingUnit(this, '3 BHK Premium Apartment', '76.5', '1840', '47,800')">
+                  <div class="unit-radio-info">
+                    <div class="unit-radio-check"></div>
+                    <div>
+                      <div class="unit-name">3 BHK Premium Apartment</div>
+                      <div class="unit-size">1,840 Sq.Ft • Grah Heights</div>
+                    </div>
+                  </div>
+                  <div class="unit-price-badge">₹76.50 L*</div>
+                </div>
+
+                <!-- Unit Option 3 -->
+                <div class="unit-radio-card" onclick="selectBookingUnit(this, 'Independent Row House', '89.0', '2150', '55,600')">
+                  <div class="unit-radio-info">
+                    <div class="unit-radio-check"></div>
+                    <div>
+                      <div class="unit-name">Independent Row House</div>
+                      <div class="unit-size">2,150 Sq.Ft Duplex • Grah Enclave</div>
+                    </div>
+                  </div>
+                  <div class="unit-price-badge">₹89.00 L*</div>
+                </div>
+              </div>
+
+              <!-- Live Dynamic EMI Preview Box -->
+              <div class="mini-emi-display">
+                <div>
+                  <div class="emi-text">Estimated Monthly EMI (at 8.5% p.a. for 20 yrs):</div>
+                  <div id="emiUnitName" style="font-size:0.75rem; color:#CBD5E1;">For 2 BHK Luxury (1,285 sq.ft)</div>
+                </div>
+                <div class="emi-amount" id="emiVal">~ ₹36,400 / mo*</div>
+              </div>
+
+              <input type="hidden" id="bookingSelectedUnit" value="2 BHK Luxury Apartment">
+
+              <div class="form-group">
+                <input type="text" id="bookingName" class="form-input" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="bookingPhone" class="form-input" placeholder="10-digit WhatsApp / Phone Number" pattern="[0-9]{10}" required>
+              </div>
+
+              <button type="submit" class="btn btn-copper" style="width:100%; padding:14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Request Detailed Quote & Callback</span>
+              </button>
+
+              <div class="form-micro-text">
+                <span>🔒 Your information is confidential and will never be shared with third parties.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LIFESTYLE & AMENITIES (ALL 5 REQUIRED INCLUDED) -->
+  <section class="amenities-section" id="lifestyle">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-sub">Curated Living</span>
+        <h2>Lifestyle & Community Amenities</h2>
+        <p>Thoughtfully integrated recreational, fitness, and essential amenities designed to enrich everyday life for every generation.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- 1. Modern Gymnasium (REQUIRED) -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Modern Gymnasium</h3>
+          <p class="amenity-desc">
+            Fully air-conditioned fitness club equipped with state-of-the-art cardio stations, free weights, cross-fit gear, and a dedicated stretch & yoga studio.
+          </p>
+        </div>
+
+        <!-- 2. Landscaped Jogging Track (REQUIRED) -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+              <line x1="4" y1="22" x2="4" y2="15"></line>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Landscaped Jogging Track</h3>
+          <p class="amenity-desc">
+            An 800-meter continuous rubberized jogging and walking loop lined with oxygenating flowering trees, aroma shrubs, and ambient twilight bollard lighting.
+          </p>
+        </div>
+
+        <!-- 3. Badminton Court (REQUIRED) -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Badminton Court</h3>
+          <p class="amenity-desc">
+            Tournament-standard court with anti-skid synthetic flooring, LED high-mast floodlights, and viewing seating gallery for evening recreation.
+          </p>
+        </div>
+
+        <!-- 4. 100% Power Backup (REQUIRED) -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="amenity-title">100% Power Backup</h3>
+          <p class="amenity-desc">
+            Heavy-duty dual automatic diesel generators ensuring uninterrupted 24x7 electricity for all individual apartments, common zones, lifts, and water pumps.
+          </p>
+        </div>
+
+        <!-- 5. Kids Play Zone (REQUIRED) -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="5" r="3"></circle>
+              <path d="M6.5 9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2"></path>
+              <path d="M9 19v3"></path>
+              <path d="M15 19v3"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">Kids Play Zone</h3>
+          <p class="amenity-desc">
+            Child-safe play haven equipped with rubberized shock-absorbent safety tiles, slides, swings, climbing web, and sandbox, under continuous CCTV surveillance.
+          </p>
+        </div>
+
+        <!-- 6. 3-Tier Security & RFID Access -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="amenity-title">3-Tier RFID Security</h3>
+          <p class="amenity-desc">
+            Gated boom barriers with automated RFID vehicle recognition, 24x7 security personnel patrols, perimeter infrared sensors, and digital visitor app logging.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. MASTER PLAN & ARCHITECTURAL HIGHLIGHTS -->
+  <section class="masterplan-section" id="masterplan">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-sub">Intelligent Planning</span>
+        <h2>Integrated Master Layout</h2>
+        <p>Engineered with 65% open green spaces, wide 30-feet internal paved boulevards, and segregated vehicular movement.</p>
+      </div>
+
+      <div class="masterplan-box">
+        <!-- Visual Schematic SVG Diagram -->
+        <div class="masterplan-diagram-wrap">
+          <svg class="masterplan-svg-visual" viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2A3654" />
+                <stop offset="100%" stop-color="#1A2238" />
+              </linearGradient>
+              <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#1B4D3E" />
+                <stop offset="100%" stop-color="#0F2B22" />
+              </linearGradient>
+            </defs>
+
+            <!-- Base Canvas -->
+            <rect width="600" height="420" rx="12" fill="#121826" />
+            
+            <!-- Amar Shaheed Path Access Highway -->
+            <rect x="0" y="360" width="600" height="50" fill="url(#roadGrad)" />
+            <line x1="0" y1="385" x2="600" y2="385" stroke="#F59E0B" stroke-dasharray="16,12" stroke-width="2" />
+            <text x="300" y="402" fill="#E2E8F0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">AMAR SHAHEED PATH 45M HIGHWAY CORRIDOR</text>
+
+            <!-- Main Security Gate Entrance -->
+            <rect x="250" y="325" width="100" height="35" rx="6" fill="#C86D51" />
+            <text x="300" y="347" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" text-anchor="middle">GRAND ARCH GATEWAY</text>
+
+            <!-- Internal Boulevard Avenue -->
+            <rect x="275" y="110" width="50" height="215" fill="#1E293B" />
+            <line x1="300" y1="110" x2="300" y2="325" stroke="#64748B" stroke-dasharray="8,6" stroke-width="2" />
+
+            <!-- Tower A: Grah Heights -->
+            <rect x="40" y="60" width="180" height="150" rx="8" fill="#1E2A47" stroke="#C86D51" stroke-width="2" />
+            <text x="130" y="125" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" text-anchor="middle">GRAH HEIGHTS</text>
+            <text x="130" y="145" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" text-anchor="middle">2 & 3 BHK Luxury Towers</text>
+
+            <!-- Central Park & Jogging Track Loop -->
+            <rect x="60" y="240" width="140" height="90" rx="45" fill="url(#greenGrad)" stroke="#10B981" stroke-width="2" />
+            <text x="130" y="280" fill="#A7F3D0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CENTRAL PARK</text>
+            <text x="130" y="296" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="middle">800m Jogging Loop</text>
+
+            <!-- Grah Enclave Row House Sector -->
+            <rect x="360" y="60" width="200" height="180" rx="8" fill="#1E2A47" stroke="#38BDF8" stroke-width="2" />
+            <text x="460" y="135" fill="#FFFFFF" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" text-anchor="middle">GRAH ENCLAVE</text>
+            <text x="460" y="155" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" text-anchor="middle">Independent Duplex Row Houses</text>
+
+            <!-- Amenities Complex: Club & Badminton -->
+            <rect x="360" y="260" width="200" height="70" rx="8" fill="#24304D" stroke="#F59E0B" stroke-width="1.5" />
+            <text x="460" y="295" fill="#FDE68A" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CLUBHOUSE & BADMINTON COURT</text>
+            <text x="460" y="312" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="middle">Gym • Kids Play Zone • Power Substation</text>
+          </svg>
+        </div>
+
+        <!-- Architectural Specifications List -->
+        <div class="specs-list-group">
+          <div class="spec-block">
+            <div class="spec-block-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <div class="spec-block-text">
+              <h4>Premium Vitrified Tiling</h4>
+              <p>Large format 800x1600mm double-charged glazed vitrified tiles across drawing, dining, and bedrooms.</p>
+            </div>
+          </div>
+
+          <div class="spec-block">
+            <div class="spec-block-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="spec-block-text">
+              <h4>Branded CP & Sanitary Ware</h4>
+              <p>Fitted with premium Jaquar / Kohler divertor series, wall-hung WC, and stainless steel sink fittings.</p>
+            </div>
+          </div>
+
+          <div class="spec-block">
+            <div class="spec-block-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="spec-block-text">
+              <h4>Concealed Copper Wiring</h4>
+              <p>Fire-retardant Havells / Polycab copper conduits with modular Legrand switches & pre-fitted AC piping.</p>
+            </div>
+          </div>
+
+          <div class="spec-block">
+            <div class="spec-block-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="spec-block-text">
+              <h4>Seismic Zone III Structural Compliance</h4>
+              <p>Heavy duty Fe-550 TMT steel bar framing designed for utmost stability and thermal insulation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. GOOGLE REVIEWS & SOCIAL PROOF -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-sub">Client Trust</span>
+        <h2>What Lucknow Homeowners Say</h2>
+        <p>Real feedback from families and professionals who found their sanctuary with Grah Builders.</p>
+      </div>
+
+      <!-- Google Rating Header Badge -->
+      <div style="text-align: center;">
+        <div class="google-badge-hero">
+          <div class="google-logo-side">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.17 0 9.97 0 12s.45 3.83 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Google Reviews</span>
+          </div>
+
+          <div class="google-score-box">
+            <div class="score-number">4.7</div>
+            <div class="score-details">
+              <div class="stars">★★★★★</div>
+              <div class="count">Based on 62 verified customer ratings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Cards Grid -->
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">AS</div>
+                <div>
+                  <div class="reviewer-name">Er. Animesh Saxena</div>
+                  <div class="reviewer-tag">IT Consultant (Resident)</div>
+                </div>
+              </div>
+              <span class="google-verified-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Relocating to Lucknow from Bangalore, Shaheed Path was our top preference. Grah Builders delivered exceptional build finish and seamless SBI loan sanction within 8 days. The ventilation in our 3 BHK flat is unmatched."
+            </p>
+          </div>
+          <div class="review-date">Reviewed 3 weeks ago on Google</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">SA</div>
+                <div>
+                  <div class="reviewer-name">Dr. Sunita Awasthi</div>
+                  <div class="reviewer-tag">Healthcare Professional</div>
+                </div>
+              </div>
+              <span class="google-verified-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Buying an independent row house in Grah Enclave gave my family complete privacy with the security of a gated township. Eldeco Udyan II is serene, and Medanta Hospital is barely an 8-minute drive from our doorstep."
+            </p>
+          </div>
+          <div class="review-date">Reviewed 1 month ago on Google</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-header">
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">RV</div>
+                <div>
+                  <div class="reviewer-name">Rajeshwar Verma</div>
+                  <div class="reviewer-tag">Business Owner</div>
+                </div>
+              </div>
+              <span class="google-verified-icon">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Transparent documentation, clear titles, and zero hidden costs. The management team at Grah Builders is approachable and committed to timely delivery. Highly recommended for genuine property buyers in Lucknow."
+            </p>
+          </div>
+          <div class="review-date">Reviewed 2 months ago on Google</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. LOCATION & GOOGLE MAPS -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="location-grid">
+        <!-- Location Context -->
+        <div class="location-info-pane">
+          <span class="badge-sub">Strategic Corridor</span>
+          <h3>Connected to Everything That Matters</h3>
+          <p style="margin-bottom: 20px;">
+            Positioned along Amar Shaheed Path at Eldeco Udyan II, you are at the nexus of South Lucknow's healthcare, international travel, educational hubs, and premier shopping centers.
+          </p>
+
+          <!-- Address Box -->
+          <div class="location-address-box">
+            <div class="location-pin-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="location-address-text">
+              <strong>Site & Corporate Address:</strong><br>
+              Plot no 1391, 2, Amar Shaheed Path, Shaheed Nagar Eldeco Udyan II, Suraksha Enclave, Sharda Nagar, Lucknow, Uttar Pradesh 226025
+            </div>
+          </div>
+
+          <!-- Proximity Milestones -->
+          <div class="proximity-list">
+            <div class="proximity-item">
+              <div class="proximity-time">12 Mins</div>
+              <div class="proximity-desc">CCS International Airport (Amausi)</div>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-time">8 Mins</div>
+              <div class="proximity-desc">Medanta Super Specialty Hospital</div>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-time">18 Mins</div>
+              <div class="proximity-desc">Charbagh Central Railway Station</div>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-time">10 Mins</div>
+              <div class="proximity-desc">Phoenix Palassio & Ekana Cricket Stadium</div>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-time">9 Mins</div>
+              <div class="proximity-desc">Lulu Mall & Golf City Hypermarket</div>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-time">5-8 Mins</div>
+              <div class="proximity-desc">CMS, DPS & Millennium Schools</div>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="https://maps.google.com/?q=Plot+no+1391,+2,+Amar+Shaheed+Path,+Shaheed+Nagar+Eldeco+Udyan+II,+Suraksha+Enclave,+Sharda+Nagar,+Lucknow,+Uttar+Pradesh+226025" target="_blank" rel="noopener noreferrer" class="btn btn-navy">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Open in Google Maps</span>
+            </a>
+            <button type="button" class="btn btn-outline-copper" onclick="openCallbackModal('Location Site Visit - Free Cab Pickup')">
+              Book Cab for Site Visit
+            </button>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive Google Map -->
+        <div class="map-frame-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.854128567546!2d80.9312644!3d26.7801202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfb6dd2ea7ccf%3A0xe21f57fca3c69022!2sAmar%20Shaheed%20Path%2C%20Eldeco%20Udyan%20II%2C%20Lucknow%2C%20Uttar%20Pradesh%20226025!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Grah Builders & Developers Location Map - Eldeco Udyan II Lucknow">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ SECTION (5 INTERACTIVE ACCORDIONS) -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge-sub">Clarity & Assurance</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about ownership, home financing, possession, and upkeep.</p>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>1. What is the possession timeline for Grah Heights and Grah Enclave?</span>
+            <div class="faq-icon-chevron">▼</div>
+          </button>
+          <div class="faq-answer">
+            Phase 1 residences of Grah Heights are in handover phase for ready-to-move buyers. Phase 2 towers have possession scheduled for December 2025. Grah Enclave independent row houses are already structurally ready for interior fit-outs and immediate registry with immediate handover on full payment.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>2. Which banks have approved 90% home loans for these projects?</span>
+            <div class="faq-icon-chevron">▼</div>
+          </button>
+          <div class="faq-answer">
+            Both Grah Heights and Grah Enclave have institutional project approvals from India's leading financial institutions including State Bank of India (SBI), Punjab National Bank (PNB), HDFC Bank, ICICI Bank, and Bank of Baroda. Eligible buyers can avail up to 90% financing at prevailing competitive home loan interest rates with customized EMI structures.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>3. How is car parking allocated for residents and visiting guests?</span>
+            <div class="faq-icon-chevron">▼</div>
+          </button>
+          <div class="faq-answer">
+            Every 2 & 3 BHK apartment in Grah Heights is allotted designated covered basement or stilt car parking with numbered bays. Grah Enclave independent row houses come with private in-compound covered porches capable of parking 1-2 large SUVs. Dedicated outdoor visitor parking bays with 24x7 security monitoring are situated right by the main gate complex.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>4. What are the monthly maintenance charges and who oversees facility management?</span>
+            <div class="faq-icon-chevron">▼</div>
+          </button>
+          <div class="faq-answer">
+            Maintenance charges are pegged nominally to cover 24x7 security personnel, high-speed lift upkeep, common area generator diesel backup, landscaping, and waste management. During the initial handover period, Grah Developers' in-house property care team manages all operations, following which responsibility seamlessly transitions to the officially formed Resident Welfare Association (RWA).
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>5. Can I inspect the legal approvals, land titles, and UP RERA certification?</span>
+            <div class="faq-icon-chevron">▼</div>
+          </button>
+          <div class="faq-answer">
+            Yes, absolutely. We practice 100% legal transparency. All layout approvals, LDA / competent authority clearances, title search reports, sanctioned structural maps, and UP RERA registration documents are available for inspection at our on-site sales office during your site visit. You can also request a verified legal docket via email or WhatsApp.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="logo-mark">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <div class="brand-name">GRAH <span>BUILDERS</span></div>
+              <div class="brand-sub">DEVELOPERS PVT LTD</div>
+            </div>
+          </div>
+          <p>
+            Building high-value, modern living communities along Shaheed Path, Lucknow. Committed to architectural finesse, timely handover, and lifelong homebuyer trust.
+          </p>
+        </div>
+
+        <!-- Col 2: Fast Navigation -->
+        <div>
+          <h4 class="footer-title">Residences</h4>
+          <ul class="footer-links-list">
+            <li><a href="#residences">Grah Heights (2 & 3 BHK)</a></li>
+            <li><a href="#residences">Grah Enclave (Row Houses)</a></li>
+            <li><a href="#lifestyle">Amenities & Gymnasium</a></li>
+            <li><a href="#masterplan">Master Layout Plan</a></li>
+            <li><a href="#booking">Price & EMI Estimator</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Useful Links -->
+        <div>
+          <h4 class="footer-title">Help & Trust</h4>
+          <ul class="footer-links-list">
+            <li><a href="#reviews">Google Reviews (4.7★)</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#location">Shaheed Path Location Map</a></li>
+            <li><a href="tel:+915223560051">Contact Sales Desk</a></li>
+            <li><a href="https://wa.me/915223560051" target="_blank" rel="noopener noreferrer">WhatsApp Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate Office -->
+        <div>
+          <h4 class="footer-title">Get in Touch</h4>
+          <ul class="footer-contact-info">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Plot no 1391, 2, Amar Shaheed Path, Shaheed Nagar Eldeco Udyan II, Suraksha Enclave, Sharda Nagar, Lucknow, UP 226025</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span><strong>Phone:</strong> +91 522 356 0051</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span><strong>Site Office Hours:</strong> 9:30 AM – 7:30 PM (All 7 Days Open)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal RERA Disclaimer -->
+      <div class="rera-disclaimer">
+        <strong>Statutory Legal Disclaimer:</strong> The images, artistic impressions, floor dimensions, and specifications depicted in this website are indicative and subject to changes as may be decided by the architect or regulatory authorities under the Real Estate (Regulation and Development) Act (UP RERA). All dimensions are approximate and prices are subject to prevailing taxes and government dues. For formal allotment and legal agreements, please visit the official Grah Builders & Developers sales gallery.
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 Grah Builders & Developers Pvt Ltd. All Rights Reserved.</div>
+        <div>Modern Living Communities Along Shaheed Path • Lucknow</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 10. STRICT REQUIREMENT: FLOATING ACTION BUTTONS (BOTTOM-RIGHT, VERTICALLY STACKED)
+       - Upper circular button: Call (+91 522 356 0051)
+       - Lower circular button: WhatsApp (https://wa.me/915223560051)
+  -->
+  <div class="floating-actions-container" aria-label="Quick Contact Actions">
+    <!-- UPPER CIRCULAR BUTTON: CALL -->
+    <a href="tel:+915223560051" class="fab-btn fab-call" aria-label="Call +91 522 356 0051">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span class="fab-tooltip">Call +91 522 356 0051</span>
+    </a>
+
+    <!-- LOWER CIRCULAR BUTTON: WHATSAPP -->
+    <a href="https://wa.me/915223560051" target="_blank" rel="noopener noreferrer" class="fab-btn fab-whatsapp" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="fab-tooltip">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- MODAL: REQUEST CALLBACK / SITE VISIT -->
+  <div class="modal-backdrop" id="callbackModal" onclick="closeCallbackModalOnBackdrop(event)">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" onclick="closeCallbackModal()" aria-label="Close modal">✕</button>
+      <h3 id="modalHeading">Request VIP Callback</h3>
+      <p id="modalSub">Speak directly with our senior project coordinator regarding pricing, floor plans, and bank loan approvals.</p>
+
+      <form onsubmit="handleModalFormSubmit(event)" class="modal-form">
+        <input type="text" id="modalCustomerName" class="form-input" placeholder="Your Name" required>
+        <input type="tel" id="modalCustomerPhone" class="form-input" placeholder="Phone Number (10 digits)" pattern="[0-9]{10}" required>
+        
+        <select id="modalProjectChoice" class="form-input" style="color:var(--slate-800);">
+          <option value="Grah Heights (2 & 3 BHK Apartments)">Grah Heights (2 & 3 BHK Apartments)</option>
+          <option value="Grah Enclave (Independent Row Houses)">Grah Enclave (Independent Row Houses)</option>
+          <option value="General Inquiry / Site Visit Schedule">General Inquiry / Site Visit Schedule</option>
+        </select>
+
+        <button type="submit" class="btn btn-copper" style="width:100%; margin-top:8px;">
+          Confirm Callback Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMsg">Inquiry sent successfully! Opening WhatsApp...</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. Mobile Menu Drawer Toggle
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('active');
+    }
+
+    // 2. Floor Plan Tab Switcher
+    function switchFloorplan(btn, targetId) {
+      const container = btn.closest('.project-info-wrap');
+      const buttons = container.querySelectorAll('.fp-tab-btn');
+      const views = container.querySelectorAll('.fp-details-view');
+
+      buttons.forEach(b => b.classList.remove('active'));
+      views.forEach(v => v.style.display = 'none');
+
+      btn.classList.add('active');
+      const targetView = document.getElementById(targetId);
+      if (targetView) {
+        targetView.style.display = 'block';
+      }
+    }
+
+    // 3. Hero Unit Pill Selector
+    function selectHeroUnit(el, unitName) {
+      const parent = document.getElementById('heroUnitSelector');
+      const pills = parent.querySelectorAll('.unit-pill-opt');
+      pills.forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      document.getElementById('heroSelectedUnit').value = unitName;
+    }
+
+    // 4. Hero Lead Submit (Instant WhatsApp Bridge)
+    function handleHeroLeadSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('heroLeadName').value.trim();
+      const phone = document.getElementById('heroLeadPhone').value.trim();
+      const unit = document.getElementById('heroSelectedUnit').value;
+
+      const message = `Hello Grah Builders, My name is ${name} (${phone}). I am interested in ${unit} along Shaheed Path, Lucknow. Please share brochure, site visit dates, and pricing details.`;
+      const whatsappUrl = `https://wa.me/915223560051?text=${encodeURIComponent(message)}`;
+
+      showToast(`Thank you, ${name}! Connecting you to WhatsApp...`);
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 700);
+
+      document.getElementById('heroLeadForm').reset();
+    }
+
+    // 5. Booking Section Unit Selector & Dynamic Live EMI
+    function selectBookingUnit(cardEl, unitName, priceLakh, sqft, emiAmount) {
+      const container = cardEl.closest('.unit-options-container');
+      const cards = container.querySelectorAll('.unit-radio-card');
+      cards.forEach(c => c.classList.remove('selected'));
+      cardEl.classList.add('selected');
+
+      document.getElementById('bookingSelectedUnit').value = unitName;
+      document.getElementById('emiUnitName').textContent = `For ${unitName} (${sqft} sq.ft)`;
+      document.getElementById('emiVal').textContent = `~ ₹${emiAmount} / mo*`;
+    }
+
+    // 6. Main Booking Section Lead Submit
+    function handleMainBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('bookingName').value.trim();
+      const phone = document.getElementById('bookingPhone').value.trim();
+      const unit = document.getElementById('bookingSelectedUnit').value;
+
+      const message = `Hello Grah Builders, I would like to reserve/schedule a tour for: ${unit}. My Name: ${name}, Phone: ${phone}. Please contact me with available unit numbers.`;
+      const whatsappUrl = `https://wa.me/915223560051?text=${encodeURIComponent(message)}`;
+
+      showToast(`Request received! Forwarding to sales desk via WhatsApp...`);
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 700);
+
+      document.getElementById('mainBookingForm').reset();
+    }
+
+    // 7. Interactive Accordion FAQ
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+      
+      const isAlreadyActive = item.classList.contains('active');
+      
+      allItems.forEach(i => i.classList.remove('active'));
+
+      if (!isAlreadyActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // 8. Modal Dialog Controllers
+    function openCallbackModal(contextTitle) {
+      const modal = document.getElementById('callbackModal');
+      const heading = document.getElementById('modalHeading');
+      if (contextTitle) {
+        heading.textContent = `Inquire: ${contextTitle}`;
+      } else {
+        heading.textContent = "Request VIP Callback";
+      }
+      modal.classList.add('active');
+    }
+
+    function closeCallbackModal() {
+      const modal = document.getElementById('callbackModal');
+      modal.classList.remove('active');
+    }
+
+    function closeCallbackModalOnBackdrop(e) {
+      if (e.target.id === 'callbackModal') {
+        closeCallbackModal();
+      }
+    }
+
+    function handleModalFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modalCustomerName').value.trim();
+      const phone = document.getElementById('modalCustomerPhone').value.trim();
+      const project = document.getElementById('modalProjectChoice').value;
+
+      const message = `Hi Grah Builders, Callback Request for ${project}. Name: ${name}, Phone: ${phone}. Please call me back.`;
+      const whatsappUrl = `https://wa.me/915223560051?text=${encodeURIComponent(message)}`;
+
+      closeCallbackModal();
+      showToast(`Request confirmed! Opening WhatsApp sales channel...`);
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 700);
+    }
+
+    // 9. Toast Notification Helper
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotice');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+  </script>
+</body>
+</html>

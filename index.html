@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucknow Real Estate Developers | Live Showcase Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0A0F1D;
+            --bg-card: rgba(18, 24, 43, 0.85);
+            --accent-gold: #D4AF37;
+            --accent-gold-light: #F3E5AB;
+            --accent-blue: #38BDF8;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-title: 'Cinzel', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 85% 60%, rgba(56, 189, 248, 0.05) 0%, transparent 45%);
+            min-height: 100vh;
+        }
+
+        /* Responsive Header - No Text Above */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 15, 29, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 16px 28px;
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #D4AF37, #996515);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .brand-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .brand-text span {
+            color: var(--accent-gold);
+        }
+
+        .header-badge {
+            background: rgba(212, 175, 55, 0.12);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--accent-gold-light);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 70px 24px 50px;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--accent-blue);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #FFF 30%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 720px;
+            margin: 0 auto 36px;
+        }
+
+        /* Grid */
+        .showcase-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px 100px;
+        }
+
+        .grid-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-glass);
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .grid-header h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .grid-header span {
+            color: var(--accent-gold);
+        }
+
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 28px;
+        }
+
+        .site-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 18px;
+            padding: 28px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .site-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .card-number {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            background: rgba(212, 175, 55, 0.12);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .rating-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(251, 191, 36, 0.12);
+            color: #FBBF24;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(251, 191, 36, 0.25);
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .card-locality {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-focus {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            border-top: 1px solid var(--border-glass);
+            padding-top: 16px;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .meta-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-actions {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+        }
+
+        .btn-live {
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            color: #000;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .btn-live:hover {
+            filter: brightness(1.15);
+            transform: scale(1.02);
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: #FFF;
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-wa:hover {
+            transform: scale(1.08);
+            background: #20BD5A;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-glass);
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .site-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 45px 16px 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Responsive Header - Zero Information Above -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">🏢</div>
+                <div class="brand-text">Lucknow<span>Builders</span></div>
+            </a>
+            <div class="header-badge">
+                ✨ 10 Live Custom Sites
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pill">
+            🎯 Real Estate Web Design Showcase
+        </div>
+        <h1>Custom Websites for <span>Top Lucknow Developers</span></h1>
+        <p>Bespoke, high-converting mobile-responsive websites crafted for 10 established real estate developers in Lucknow to capture direct home buyers without 2% broker fees.</p>
+    </section>
+
+    <!-- Showcase Grid -->
+    <main class="showcase-container">
+        <div class="grid-header">
+            <h2>Select a <span>Live Preview</span> Site</h2>
+            <div>Verified Google Business Leads with No Prior Website</div>
+        </div>
+
+        <div class="site-grid">
+
+            <!-- Card 1 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#01</span>
+                    <span class="rating-badge">★ 4.8 (129 Reviews)</span>
+                </div>
+                <h3 class="card-title">RVD Construction & Developers</h3>
+                <div class="card-locality">📍 Virat Khand, Gomti Nagar, Lucknow</div>
+                <div class="card-focus">Luxury 2, 3 & 4 BHK Apartments, Penthouses & Builder Floors in prime Gomti Nagar.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 98381 71352</span></div>
+                    <div class="meta-row">🛡️ <span>Verified RERA Compliant</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/rvd-construction/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919838171352?text=Hey%20I%20am%20Mayank,%20I%20found%20RVD%20Construction%20on%20Google%20Maps%20with%20great%20reviews%20(4.8%E2%98%85%20from%20129%20reviews)!%20I%20created%20a%20sample%20website%20for%20you%20to%20review." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#02</span>
+                    <span class="rating-badge">★ 5.0 (15 Reviews)</span>
+                </div>
+                <h3 class="card-title">Metro Estate Developers</h3>
+                <div class="card-locality">📍 Raibareli Road, Kalli Pashchim, Lucknow</div>
+                <div class="card-focus">Gated Plotted Townships & Freehold Lands along Outer Ring Road & SGPGI.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 94150 12345</span></div>
+                    <div class="meta-row">📜 <span>Immediate Registry & Possession</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/metro-estate/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919415012345?text=Hey%20I%20am%20Mayank,%20I%20found%20Metro%20Estate%20Developers%20on%20Google%20Maps%20with%205.0%E2%98%85%20reviews!%20I%20created%20a%20sample%20website%20for%20your%20township." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#03</span>
+                    <span class="rating-badge">★ 4.7 (62 Reviews)</span>
+                </div>
+                <h3 class="card-title">Grah Builders & Developers</h3>
+                <div class="card-locality">📍 Amar Shaheed Path, Eldeco Udyan II</div>
+                <div class="card-focus">Contemporary 2 & 3 BHK Apartments, Row Houses & Gated Living along Shaheed Path.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 522 356 0051</span></div>
+                    <div class="meta-row">🏦 <span>90% Bank Loan Approved</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/grah-builders/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/915223560051?text=Hey%20I%20am%20Mayank,%20I%20found%20Grah%20Builders%20on%20Google%20Maps%20with%204.7%E2%98%85%20rating!%20I%20built%20a%20sample%20website%20for%20your%20Shaheed%20Path%20projects." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#04</span>
+                    <span class="rating-badge">★ 4.9 (High Rating)</span>
+                </div>
+                <h3 class="card-title">Azhan Developers Private Limited</h3>
+                <div class="card-locality">📍 Tedhi Pulia, Adil Nagar / Ring Road</div>
+                <div class="card-focus">Prime Commercial Retail Showrooms, High-Street Stores & Residential Flats.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 87260 80001</span></div>
+                    <div class="meta-row">📈 <span>High Rental Yield Guarantee</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/azhan-developers/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/918726080001?text=Hey%20I%20am%20Mayank,%20I%20found%20Azhan%20Developers%20on%20Google%20Maps%20with%20great%20reviews!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#05</span>
+                    <span class="rating-badge">★ 4.6 (40 Reviews)</span>
+                </div>
+                <h3 class="card-title">Jindal Infra Developers</h3>
+                <div class="card-locality">📍 Rana Pratap Marg, Hazratganj, Lucknow</div>
+                <div class="card-focus">Grade-A Commercial Corporate Parks & High-Rise Luxury Towers in Central Lucknow.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>1800 309 2999</span></div>
+                    <div class="meta-row">🏢 <span>Hazratganj Prime Prestige</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/jindal-infra/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919151022999?text=Hey%20I%20am%20Mayank,%20I%20found%20Jindal%20Infra%20on%20Google%20Maps%20with%2040%20reviews!%20I%20created%20a%20sample%20corporate%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#06</span>
+                    <span class="rating-badge">★ 4.7 (22 Reviews)</span>
+                </div>
+                <h3 class="card-title">Vir Infrastructure & Developers</h3>
+                <div class="card-locality">📍 Vikas Khand 1, Gomti Nagar, Lucknow</div>
+                <div class="card-focus">Ultra-Luxury Independent Duplexes & Villa Residences in Gomti Nagar.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 98388 83318</span></div>
+                    <div class="meta-row">🏡 <span>100% Freehold Luxury</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/vir-infrastructure/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919838883318?text=Hey%20I%20am%20Mayank,%20I%20found%20Vir%20Infrastructure%20on%20Google%20Maps%20with%2022%20reviews!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#07</span>
+                    <span class="rating-badge">★ 4.5 (Verified)</span>
+                </div>
+                <h3 class="card-title">Lucknow Home Developers</h3>
+                <div class="card-locality">📍 Vibhuti Khand, Gomti Nagar, Lucknow</div>
+                <div class="card-focus">Ready-to-Move 2 & 3 BHK Apartments & Family Flats with Zero Brokerage.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>1800 419 8393</span></div>
+                    <div class="meta-row">🔑 <span>Immediate Possession Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/lucknow-home-developers/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919839012393?text=Hey%20I%20am%20Mayank,%20I%20found%20Lucknow%20Home%20Developers%20on%20Google%20Maps!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#08</span>
+                    <span class="rating-badge">★ 4.8 (11 Reviews)</span>
+                </div>
+                <h3 class="card-title">REDA Developers & Builders</h3>
+                <div class="card-locality">📍 Sector G, LDA Colony, Lucknow</div>
+                <div class="card-focus">Certified Real Estate Developments, Group Housing & RERA-Approved Projects.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 70846 00011</span></div>
+                    <div class="meta-row">⚖️ <span>100% Legal Title Guarantee</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/reda-association/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/917084600011?text=Hey%20I%20am%20Mayank,%20I%20found%20REDA%20on%20Google%20Maps%20with%20great%20reviews!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#09</span>
+                    <span class="rating-badge">★ 4.8 (44 Reviews)</span>
+                </div>
+                <h3 class="card-title">Shilanyaas Realtors & Developers</h3>
+                <div class="card-locality">📍 Block C, Rajajipuram, Lucknow</div>
+                <div class="card-focus">Turnkey Construction, Affordable Family Homes & Gated Townships in West Lucknow.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 95174 32732</span></div>
+                    <div class="meta-row">🏗️ <span>12+ Years of Trusted Building</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/shilanyaas-realtors/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919517432732?text=Hey%20I%20am%20Mayank,%20I%20found%20Shilanyaas%20Realtors%20on%20Google%20Maps%20with%2044%20reviews!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="site-card">
+                <div class="card-top">
+                    <span class="card-number">#10</span>
+                    <span class="rating-badge">★ 4.9 (161 Reviews)</span>
+                </div>
+                <h3 class="card-title">Benesom Realtors Pvt Ltd</h3>
+                <div class="card-locality">📍 Beam Square, Tedhipuliya, Adil Nagar</div>
+                <div class="card-focus">Integrated Smart Townships, Farmhouses & Plotted Communities in North Lucknow.</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>+91 98384 40031</span></div>
+                    <div class="meta-row">🌟 <span>Lucknow's Highest-Rated Builder</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/benesom-realtors/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919838440031?text=Hey%20I%20am%20Mayank,%20I%20found%20Benesom%20Realtors%20on%20Google%20Maps%20with%20161%20reviews%20and%204.9%E2%98%85%20rating!%20I%20created%20a%20sample%20website%20for%20you." target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucknow Real Estate Showcase. Crafted for high-conversion web development client acquisition.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vir Infrastructure &amp; Estate Developers | Luxury Villas &amp; Duplexes in Gomti Nagar, Lucknow</title>
+  <meta name="description" content="Vir Infrastructure &amp; Estate Developers Pvt Ltd - Bespoke Luxury Villas, Independent Duplexes &amp; Gated Residences in Vikas Khand 1, Gomti Nagar, Lucknow. 100% Freehold, RERA Approved.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    /* -----------------------------------------------------------
+       ROOT & THEME VARIABLES: Emerald Sapphire & Champagne Gold
+       ----------------------------------------------------------- */
+    :root {
+      --bg-dark: #07172B;
+      --bg-sapphire: #0B2545;
+      --bg-card: #0F3057;
+      --bg-card-hover: #133D6E;
+      --gold-primary: #D4AF37;
+      --gold-light: #F3E5AB;
+      --gold-dark: #AA8010;
+      --gold-gradient: linear-gradient(135deg, #ECC870 0%, #D4AF37 50%, #AA8010 100%);
+      --text-white: #FFFFFF;
+      --text-cream: #F8F5EE;
+      --text-muted: #9BB0C7;
+      --border-gold: rgba(212, 175, 55, 0.35);
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --shadow-luxury: 0 20px 45px rgba(0, 0, 0, 0.45);
+      --shadow-gold: 0 10px 25px rgba(212, 175, 55, 0.25);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --font-heading: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* -----------------------------------------------------------
+       GLOBAL RESET & BASE STYLES
+       ----------------------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-cream);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* -----------------------------------------------------------
+       SECTION HEADERS & TYPOGRAPHY
+       ----------------------------------------------------------- */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      border: 1px solid var(--border-gold);
+      background: rgba(212, 175, 55, 0.08);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 0.85rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .section-title span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 650px;
+      margin: 0 auto 3rem auto;
+      font-weight: 300;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* -----------------------------------------------------------
+       BUTTONS
+       ----------------------------------------------------------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      padding: 0.9rem 1.8rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-transform: uppercase;
+    }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #07172B;
+      font-weight: 700;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+      filter: brightness(1.08);
+    }
+
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1px solid var(--gold-primary);
+    }
+
+    .btn-outline-gold:hover {
+      background: rgba(212, 175, 55, 0.12);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* -----------------------------------------------------------
+       HEADER & NAVIGATION (Strictly 1st child of body)
+       ----------------------------------------------------------- */
+    header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(7, 23, 43, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-gold);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 84px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+    }
+
+    .logo-crest {
+      width: 46px;
+      height: 46px;
+      border: 1.5px solid var(--gold-primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--gold-light);
+      font-size: 1.35rem;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.18);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 1.5px;
+      color: var(--text-white);
+      line-height: 1.15;
+    }
+
+    .brand-tag {
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: var(--text-cream);
+      position: relative;
+      padding: 0.4rem 0;
+    }
+
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .header-phone:hover {
+      border-color: var(--gold-primary);
+      color: #fff;
+    }
+
+    .hamburger-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--gold-light);
+      font-size: 1.6rem;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* -----------------------------------------------------------
+       HERO SECTION
+       ----------------------------------------------------------- */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, rgba(7, 23, 43, 0.72) 0%, rgba(11, 37, 69, 0.92) 100%),
+                  url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80') center center/cover no-repeat;
+      padding: 5rem 0 6rem 0;
+      border-bottom: 1px solid var(--border-gold);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-gold);
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+      line-height: 1.15;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 1.3rem;
+    }
+
+    .hero h1 span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      font-size: 1.15rem;
+      color: #E2E8F0;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      max-width: 580px;
+      line-height: 1.6;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .stat-item h3 {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .stat-item p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* -----------------------------------------------------------
+       LEAD GENERATION CARD (Inside Hero Grid)
+       ----------------------------------------------------------- */
+    .lead-card {
+      background: rgba(11, 37, 69, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1.5px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-luxury);
+      position: relative;
+    }
+
+    .lead-card::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 15%;
+      right: 15%;
+      height: 3px;
+      background: var(--gold-gradient);
+      border-radius: 50px;
+    }
+
+    .lead-card-header {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .lead-card-header h3 {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      color: var(--text-white);
+      font-weight: 700;
+    }
+
+    .lead-card-header p {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      margin-top: 0.25rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.1rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #E2E8F0;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.4px;
+    }
+
+    .form-control, .form-select {
+      width: 100%;
+      background: rgba(7, 23, 43, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      color: #fff;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+      background: rgba(7, 23, 43, 0.95);
+    }
+
+    .form-select option {
+      background: #0B2545;
+      color: #fff;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .form-guarantee {
+      text-align: center;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+
+    /* -----------------------------------------------------------
+       SHOWCASE: VIR ROYALE DUPLEXES & VIR IMPERIAL VILLAS
+       ----------------------------------------------------------- */
+    .showcase-section {
+      padding: 6.5rem 0;
+      background: #07172B;
+      position: relative;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    .residence-card {
+      background: var(--bg-sapphire);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-luxury);
+      position: relative;
+    }
+
+    .residence-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      border-color: rgba(212, 175, 55, 0.7);
+    }
+
+    .residence-img-box {
+      position: relative;
+      height: 310px;
+      overflow: hidden;
+    }
+
+    .residence-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .residence-card:hover .residence-img-box img {
+      transform: scale(1.06);
+    }
+
+    .residence-tag {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.2rem;
+      background: rgba(7, 23, 43, 0.85);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+    }
+
+    .residence-status {
+      position: absolute;
+      bottom: 1.2rem;
+      right: 1.2rem;
+      background: rgba(212, 175, 55, 0.95);
+      color: #07172B;
+      padding: 0.35rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .residence-body {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .residence-title {
+      font-family: var(--font-heading);
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .residence-subtitle {
+      font-size: 0.9rem;
+      color: var(--gold-light);
+      margin-bottom: 1.3rem;
+      font-weight: 500;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 1.2rem 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 1.5rem;
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .spec-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(212, 175, 55, 0.12);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .spec-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .spec-value {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 1.8rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      margin-bottom: 0.6rem;
+    }
+
+    .feature-list li i {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+    }
+
+    .card-footer-actions {
+      display: flex;
+      gap: 0.85rem;
+      margin-top: auto;
+    }
+
+    .card-footer-actions .btn {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      font-size: 0.86rem;
+    }
+
+    /* -----------------------------------------------------------
+       AMENITIES & SPECIFICATIONS
+       ----------------------------------------------------------- */
+    .amenities-section {
+      padding: 6.5rem 0;
+      background: var(--bg-sapphire);
+      position: relative;
+    }
+
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .amenity-card {
+      background: rgba(7, 23, 43, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2.2rem 1.8rem;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .amenity-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-5px);
+      background: rgba(15, 48, 87, 0.85);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    .amenity-icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(11, 37, 69, 0.4) 100%);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 1.3rem;
+    }
+
+    .amenity-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    .amenity-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* -----------------------------------------------------------
+       SPECIFICATIONS TABLE HIGHLIGHT
+       ----------------------------------------------------------- */
+    .spec-table-container {
+      margin-top: 4.5rem;
+      background: #07172B;
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+
+    .spec-table-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8rem;
+    }
+
+    .spec-table-box {
+      border-left: 2px solid var(--gold-primary);
+      padding-left: 1.2rem;
+    }
+
+    .spec-table-box h4 {
+      font-size: 1rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .spec-table-box p {
+      font-size: 0.85rem;
+      color: #CBD5E1;
+    }
+
+    /* -----------------------------------------------------------
+       GOOGLE REVIEWS & SOCIAL PROOF
+       ----------------------------------------------------------- */
+    .reviews-section {
+      padding: 6.5rem 0;
+      background: #07172B;
+    }
+
+    .rating-overview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      background: rgba(11, 37, 69, 0.7);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2.5rem;
+      max-width: 680px;
+      margin: 0 auto 3.5rem auto;
+      box-shadow: var(--shadow-luxury);
+    }
+
+    .rating-score {
+      font-family: var(--font-heading);
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .rating-stars {
+      color: #FFC107;
+      font-size: 1.2rem;
+      display: flex;
+      gap: 0.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .rating-meta h4 {
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .rating-meta p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .review-card {
+      background: var(--bg-sapphire);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .review-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-4px);
+    }
+
+    .review-quote {
+      font-size: 0.95rem;
+      color: #E2E8F0;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .review-quote::before {
+      content: '“';
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      color: rgba(212, 175, 55, 0.25);
+      position: absolute;
+      top: -1.2rem;
+      left: -0.6rem;
+      line-height: 1;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--gold-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #07172B;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .reviewer-details h5 {
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .reviewer-details p {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+    }
+
+    /* -----------------------------------------------------------
+       LOCATION & PROXIMITY
+       ----------------------------------------------------------- */
+    .location-section {
+      padding: 6.5rem 0;
+      background: var(--bg-sapphire);
+      position: relative;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .map-wrapper {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1.5px solid var(--border-gold);
+      box-shadow: var(--shadow-luxury);
+      height: 460px;
+      position: relative;
+      background: #07172B;
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .proximity-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      margin: 1.8rem 0;
+    }
+
+    .proximity-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.4rem;
+      background: rgba(7, 23, 43, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .proximity-item:hover {
+      border-color: var(--gold-primary);
+      background: rgba(7, 23, 43, 0.95);
+      transform: translateX(5px);
+    }
+
+    .proximity-left {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .proximity-icon {
+      color: var(--gold-light);
+      font-size: 1.1rem;
+    }
+
+    .proximity-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: #fff;
+    }
+
+    .proximity-distance {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .proximity-time {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.12);
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .address-highlight {
+      background: rgba(7, 23, 43, 0.9);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .address-highlight i {
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin-top: 0.2rem;
+    }
+
+    .address-highlight h4 {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+
+    .address-highlight p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* -----------------------------------------------------------
+       FAQ SECTION (Interactive Accordions)
+       ----------------------------------------------------------- */
+    .faq-section {
+      padding: 6.5rem 0;
+      background: #07172B;
+    }
+
+    .faq-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .faq-item {
+      background: var(--bg-sapphire);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--border-gold);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 1.4rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      transition: color 0.3s ease;
+    }
+
+    .faq-item.active .faq-question {
+      color: var(--gold-light);
+    }
+
+    .faq-icon {
+      font-size: 1.1rem;
+      color: var(--gold-primary);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      padding: 0 1.6rem;
+      background: rgba(7, 23, 43, 0.4);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 0 1.6rem 1.5rem 1.6rem;
+      transition: max-height 0.4s ease-in-out;
+    }
+
+    .faq-answer p {
+      font-size: 0.93rem;
+      color: #CBD5E1;
+      line-height: 1.65;
+    }
+
+    /* -----------------------------------------------------------
+       CALL TO ACTION BANNER (Before Footer)
+       ----------------------------------------------------------- */
+    .cta-banner {
+      background: linear-gradient(135deg, #0B2545 0%, #133D6E 100%);
+      border-top: 1px solid var(--border-gold);
+      border-bottom: 1px solid var(--border-gold);
+      padding: 4.5rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .cta-banner p {
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      max-width: 600px;
+      margin: 0 auto 2.2rem auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    /* -----------------------------------------------------------
+       FOOTER
+       ----------------------------------------------------------- */
+    footer {
+      background: #040E1B;
+      padding: 4.5rem 0 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      margin-bottom: 1.3rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .footer-col p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.7rem;
+    }
+
+    .footer-links a {
+      color: #CBD5E1;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+      transform: translateX(4px);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.9rem;
+      color: #CBD5E1;
+      font-size: 0.88rem;
+    }
+
+    .footer-contact-item i {
+      color: var(--gold-primary);
+      margin-top: 0.25rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* -----------------------------------------------------------
+       FLOATING ACTION BUTTONS (Bottom-Right Stacked)
+       ----------------------------------------------------------- */
+    .floating-actions {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 9999;
+    }
+
+    .fab {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.45rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      position: relative;
+      transition: var(--transition);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .fab:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .fab-call {
+      background: linear-gradient(135deg, #ECC870 0%, #D4AF37 100%);
+      color: #07172B;
+      border-color: #F3E5AB;
+    }
+
+    .fab-whatsapp {
+      background: #25D366;
+      border-color: #4ade80;
+    }
+
+    .fab-tooltip {
+      position: absolute;
+      right: 70px;
+      background: rgba(7, 23, 43, 0.95);
+      border: 1px solid var(--border-gold);
+      color: #fff;
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .fab:hover .fab-tooltip {
+      opacity: 1;
+      transform: translateX(-5px);
+    }
+
+    /* Pulse animation for WhatsApp */
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .fab-whatsapp {
+      animation: pulse-ring 2.5s infinite;
+    }
+
+    /* -----------------------------------------------------------
+       MODALS: FLOOR PLAN & BOOKING MODAL
+       ----------------------------------------------------------- */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(8px);
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-box {
+      background: var(--bg-sapphire);
+      border: 1.5px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 820px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 2.2rem;
+      position: relative;
+      box-shadow: var(--shadow-luxury);
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-box {
+      transform: translateY(0);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+
+    .modal-close-btn:hover {
+      background: var(--gold-primary);
+      color: #07172B;
+    }
+
+    .modal-tabs {
+      display: flex;
+      gap: 0.8rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin: 1.5rem 0;
+      padding-bottom: 0.5rem;
+    }
+
+    .modal-tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .modal-tab-btn.active {
+      color: var(--gold-light);
+    }
+
+    .modal-tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -0.55rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gold-primary);
+    }
+
+    .plan-graphic {
+      background: #07172B;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    /* -----------------------------------------------------------
+       MOBILE RESPONSIVENESS & MEDIA QUERIES
+       ----------------------------------------------------------- */
+    @media (max-width: 1024px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .showcase-grid {
+        grid-template-columns: 1fr;
+      }
+      .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .spec-table-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hamburger-btn {
+        display: block;
+      }
+      .header-phone {
+        display: none;
+      }
+      .nav-menu {
+        position: fixed;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        background: rgba(7, 23, 43, 0.98);
+        border-bottom: 1px solid var(--border-gold);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1.4rem;
+        transform: translateY(-120%);
+        transition: transform 0.35s ease;
+      }
+      .nav-menu.open {
+        transform: translateY(0);
+      }
+      .amenities-grid {
+        grid-template-columns: 1fr;
+      }
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .rating-overview {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .card-footer-actions {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION (Strictly 1st child of body)
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <!-- Luxury Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Vir Infrastructure Home">
+        <div class="logo-crest">
+          <i class="fa-solid fa-landmark-dome"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VIR INFRASTRUCTURE</span>
+          <span class="brand-tag">&amp; ESTATE DEVELOPERS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#villas" onclick="closeMenu()">Villas</a></li>
+        <li><a href="#duplexes" onclick="closeMenu()">Duplexes</a></li>
+        <li><a href="#specifications" onclick="closeMenu()">Specifications</a></li>
+        <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
+        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+        <li><a href="#location" onclick="closeMenu()">Location</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="tel:+919838883318" class="header-phone">
+          <i class="fa-solid fa-phone"></i>
+          <span>+91 98388 83318</span>
+        </a>
+        <button class="btn btn-gold" onclick="openTourModal()">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Private Tour</span>
+        </button>
+        <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION WITH DIRECT LEAD GENERATION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <!-- Hero Text Details -->
+        <div class="hero-text-side">
+          <div class="hero-badges-row">
+            <span class="trust-pill"><i class="fa-solid fa-award"></i> RERA Approved</span>
+            <span class="trust-pill"><i class="fa-solid fa-stamp"></i> 100% Freehold Land</span>
+            <span class="trust-pill"><i class="fa-solid fa-location-dot"></i> Vikas Khand 1, Gomti Nagar</span>
+          </div>
+
+          <h1>Bespoke Luxury Villas &amp; <span>Duplex Residences</span> in Gomti Nagar</h1>
+
+          <p class="hero-lead">
+            Experience ultra-luxury living crafted with imported Italian marble, private landscaped terrace gardens, and gated exclusivity. Designed for connoisseurs seeking timeless architectural perfection in Lucknow's most prestigious neighborhood.
+          </p>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+            <a href="#villas" class="btn btn-gold">
+              <i class="fa-solid fa-compass"></i> Explore Residences
+            </a>
+            <a href="tel:+919838883318" class="btn btn-outline-gold">
+              <i class="fa-solid fa-phone-volume"></i> Direct Call
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Freehold Registry</p>
+            </div>
+            <div class="stat-item">
+              <h3>4.7★</h3>
+              <p>22 Google Reviews</p>
+            </div>
+            <div class="stat-item">
+              <h3>4 Mins</h3>
+              <p>To Patrakarpuram</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrated Lead Generation Card -->
+        <div class="hero-form-side">
+          <div class="lead-card">
+            <div class="lead-card-header">
+              <span class="section-tag" style="margin-bottom: 0.4rem;">VIP Consultation</span>
+              <h3>Request Private Preview</h3>
+              <p>Instant WhatsApp brochure &amp; priority site inspection</p>
+            </div>
+
+            <form id="heroLeadForm" onsubmit="handleLeadSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="unitType">Select Preferred Configuration</label>
+                <select id="unitType" class="form-select" required>
+                  <option value="3 BHK Duplex (Vir Royale)">3 BHK Duplex (2,450 sq.ft.)</option>
+                  <option value="4 BHK Villa (Vir Imperial)">4 BHK Luxury Villa (3,400 sq.ft.)</option>
+                  <option value="Penthouse Residence">Penthouse Residence with Terrace</option>
+                  <option value="Customized Gated Plot">Customized Plot &amp; Construction</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientName">Full Name</label>
+                <input type="text" id="clientName" class="form-control" placeholder="e.g. Dr. Rajesh Verma" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientPhone">Contact Number</label>
+                <input type="tel" id="clientPhone" class="form-control" placeholder="+91 98388 XXXXX" required>
+              </div>
+
+              <button type="submit" class="btn btn-gold form-submit-btn">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.15rem;"></i>
+                <span>Connect on WhatsApp</span>
+              </button>
+
+              <div class="form-guarantee">
+                <i class="fa-solid fa-shield-halved" style="color: var(--gold-primary);"></i>
+                <span>Direct developer inquiry &bull; No broker calls &bull; Strict privacy</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SHOWCASE: VIR ROYALE DUPLEXES & VIR IMPERIAL VILLAS
+       ========================================== -->
+  <section class="showcase-section" id="villas">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Architectural Masterpieces</span>
+        <h2 class="section-title">Signature <span>Residences</span></h2>
+        <p class="section-subtitle">
+          Independently registered, freehold residential landmarks situated right in Vikas Khand 1, Gomti Nagar. Designed for families who refuse to compromise on space or craftsmanship.
+        </p>
+      </div>
+
+      <div class="showcase-grid">
+        <!-- Card 1: Vir Royale Duplexes -->
+        <div class="residence-card" id="duplexes">
+          <div class="residence-img-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Vir Royale Duplexes">
+            <span class="residence-tag">Independent Duplex</span>
+            <span class="residence-status">Near Completion</span>
+          </div>
+          <div class="residence-body">
+            <h3 class="residence-title">Vir Royale Duplexes</h3>
+            <div class="residence-subtitle">Bespoke 3 &amp; 4 BHK Luxury Duplex Homes</div>
+            
+            <div class="specs-grid">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <div class="spec-label">Carpet Area</div>
+                  <div class="spec-value">2,450 – 3,100 Sq.Ft.</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-gem"></i></div>
+                <div>
+                  <div class="spec-label">Flooring</div>
+                  <div class="spec-value">Italian Botticino</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-tree"></i></div>
+                <div>
+                  <div class="spec-label">Terrace</div>
+                  <div class="spec-value">Private Landscaped</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-square-parking"></i></div>
+                <div>
+                  <div class="spec-label">Parking</div>
+                  <div class="spec-value">2 Covered Bays</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Double-height living foyer with panoramic glass façade</li>
+              <li><i class="fa-solid fa-circle-check"></i> Modular German-engineered kitchen with quartz countertops</li>
+              <li><i class="fa-solid fa-circle-check"></i> Private rooftop pergola lounge &amp; barbecue deck</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% Freehold LDA title with separate boundary registry</li>
+            </ul>
+
+            <div class="card-footer-actions">
+              <button class="btn btn-outline-gold" onclick="openFloorPlanModal('Vir Royale Duplex', '2,450 - 3,100 sq.ft.', 'G+1 Independent Duplex with Private Terrace')">
+                <i class="fa-solid fa-layer-group"></i> View Floor Plan
+              </button>
+              <button class="btn btn-gold" onclick="inquireUnit('Vir Royale Duplexes')">
+                <i class="fa-solid fa-calendar-day"></i> Schedule Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Vir Imperial Villas -->
+        <div class="residence-card">
+          <div class="residence-img-box">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80" alt="Vir Imperial Villas">
+            <span class="residence-tag">Exclusive Villa Floor</span>
+            <span class="residence-status">Limited Release</span>
+          </div>
+          <div class="residence-body">
+            <h3 class="residence-title">Vir Imperial Villas</h3>
+            <div class="residence-subtitle">4 BHK Ultra-Luxury Independent Estate Villas</div>
+            
+            <div class="specs-grid">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <div class="spec-label">Carpet Area</div>
+                  <div class="spec-value">3,400 – 4,500 Sq.Ft.</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-gem"></i></div>
+                <div>
+                  <div class="spec-label">Flooring</div>
+                  <div class="spec-value">Statuario Italian</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-elevator"></i></div>
+                <div>
+                  <div class="spec-label">Elevator</div>
+                  <div class="spec-value">Private Shaft Ready</div>
+                </div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <div class="spec-label">Security</div>
+                  <div class="spec-value">Biometric Access</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-circle-check"></i> Master bedroom suite with walk-in wardrobe &amp; jacuzzi bath</li>
+              <li><i class="fa-solid fa-circle-check"></i> Full smart home automation pre-wired for lights, AC &amp; curtains</li>
+              <li><i class="fa-solid fa-circle-check"></i> Private landscaped courtyard for indoor-outdoor tranquility</li>
+              <li><i class="fa-solid fa-circle-check"></i> Heavy-duty soundproof UPVC German sliding window systems</li>
+            </ul>
+
+            <div class="card-footer-actions">
+              <button class="btn btn-outline-gold" onclick="openFloorPlanModal('Vir Imperial Villa', '3,400 - 4,500 sq.ft.', 'G+2 Independent Villa with Private Courtyard & Elevator')">
+                <i class="fa-solid fa-layer-group"></i> View Floor Plan
+              </button>
+              <button class="btn btn-gold" onclick="inquireUnit('Vir Imperial Villas')">
+                <i class="fa-solid fa-calendar-day"></i> Schedule Visit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LUXURY AMENITIES & SPECIFICATIONS
+       ========================================== -->
+  <section class="amenities-section" id="specifications">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Curated Living Standards</span>
+        <h2 class="section-title">Unrivaled <span>Luxury Amenities</span></h2>
+        <p class="section-subtitle">
+          Engineered with military-grade structural safety, 5-star hotel finishes, and future-ready technology to provide your family an elite sanctuary in Gomti Nagar.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- Amenity 1 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-torii-gate"></i>
+          </div>
+          <h3 class="amenity-title">Private Gated Entry</h3>
+          <p class="amenity-desc">
+            Grand motorized boundary gates with controlled vehicular entry, boom barrier protocols, and RFID resident tag verification.
+          </p>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="amenity-title">24/7 Multi-Tier Security</h3>
+          <p class="amenity-desc">
+            Complete perimeter HD CCTV surveillance with night-vision, trained guards, intercom concierge, and video doorbell at each residence.
+          </p>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="amenity-title">Home Automation Pre-wiring</h3>
+          <p class="amenity-desc">
+            Pre-installed smart conduits compatible with Alexa, Google Home, smart scenes, dimming lights, and motorized curtain controls.
+          </p>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3 class="amenity-title">Landscaped Terrace Garden</h3>
+          <p class="amenity-desc">
+            Waterproofed designer rooftop gardens with ambient solar lighting, artificial lawn, gazebo seating, and family barbecue space.
+          </p>
+        </div>
+
+        <!-- Amenity 5 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-charging-station"></i>
+          </div>
+          <h3 class="amenity-title">2-Car Private Parking</h3>
+          <p class="amenity-desc">
+            Deep covered portico with anti-skid granite tiling, dedicated EV fast-charging provision, and separate wash outlet.
+          </p>
+        </div>
+
+        <!-- Amenity 6 -->
+        <div class="amenity-card">
+          <div class="amenity-icon-box">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h3 class="amenity-title">100% Power &amp; Water Security</h3>
+          <p class="amenity-desc">
+            3-phase high-voltage power backup connection, dual overhead water storage tanks, and automated pressure pump systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- Technical Specifications Strip -->
+      <div class="spec-table-container">
+        <div class="spec-table-grid">
+          <div class="spec-table-box">
+            <h4>Structure &amp; Steel</h4>
+            <p>Seismic Zone III compliant RCC frame with Tata Tiscon / Jindal 550D TMT reinforcement.</p>
+          </div>
+          <div class="spec-table-box">
+            <h4>Sanitary &amp; CP Fittings</h4>
+            <p>Concealed divertor fixtures by Kohler / Jaquar Artize with wall-hung rimless water closets.</p>
+          </div>
+          <div class="spec-table-box">
+            <h4>Electrical &amp; Wiring</h4>
+            <p>Finolex / Havells fire-retardant low-smoke cables with Schneider modular switches.</p>
+          </div>
+          <div class="spec-table-box">
+            <h4>Flooring &amp; Walls</h4>
+            <p>Imported Italian marble in living areas, engineered wooden flooring in master suites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GOOGLE REVIEWS & SOCIAL PROOF
+       ========================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Uncompromising Reputation</span>
+        <h2 class="section-title">Verified <span>Resident Testimonials</span></h2>
+        <p class="section-subtitle">
+          Hear directly from high-net-worth homeowners and investors who trusted Vir Infrastructure for their forever homes in Gomti Nagar.
+        </p>
+      </div>
+
+      <!-- Rating Overview Pill -->
+      <div class="rating-overview">
+        <div class="rating-score">4.7</div>
+        <div class="rating-meta">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h4>Excellent Rating on Google Maps</h4>
+          <p>Based on 22 authentic client reviews &amp; verified registrations</p>
+        </div>
+        <div style="border-left: 1px solid var(--border-gold); padding-left: 1.5rem; display: flex; align-items: center;">
+          <i class="fa-brands fa-google" style="font-size: 2.4rem; color: #EA4335;"></i>
+        </div>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <p class="review-quote">
+            "The Italian marble finish and construction quality in Vikas Khand 1 are unmatched. Vir Infrastructure delivered exactly what they promised with zero registry delays. Their attention to detail on plumbing and waterproofing is extraordinary."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">AV</div>
+            <div class="reviewer-details">
+              <h5>Dr. Anand Vardhan</h5>
+              <p><i class="fa-solid fa-circle-check" style="color: #22c55e;"></i> Verified Homeowner (Vir Royale)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <p class="review-quote">
+            "Living just 4 minutes from Patrakarpuram while enjoying absolute gated privacy. The private terrace garden and double height ceiling make the duplex feel like a 5-star suite. Truly proud of our decision."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">SK</div>
+            <div class="reviewer-details">
+              <h5>Sanjay Kapoor</h5>
+              <p><i class="fa-solid fa-circle-check" style="color: #22c55e;"></i> Business Owner, Gomti Nagar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <p class="review-quote">
+            "Clear title, 100% freehold land, and instant loan sanction through SBI. Er. and team Vir developers have true integrity in Gomti Nagar real estate. Transparent pricing with zero hidden charges."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">MS</div>
+            <div class="reviewer-details">
+              <h5>Manish Srivastava</h5>
+              <p><i class="fa-solid fa-circle-check" style="color: #22c55e;"></i> Senior Executive, MNC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LOCATION & PROXIMITY SECTION
+       ========================================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Prime Vikas Khand 1</span>
+        <h2 class="section-title">Centrally Located in <span>Gomti Nagar</span></h2>
+        <p class="section-subtitle">
+          Located in the tranquil, elite residential pocket of Vikas Khand 1 with effortless connectivity to Lucknow’s premier retail, hospital, and business centers.
+        </p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Interactive Map Wrapper -->
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.887680784949!2d80.9984950759313!3d26.843516063071853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3096053351d%3A0x6a2c262e31e1fcab!2sVikas%20Khand%201%2C%20Gomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226010!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            title="Vir Infrastructure Location Vikas Khand 1 Gomti Nagar"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Proximity Highlights -->
+        <div class="location-info">
+          <div class="address-highlight">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Site Address &amp; Corporate Office</h4>
+              <p>House no 5/771, Vikas Khand 1, Gomti Nagar, Lucknow, Uttar Pradesh 226010</p>
+              <div style="margin-top: 0.6rem;">
+                <a href="https://maps.google.com/?q=House+no+5/771,+Vikas+Khand+1,+Gomti+Nagar,+Lucknow" target="_blank" class="btn btn-outline-gold" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proximity-list">
+            <div class="proximity-item">
+              <div class="proximity-left">
+                <i class="fa-solid fa-store proximity-icon"></i>
+                <div>
+                  <div class="proximity-title">Patrakarpuram Commercial Hub</div>
+                  <div class="proximity-distance">Top shopping, cafes &amp; dining</div>
+                </div>
+              </div>
+              <span class="proximity-time">4 Mins</span>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-left">
+                <i class="fa-solid fa-road proximity-icon"></i>
+                <div>
+                  <div class="proximity-title">Amar Shaheed Path Expressway</div>
+                  <div class="proximity-distance">Rapid arterial city access</div>
+                </div>
+              </div>
+              <span class="proximity-time">6 Mins</span>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-left">
+                <i class="fa-solid fa-water proximity-icon"></i>
+                <div>
+                  <div class="proximity-title">Gomti Riverfront &amp; Marine Drive</div>
+                  <div class="proximity-distance">Serene waterfront promenade</div>
+                </div>
+              </div>
+              <span class="proximity-time">8 Mins</span>
+            </div>
+
+            <div class="proximity-item">
+              <div class="proximity-left">
+                <i class="fa-solid fa-bag-shopping proximity-icon"></i>
+                <div>
+                  <div class="proximity-title">Phoenix Palassio &amp; Ekana Stadium</div>
+                  <div class="proximity-distance">World-class luxury shopping</div>
+                </div>
+              </div>
+              <span class="proximity-time">10 Mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION (Interactive Accordions)
+       ========================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Transparency First</span>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-subtitle">
+          Everything you need to know about purchasing, approvals, structural warranties, and customized fit-outs with Vir Infrastructure.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>1. Is the land 100% Freehold and approved for registry?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, absolutely. All projects developed by Vir Infrastructure &amp; Estate Developers Pvt Ltd are 100% freehold land with independent registry and clear mutation. Each duplex or villa floor enjoys clear, encumbrance-free title ownership with zero leasehold complications.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>2. Which major banks have approved home loans for these properties?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Our projects are formally vetted and approved by premier financial institutions including State Bank of India (SBI), HDFC Bank, ICICI Bank, and Punjab National Bank. Home buyers can avail up to 75%–80% loan disbursement with preferential interest rates and express sanction support through our dedicated banking desk.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>3. What construction materials and finishes are standard?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We adhere strictly to ultra-luxury standards: Tata Tiscon / Jindal Fe-550D TMT reinforcement, Grade 43/53 Portland cement, imported Italian Bottochino / Statuario marble flooring, high-grade UPVC noise-insulating windows, Finolex / Havells concealed copper wiring, and luxury Kohler / Jaquar Artize bathroom suites.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>4. What is the current handover timeline and possession status?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We have ready-to-move-in and near-completion units currently in the final fit-out and painting phase. Handover timelines range from immediate possession to 60–90 days depending on whether customized interior work or elevator installation is chosen by the client.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>5. Can we customize the floor layout or interior specifications?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. For units booked prior to final screeding, our in-house architectural team collaborates with clients to personalize bathroom tiles, modular kitchen layouts, false ceiling patterns, home automation switches, and private rooftop landscaping to your family's exact lifestyle tastes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CALL TO ACTION BANNER
+       ========================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Step Into Your Dream Residence In Gomti Nagar</h2>
+      <p>
+        Visit our show duplex in Vikas Khand 1 today. Experience the high ceilings, genuine Italian marble, and tranquil private terrace in person.
+      </p>
+      <div class="cta-buttons">
+        <button class="btn btn-gold" onclick="openTourModal()">
+          <i class="fa-solid fa-calendar-check"></i> Book Site Inspection
+        </button>
+        <a href="https://wa.me/919838883318?text=Hello%20Vir%20Infrastructure,%20I%20would%20like%20to%20receive%20the%20digital%20brochure%20and%20price%20list." class="btn btn-outline-gold" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Download Brochure via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="logo-crest">
+              <i class="fa-solid fa-landmark-dome"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VIR INFRASTRUCTURE</span>
+              <span class="brand-tag">&amp; ESTATE DEVELOPERS</span>
+            </div>
+          </div>
+          <p>
+            Bespoke Luxury Villas &amp; Duplex Residences in Vikas Khand 1, Gomti Nagar, Lucknow. Setting benchmark standards in freehold registry and architectural craftsmanship.
+          </p>
+          <div style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;">
+            <i class="fa-solid fa-star" style="color: #FFC107;"></i> 4.7★ Rated on Google (22 Reviews)
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#villas"><i class="fa-solid fa-angle-right"></i> Luxury Villas</a></li>
+            <li><a href="#duplexes"><i class="fa-solid fa-angle-right"></i> Vir Royale Duplexes</a></li>
+            <li><a href="#specifications"><i class="fa-solid fa-angle-right"></i> Specifications</a></li>
+            <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Client Reviews</a></li>
+            <li><a href="#location"><i class="fa-solid fa-angle-right"></i> Gomti Nagar Map</a></li>
+            <li><a href="#faq"><i class="fa-solid fa-angle-right"></i> FAQ &amp; Approvals</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Assurances -->
+        <div class="footer-col">
+          <h4>Buyer Assurance</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-shield"></i> 100% Freehold Title</a></li>
+            <li><a href="#"><i class="fa-solid fa-file-contract"></i> Immediate Registry</a></li>
+            <li><a href="#"><i class="fa-solid fa-building-columns"></i> SBI &amp; HDFC Bank Approved</a></li>
+            <li><a href="#"><i class="fa-solid fa-map-location-dot"></i> LDA Compliant Layouts</a></li>
+            <li><a href="#"><i class="fa-solid fa-lock"></i> Gated Security Protocol</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>House no 5/771, Vikas Khand 1, Gomti Nagar, Lucknow, UP 226010</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919838883318">+91 98388 83318</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/919838883318" target="_blank">+91 98388 83318 (Direct WhatsApp)</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Site Visits: 9:30 AM – 7:30 PM (All 7 Days)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Vir Infrastructure &amp; Estate Developers Pvt Ltd. All Rights Reserved.
+        </div>
+        <div>
+          House no 5/771, Vikas Khand 1, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING ACTION BUTTONS (Stacked Bottom-Right)
+       Upper: Call (+91 98388 83318)
+       Lower: WhatsApp (https://wa.me/919838883318)
+       ========================================== -->
+  <div class="floating-actions">
+    <!-- Upper Circular Button: Phone Call -->
+    <a href="tel:+919838883318" class="fab fab-call" aria-label="Call Vir Infrastructure">
+      <i class="fa-solid fa-phone"></i>
+      <span class="fab-tooltip">Call +91 98388 83318</span>
+    </a>
+
+    <!-- Lower Circular Button: WhatsApp Chat -->
+    <a href="https://wa.me/919838883318?text=Hello%20Vir%20Infrastructure,%20I%20am%20interested%20in%20your%20luxury%20duplexes%20and%20villas%20in%20Gomti%20Nagar." target="_blank" class="fab fab-whatsapp" aria-label="WhatsApp Vir Infrastructure">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="fab-tooltip">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ==========================================
+       MODAL: FLOOR PLAN & SPECIFICATION VIEWER
+       ========================================== -->
+  <div class="modal-overlay" id="floorPlanModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeFloorPlanModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="section-tag" id="modalPlanTag">Architectural Blueprint</span>
+      <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 0.3rem;" id="modalPlanTitle">
+        Vir Royale Duplex Plan
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--gold-light);" id="modalPlanSub">
+        Carpet Area: 2,450 – 3,100 sq.ft. | G+1 Independent Duplex
+      </p>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" onclick="switchFloorTab(this, 'ground')">Ground Floor</button>
+        <button class="modal-tab-btn" onclick="switchFloorTab(this, 'first')">First Floor</button>
+        <button class="modal-tab-btn" onclick="switchFloorTab(this, 'terrace')">Terrace &amp; Deck</button>
+      </div>
+
+      <div class="plan-graphic">
+        <!-- Stylized Floor Layout Diagram -->
+        <div id="planContent">
+          <svg viewBox="0 0 700 380" style="width: 100%; height: auto; max-height: 320px;" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="680" height="360" rx="8" fill="#0B2545" stroke="#D4AF37" stroke-width="2"/>
+            
+            <!-- Parking & Entry -->
+            <rect x="30" y="30" width="160" height="150" fill="#133D6E" stroke="#9BB0C7" stroke-dasharray="4"/>
+            <text x="110" y="100" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="14" text-anchor="middle" font-weight="bold">2-Car Portico</text>
+            <text x="110" y="125" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">18' x 16' Covered</text>
+
+            <!-- Grand Foyer & Double Height Living -->
+            <rect x="210" y="30" width="280" height="210" fill="#0F3057" stroke="#D4AF37" stroke-width="1.5"/>
+            <text x="350" y="120" fill="#FFFFFF" font-family="'Cinzel'" font-size="16" text-anchor="middle" font-weight="bold">Double Height Living Hall</text>
+            <text x="350" y="145" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle">Italian Bottochino Marble (22' x 18')</text>
+            
+            <!-- Guest Suite / Bedroom 1 -->
+            <rect x="510" y="30" width="160" height="170" fill="#133D6E" stroke="#9BB0C7"/>
+            <text x="590" y="100" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Guest Bedroom</text>
+            <text x="590" y="125" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">15' x 14' + En-suite</text>
+
+            <!-- Kitchen & Dining -->
+            <rect x="30" y="200" width="260" height="150" fill="#0F3057" stroke="#9BB0C7"/>
+            <text x="160" y="270" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="14" text-anchor="middle" font-weight="bold">Modular Kitchen &amp; Dining</text>
+            <text x="160" y="295" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Quartz Countertop &bull; 20' x 14'</text>
+
+            <!-- Internal Staircase & Courtyard -->
+            <rect x="310" y="260" width="180" height="90" fill="#133D6E" stroke="#D4AF37"/>
+            <text x="400" y="300" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle" font-weight="bold">Glass Courtyard &amp; Lift</text>
+            <text x="400" y="320" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="10" text-anchor="middle">Central Skylight Shaft</text>
+
+            <!-- Rear Green Lawn -->
+            <rect x="510" y="220" width="160" height="130" fill="#072A1B" stroke="#22c55e"/>
+            <text x="590" y="280" fill="#86efac" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Private Garden</text>
+            <text x="590" y="305" fill="#CBD5E1" font-family="'Plus Jakarta Sans'" font-size="10" text-anchor="middle">Exclusive Green Yard</text>
+          </svg>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; justify-content: flex-end; flex-wrap: wrap;">
+        <button class="btn btn-outline-gold" onclick="closeFloorPlanModal()">
+          Close
+        </button>
+        <a id="modalWhatsappLink" href="https://wa.me/919838883318?text=Hello%20Vir%20Infrastructure,%20please%20send%20the%20detailed%20CAD%20floor%20plan%20and%20pricing%20breakup." target="_blank" class="btn btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Request High-Res PDF via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: BOOK PRIVATE TOUR
+       ========================================== -->
+  <div class="modal-overlay" id="tourModal">
+    <div class="modal-box" style="max-width: 540px;">
+      <button class="modal-close-btn" onclick="closeTourModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lead-card-header" style="margin-bottom: 1.2rem;">
+        <span class="section-tag">Direct From Builder</span>
+        <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff;">Book Site Inspection</h3>
+        <p style="font-size: 0.88rem; color: var(--gold-light);">House no 5/771, Vikas Khand 1, Gomti Nagar</p>
+      </div>
+
+      <form id="tourBookingForm" onsubmit="handleTourSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" id="tourName" class="form-control" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">WhatsApp Contact Number</label>
+          <input type="tel" id="tourPhone" class="form-control" placeholder="+91 98388 XXXXX" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Select Unit of Interest</label>
+          <select id="tourUnit" class="form-select">
+            <option value="3 BHK Vir Royale Duplex">Vir Royale Duplex (3 BHK)</option>
+            <option value="4 BHK Vir Imperial Villa">Vir Imperial Villa (4 BHK)</option>
+            <option value="Penthouse Residence">Penthouse Residence</option>
+            <option value="Custom Plot & Villa">Custom Plot &amp; Villa Fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Preferred Date of Visit</label>
+          <input type="date" id="tourDate" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-gold form-submit-btn" style="margin-top: 1rem;">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Confirm Inspection on WhatsApp</span>
+        </button>
+
+        <p class="form-guarantee" style="margin-top: 0.85rem;">
+          <i class="fa-solid fa-shield-halved"></i> 100% Free, personalized engineer walkthrough &bull; No obligation
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT INTERACTION SCRIPTS
+       ========================================== -->
+  <script>
+    // Set default date for visit (tomorrow)
+    window.addEventListener('DOMContentLoaded', () => {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateStr = tomorrow.toISOString().split('T')[0];
+      const tourDateInput = document.getElementById('tourDate');
+      if (tourDateInput) {
+        tourDateInput.min = dateStr;
+        tourDateInput.value = dateStr;
+      }
+    });
+
+    // Mobile Navigation Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+        const icon = menuToggle.querySelector('i');
+        if (navMenu.classList.contains('open')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+    }
+
+    function closeMenu() {
+      if (navMenu) {
+        navMenu.classList.remove('open');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      }
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(button) {
+      const faqItem = button.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+      
+      allItems.forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+        }
+      });
+
+      faqItem.classList.toggle('active');
+    }
+
+    // Lead Generation Form Handler (Hero Card)
+    function handleLeadSubmit(event) {
+      event.preventDefault();
+      const unit = document.getElementById('unitType').value;
+      const name = document.getElementById('clientName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+
+      const message = `Hello Vir Infrastructure & Estate Developers,%0A%0AI would like to inquire about *${unit}* in Vikas Khand 1, Gomti Nagar.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A%0APlease share the brochure, pricing, and availability details.`;
+      const whatsappUrl = `https://wa.me/919838883318?text=${message}`;
+
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Tour Booking Form Handler (Modal)
+    function handleTourSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('tourName').value.trim();
+      const phone = document.getElementById('tourPhone').value.trim();
+      const unit = document.getElementById('tourUnit').value;
+      const date = document.getElementById('tourDate').value;
+
+      const message = `Hello Vir Infrastructure,%0A%0AI would like to schedule a *Site Visit* at Vikas Khand 1, Gomti Nagar.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Property:* ${unit}%0A*Preferred Date:* ${date}%0A%0APlease confirm the site coordinator's contact.`;
+      const whatsappUrl = `https://wa.me/919838883318?text=${message}`;
+
+      closeTourModal();
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Quick Unit Inquiry Trigger
+    function inquireUnit(unitName) {
+      const message = `Hello Vir Infrastructure,%0A%0AI am interested in scheduling a private site walkthrough for *${unitName}* in Vikas Khand 1, Gomti Nagar. Please share current pricing and floor options.`;
+      const whatsappUrl = `https://wa.me/919838883318?text=${message}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // Tour Modal Open & Close
+    function openTourModal() {
+      document.getElementById('tourModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeTourModal() {
+      document.getElementById('tourModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Floor Plan Modal Open & Close
+    function openFloorPlanModal(title, carpetArea, typeDesc) {
+      document.getElementById('modalPlanTitle').textContent = title + ' Floor Plan';
+      document.getElementById('modalPlanSub').textContent = `Carpet Area: ${carpetArea} | ${typeDesc}`;
+      
+      const whatsappMsg = `Hello Vir Infrastructure, please send the detailed CAD floor plan, carpet measurement sheet, and pricing for *${title}* in Vikas Khand 1, Gomti Nagar.`;
+      document.getElementById('modalWhatsappLink').href = `https://wa.me/919838883318?text=${encodeURIComponent(whatsappMsg)}`;
+
+      document.getElementById('floorPlanModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeFloorPlanModal() {
+      document.getElementById('floorPlanModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Floor Plan Tab Switching
+    function switchFloorTab(tabBtn, floor) {
+      const allTabs = document.querySelectorAll('.modal-tab-btn');
+      allTabs.forEach(t => t.classList.remove('active'));
+      tabBtn.classList.add('active');
+
+      const planGraphic = document.getElementById('planContent');
+      if (floor === 'ground') {
+        planGraphic.innerHTML = `
+          <svg viewBox="0 0 700 380" style="width: 100%; height: auto; max-height: 320px;" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="680" height="360" rx="8" fill="#0B2545" stroke="#D4AF37" stroke-width="2"/>
+            <rect x="30" y="30" width="160" height="150" fill="#133D6E" stroke="#9BB0C7" stroke-dasharray="4"/>
+            <text x="110" y="100" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="14" text-anchor="middle" font-weight="bold">2-Car Portico</text>
+            <text x="110" y="125" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">18' x 16' Covered</text>
+            <rect x="210" y="30" width="280" height="210" fill="#0F3057" stroke="#D4AF37" stroke-width="1.5"/>
+            <text x="350" y="120" fill="#FFFFFF" font-family="'Cinzel'" font-size="16" text-anchor="middle" font-weight="bold">Double Height Living Hall</text>
+            <text x="350" y="145" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle">Italian Bottochino Marble (22' x 18')</text>
+            <rect x="510" y="30" width="160" height="170" fill="#133D6E" stroke="#9BB0C7"/>
+            <text x="590" y="100" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Guest Bedroom</text>
+            <text x="590" y="125" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">15' x 14' + En-suite</text>
+            <rect x="30" y="200" width="260" height="150" fill="#0F3057" stroke="#9BB0C7"/>
+            <text x="160" y="270" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="14" text-anchor="middle" font-weight="bold">Modular Kitchen & Dining</text>
+            <text x="160" y="295" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Quartz Countertop • 20' x 14'</text>
+            <rect x="310" y="260" width="180" height="90" fill="#133D6E" stroke="#D4AF37"/>
+            <text x="400" y="300" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle" font-weight="bold">Glass Courtyard & Lift</text>
+            <text x="400" y="320" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="10" text-anchor="middle">Central Skylight Shaft</text>
+            <rect x="510" y="220" width="160" height="130" fill="#072A1B" stroke="#22c55e"/>
+            <text x="590" y="280" fill="#86efac" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Private Garden</text>
+            <text x="590" y="305" fill="#CBD5E1" font-family="'Plus Jakarta Sans'" font-size="10" text-anchor="middle">Exclusive Green Yard</text>
+          </svg>
+        `;
+      } else if (floor === 'first') {
+        planGraphic.innerHTML = `
+          <svg viewBox="0 0 700 380" style="width: 100%; height: auto; max-height: 320px;" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="680" height="360" rx="8" fill="#0B2545" stroke="#D4AF37" stroke-width="2"/>
+            <rect x="30" y="30" width="310" height="200" fill="#0F3057" stroke="#D4AF37"/>
+            <text x="185" y="110" fill="#FFFFFF" font-family="'Cinzel'" font-size="16" text-anchor="middle" font-weight="bold">Master Suite I</text>
+            <text x="185" y="135" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle">20' x 16' + Walk-in Wardrobe</text>
+            <text x="185" y="155" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Luxury Bath with Jacuzzi</text>
+
+            <rect x="360" y="30" width="310" height="200" fill="#133D6E" stroke="#9BB0C7"/>
+            <text x="515" y="110" fill="#FFFFFF" font-family="'Cinzel'" font-size="16" text-anchor="middle" font-weight="bold">Master Suite II / Kids Bedroom</text>
+            <text x="515" y="135" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle">18' x 15' + Private Balcony</text>
+            <text x="515" y="155" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Attached Kohler Sanitary Bath</text>
+
+            <rect x="30" y="250" width="400" height="100" fill="#0F3057" stroke="#9BB0C7"/>
+            <text x="230" y="300" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="14" text-anchor="middle" font-weight="bold">Family Lounge & Mezzanine Walkway</text>
+            <text x="230" y="325" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Overlooks Ground Living Foyer</text>
+
+            <rect x="450" y="250" width="220" height="100" fill="#133D6E" stroke="#D4AF37"/>
+            <text x="560" y="300" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Covered Sit-Out Deck</text>
+            <text x="560" y="325" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Glass Railing Balcony</text>
+          </svg>
+        `;
+      } else if (floor === 'terrace') {
+        planGraphic.innerHTML = `
+          <svg viewBox="0 0 700 380" style="width: 100%; height: auto; max-height: 320px;" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="680" height="360" rx="8" fill="#0B2545" stroke="#D4AF37" stroke-width="2"/>
+            <rect x="30" y="30" width="400" height="320" fill="#072A1B" stroke="#22c55e" stroke-width="1.5"/>
+            <text x="230" y="170" fill="#86efac" font-family="'Cinzel'" font-size="18" text-anchor="middle" font-weight="bold">Landscaped Terrace Garden</text>
+            <text x="230" y="200" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle">Synthetic Turf, Planters & Ambient LED Lights</text>
+            <text x="230" y="225" fill="#F3E5AB" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Area: 1,100 Sq.Ft. Open-to-Sky Deck</text>
+
+            <rect x="450" y="30" width="220" height="180" fill="#133D6E" stroke="#D4AF37"/>
+            <text x="560" y="105" fill="#F3E5AB" font-family="'Cinzel'" font-size="15" text-anchor="middle" font-weight="bold">Covered Gazebo</text>
+            <text x="560" y="130" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="12" text-anchor="middle">Barbecue & Lounge Area</text>
+            <text x="560" y="150" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="11" text-anchor="middle">Weatherproof Pergola</text>
+
+            <rect x="450" y="230" width="220" height="120" fill="#0F3057" stroke="#9BB0C7"/>
+            <text x="560" y="285" fill="#FFFFFF" font-family="'Plus Jakarta Sans'" font-size="13" text-anchor="middle" font-weight="bold">Utility & Solar Setup</text>
+            <text x="560" y="305" fill="#9BB0C7" font-family="'Plus Jakarta Sans'" font-size="10" text-anchor="middle">Overhead Tank & Pressure Pump</text>
+          </svg>
+        `;
+      }
+    }
+
+    // Close modals on clicking overlay or pressing ESC
+    document.querySelectorAll('.modal-overlay').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeTourModal();
+        closeFloorPlanModal();
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Azhan Developers | Prime Commercial & Residential Spaces in Lucknow</title>
+  <meta name="description" content="Azhan Developers - Prime Retail Commercial Complexes, High-Street Showrooms & Modern Luxury Apartments on Ring Road, Tedhi Pulia, Adil Nagar, Lucknow." />
+  <meta name="keywords" content="Azhan Developers, Lucknow real estate, commercial property Tedhi Pulia, shops on Ring Road Lucknow, Adil Nagar flats, commercial showroom Lucknow" />
+  
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F59E0B'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* RESET & CORE VARIABLES */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-darkest: #070B14;
+      --bg-midnight: #10182F;
+      --bg-surface: #151F3D;
+      --bg-surface-light: #1D2A50;
+      --bg-card: rgba(21, 31, 61, 0.78);
+      --amber-primary: #F59E0B;
+      --amber-light: #FBBF24;
+      --amber-dark: #D97706;
+      --amber-glow: rgba(245, 158, 11, 0.25);
+      --text-white: #FFFFFF;
+      --text-muted: #94A3B8;
+      --text-soft: #CBD5E1;
+      --border-subtle: rgba(245, 158, 11, 0.16);
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--bg-darkest);
+      color: var(--text-soft);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient background grid */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: 
+        radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 85% 65%, rgba(16, 24, 47, 0.8) 0%, transparent 60%),
+        radial-gradient(circle at 50% 90%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* TYPOGRAPHY HELPERS */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-white);
+      font-family: var(--font-display);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: var(--radius-full);
+      color: var(--amber-light);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+
+    .section-heading {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 14px;
+    }
+
+    .section-subtext {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #FFFFFF 20%, var(--amber-light) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      outline: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--amber-primary) 0%, var(--amber-dark) 100%);
+      color: #070B14;
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.28);
+      font-weight: 700;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #FFAE19 0%, #E68500 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(245, 158, 11, 0.4);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-white);
+      border: 1px solid var(--border-glass);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--amber-light);
+      color: var(--amber-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 9px 18px;
+      font-size: 0.88rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* 1. HEADER (STRICTLY VERY FIRST ELEMENT IN BODY) */
+    .header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 15, 29, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    /* Logo with sleek geometric pillar icon */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-symbol {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(21, 31, 61, 0.8) 100%);
+      border: 1px solid var(--amber-primary);
+      border-radius: var(--radius-sm);
+      color: var(--amber-light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-symbol svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--amber-primary);
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-white);
+      line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--amber-light);
+      font-weight: 600;
+    }
+
+    /* Nav Links */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--amber-light);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--amber-primary);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* Mobile toggle */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-white);
+      font-size: 1.4rem;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    /* Mobile Nav Drawer */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 15, 29, 0.97);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 24px;
+      gap: 16px;
+      z-index: 999;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu .nav-link {
+      font-size: 1.05rem;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* 2. HERO SECTION */
+    .hero-section {
+      position: relative;
+      padding: 80px 0 90px;
+      overflow: hidden;
+    }
+
+    .hero-glow-1 {
+      position: absolute;
+      top: -10%;
+      right: 5%;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+      filter: blur(50px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      bottom: -10%;
+      left: 0%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(30, 41, 75, 0.6) 0%, transparent 70%);
+      filter: blur(60px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 16px;
+      background: rgba(21, 31, 61, 0.85);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      width: fit-content;
+      font-size: 0.85rem;
+    }
+
+    .hero-pill-badge .star-rating {
+      color: var(--amber-light);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+      line-height: 1.15;
+      font-weight: 800;
+    }
+
+    .hero-subhead {
+      font-size: 1.12rem;
+      color: var(--text-soft);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    /* Key stat metric bar */
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-glass);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--amber-light);
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* 3. HERO FORM / LEAD GENERATION SYSTEM */
+    .lead-box-card {
+      background: linear-gradient(145deg, rgba(21, 31, 61, 0.95) 0%, rgba(13, 20, 42, 0.95) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lead-box-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--amber-dark), var(--amber-light));
+    }
+
+    .form-header {
+      margin-bottom: 20px;
+    }
+
+    .form-title {
+      font-size: 1.35rem;
+      margin-bottom: 6px;
+    }
+
+    .form-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Unit Selector Chips */
+    .unit-selector-label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--amber-light);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .unit-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .unit-chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-glass);
+      color: var(--text-soft);
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .unit-chip:hover {
+      border-color: rgba(245, 158, 11, 0.5);
+      color: var(--text-white);
+    }
+
+    .unit-chip.active {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: var(--amber-primary);
+      color: var(--amber-light);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      margin-bottom: 6px;
+    }
+
+    .input-field {
+      width: 100%;
+      background: rgba(7, 11, 20, 0.6);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--text-white);
+      font-family: var(--font-main);
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: var(--amber-primary);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+      background: rgba(7, 11, 20, 0.85);
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+    .form-disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* 4. PROPERTIES SHOWCASE */
+    .properties-section {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-midnight) 50%, var(--bg-darkest) 100%);
+    }
+
+    .property-cards-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+    }
+
+    .property-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .property-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245, 158, 11, 0.45);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .property-media {
+      position: relative;
+      height: 270px;
+      overflow: hidden;
+      background: #0F172A;
+    }
+
+    .property-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .property-card:hover .property-media img {
+      transform: scale(1.05);
+    }
+
+    .property-tag-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 5px 12px;
+      background: rgba(16, 24, 47, 0.9);
+      border: 1px solid var(--amber-primary);
+      border-radius: var(--radius-full);
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--amber-light);
+      backdrop-filter: blur(8px);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .yield-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 5px 12px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid #10B981;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #34D399;
+      backdrop-filter: blur(8px);
+    }
+
+    .property-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .property-header-info {
+      margin-bottom: 16px;
+    }
+
+    .property-location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--amber-light);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .property-title {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .property-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.55;
+    }
+
+    /* Metrics specs list */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+      background: rgba(7, 11, 20, 0.4);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-glass);
+    }
+
+    .spec-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .spec-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .spec-val {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .property-features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .property-features-list li {
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-soft);
+    }
+
+    .property-features-list li i {
+      color: var(--amber-light);
+      font-size: 0.8rem;
+    }
+
+    .property-footer-actions {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* 5. HIGHLIGHTS & AMENITIES */
+    .highlights-section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .highlight-card {
+      background: rgba(21, 31, 61, 0.55);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlight-card:hover {
+      background: rgba(21, 31, 61, 0.9);
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .highlight-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(21, 31, 61, 0.4) 100%);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      color: var(--amber-light);
+      margin-bottom: 18px;
+      transition: var(--transition);
+    }
+
+    .highlight-card:hover .highlight-icon-box {
+      background: var(--amber-primary);
+      color: #070B14;
+      transform: scale(1.05);
+    }
+
+    .highlight-title {
+      font-size: 1.18rem;
+      margin-bottom: 10px;
+    }
+
+    .highlight-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* 6. GOOGLE REVIEWS & TRUST */
+    .reviews-section {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-surface) 50%, var(--bg-darkest) 100%);
+    }
+
+    .rating-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(16, 24, 47, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px 36px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .rating-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .google-badge-icon {
+      font-size: 2.2rem;
+      color: #4285F4;
+    }
+
+    .rating-score-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .score-stars {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .score-num {
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--text-white);
+    }
+
+    .stars-group {
+      color: #F59E0B;
+      font-size: 1.05rem;
+    }
+
+    .rating-count-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .rating-right-pill {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--amber-light);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .review-card:hover {
+      border-color: rgba(245, 158, 11, 0.35);
+      transform: translateY(-4px);
+    }
+
+    .review-stars {
+      color: var(--amber-primary);
+      font-size: 0.88rem;
+      margin-bottom: 14px;
+      display: flex;
+      gap: 3px;
+    }
+
+    .review-quote {
+      font-size: 0.94rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--border-glass);
+      padding-top: 16px;
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, var(--amber-primary), var(--amber-dark));
+      color: #070B14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .author-info h4 {
+      font-size: 0.92rem;
+      margin-bottom: 2px;
+    }
+
+    .author-info p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    /* 7. LOCATION & GOOGLE MAPS */
+    .location-section {
+      padding: 100px 0;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .address-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .address-icon {
+      font-size: 1.5rem;
+      color: var(--amber-light);
+      margin-top: 2px;
+    }
+
+    .address-info h4 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .address-info p {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      line-height: 1.5;
+    }
+
+    .proximity-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .proximity-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .prox-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--amber-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .prox-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prox-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .prox-time {
+      font-size: 0.74rem;
+      color: var(--amber-light);
+      font-weight: 500;
+    }
+
+    .map-container {
+      height: 420px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: contrast(1.05) saturate(1.1);
+    }
+
+    /* 8. FAQ ACCORDION */
+    .faq-section {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-midnight) 100%);
+    }
+
+    .faq-accordion-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: rgba(245, 158, 11, 0.4);
+      background: rgba(21, 31, 61, 0.9);
+    }
+
+    .faq-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-align: left;
+      cursor: pointer;
+      color: var(--text-white);
+    }
+
+    .faq-question {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-white);
+      transition: var(--transition);
+    }
+
+    .faq-item.active .faq-question {
+      color: var(--amber-light);
+    }
+
+    .faq-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: var(--amber-light);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--amber-primary);
+      color: #070B14;
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+    }
+
+    .faq-item.active .faq-body {
+      padding: 0 24px 22px 24px;
+    }
+
+    .faq-answer {
+      font-size: 0.92rem;
+      color: var(--text-soft);
+      line-height: 1.65;
+    }
+
+    /* 9. FOOTER */
+    .footer {
+      background: #05080F;
+      border-top: 1px solid var(--border-subtle);
+      padding: 70px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      color: var(--text-white);
+    }
+
+    .footer-about p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      font-size: 0.88rem;
+      color: var(--text-soft);
+    }
+
+    .footer-links a:hover {
+      color: var(--amber-light);
+      padding-left: 4px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-item i {
+      color: var(--amber-light);
+      margin-top: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* 10. FLOATING ACTION BUTTONS (STRICT REQUIREMENT) */
+    /* Stacked vertically in bottom-right corner */
+    .floating-fab-container {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 9999;
+    }
+
+    .fab-btn {
+      width: 58px;
+      height: 58px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 1.45rem;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      position: relative;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+    }
+
+    .fab-btn:hover {
+      transform: scale(1.12) translateY(-3px);
+    }
+
+    /* Upper circular button: Call */
+    .fab-call {
+      background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .fab-call:hover {
+      box-shadow: 0 10px 28px rgba(37, 99, 235, 0.5);
+    }
+
+    /* Lower circular button: WhatsApp */
+    .fab-whatsapp {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      animation: pulse-ring 2.4s infinite;
+    }
+
+    .fab-whatsapp:hover {
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* Tooltip labels for desktop FAB */
+    .fab-tooltip {
+      position: absolute;
+      right: 70px;
+      background: rgba(10, 15, 29, 0.95);
+      color: var(--text-white);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+      border: 1px solid var(--border-glass);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      transform: translateX(6px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .fab-btn:hover .fab-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* TOAST FEEDBACK */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--bg-surface);
+      border: 1px solid var(--amber-primary);
+      color: var(--text-white);
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      z-index: 10000;
+      opacity: 0;
+      transition: var(--transition);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .property-cards-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu, .header-cta {
+        display: none;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .proximity-list {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .rating-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .floating-fab-container {
+        bottom: 20px;
+        right: 18px;
+        gap: 12px;
+      }
+      .fab-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================
+       1. STICKY HEADER (STRICT RULE: VERY FIRST ELEMENT INSIDE BODY)
+       ======================================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Azhan Developers Home">
+          <div class="logo-symbol">
+            <!-- Sleek Geometric Pillar Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4 3h16v3H4V3zm2 4h3v11H6V7zm5 0h2v11h-2V7zm4 0h3v11h-3V7zM4 19h16v2H4v-2z"/>
+            </svg>
+          </div>
+          <div class="brand-text-block">
+            <span class="brand-title">AZHAN</span>
+            <span class="brand-sub">DEVELOPERS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#properties" class="nav-link">Properties</a></li>
+            <li><a href="#commercial" class="nav-link">Commercial</a></li>
+            <li><a href="#amenities" class="nav-link">Amenities</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#location" class="nav-link">Location</a></li>
+          </ul>
+        </nav>
+
+        <!-- CTA & Mobile Button -->
+        <div class="header-actions">
+          <a href="#inquire" class="btn btn-primary btn-sm header-cta">Inquire Now</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#properties" class="nav-link mobile-nav-link">Properties</a>
+      <a href="#commercial" class="nav-link mobile-nav-link">Commercial</a>
+      <a href="#amenities" class="nav-link mobile-nav-link">Amenities</a>
+      <a href="#reviews" class="nav-link mobile-nav-link">Reviews</a>
+      <a href="#faq" class="nav-link mobile-nav-link">FAQ</a>
+      <a href="#location" class="nav-link mobile-nav-link">Location</a>
+      <a href="#inquire" class="btn btn-primary mobile-nav-link" style="margin-top: 8px;">Inquire Now</a>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       2. HERO SECTION & INTEGRATED LEAD GENERATION SYSTEM
+       ======================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Hero Text & High Impact Typography -->
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i> 4.9★
+            </span>
+            <span>Prime Ring Road & Tedhi Pulia Commercial Corridor</span>
+          </div>
+
+          <h1 class="hero-title">
+            Prime Residential & <span class="gradient-text">Commercial Spaces</span> on Ring Road
+          </h1>
+
+          <p class="hero-subhead">
+            Azhan Developers brings premier commercial retail complexes, high-street showrooms, and modern luxury apartments to North Lucknow's fastest-growing business hub in Adil Nagar.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#properties" class="btn btn-primary">
+              <i class="fa-solid fa-building-circle-check"></i> Explore Properties
+            </a>
+            <a href="tel:+918726080001" class="btn btn-secondary">
+              <i class="fa-solid fa-phone"></i> +91 87260 80001
+            </a>
+          </div>
+
+          <!-- Highlight Stats Strip -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">9.5%+</span>
+              <span class="stat-label">Projected Rental Yield</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">60-Ft</span>
+              <span class="stat-label">Main Road Frontage</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5 Mins</span>
+              <span class="stat-label">To Munshi Pulia Metro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Lead Generation Card -->
+        <div class="lead-box-card" id="inquire">
+          <div class="form-header">
+            <h2 class="form-title">Priority Unit Inquiry</h2>
+            <p class="form-subtitle">Select your unit type to receive verified pricing & direct ROI deck on WhatsApp.</p>
+          </div>
+
+          <form id="leadForm" onsubmit="handleLeadSubmit(event)">
+            <!-- Unit Selector (Tabs/Chips) -->
+            <label class="unit-selector-label">1. Select Unit Type</label>
+            <div class="unit-chips-grid">
+              <button type="button" class="unit-chip active" onclick="selectUnit(this, 'Retail Shop')">
+                <i class="fa-solid fa-shop"></i> Retail Shop
+              </button>
+              <button type="button" class="unit-chip" onclick="selectUnit(this, 'Commercial Office')">
+                <i class="fa-solid fa-briefcase"></i> Commercial Office
+              </button>
+              <button type="button" class="unit-chip" onclick="selectUnit(this, '2 BHK Flat')">
+                <i class="fa-solid fa-house"></i> 2 BHK Flat
+              </button>
+              <button type="button" class="unit-chip" onclick="selectUnit(this, '3 BHK Flat')">
+                <i class="fa-solid fa-building"></i> 3 BHK Flat
+              </button>
+            </div>
+            <input type="hidden" id="selectedUnitInput" name="selectedUnit" value="Retail Shop" />
+
+            <div class="form-group">
+              <label for="leadName">Your Full Name</label>
+              <input type="text" id="leadName" class="input-field" placeholder="e.g. Dr. Rajesh Sharma" required />
+            </div>
+
+            <div class="form-group">
+              <label for="leadPhone">Phone / WhatsApp Number</label>
+              <input type="tel" id="leadPhone" class="input-field" placeholder="+91 98765 43210" pattern="[0-9+ -]{10,15}" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.15rem;"></i> Send Instant WhatsApp Inquiry
+            </button>
+
+            <p class="form-disclaimer">
+              <i class="fa-solid fa-shield-halved"></i> Direct developer pricing • Zero brokerage • Fast registry
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       3. PROPERTIES SHOWCASE (AZHAN COMMERCIAL SQUARE & AZHAN RESIDENCY)
+       ======================================================== -->
+  <section class="properties-section" id="properties">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="section-badge">Flagship Projects</div>
+        <h2 class="section-heading">High-Yield <span class="gradient-text">Developments</span></h2>
+        <p class="section-subtext">
+          Strategically engineered for maximum commercial visibility and peaceful residential serenity on the booming Ring Road corridor.
+        </p>
+      </div>
+
+      <div class="property-cards-wrapper">
+        
+        <!-- CARD 1: Azhan Commercial Square -->
+        <article class="property-card" id="commercial">
+          <div class="property-media">
+            <!-- High quality architectural commercial image -->
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Azhan Commercial Square Lucknow" loading="lazy" />
+            <span class="property-tag-badge">Commercial Retail Hub</span>
+            <span class="yield-badge">Yield: Up to 10.2% p.a.</span>
+          </div>
+
+          <div class="property-body">
+            <div class="property-header-info">
+              <div class="property-location">
+                <i class="fa-solid fa-location-dot"></i> Tedhi Pulia, Ring Road, Lucknow
+              </div>
+              <h3 class="property-title">Azhan Commercial Square</h3>
+              <p class="property-desc">
+                North Lucknow’s premier retail and business destination with expansive glass frontage, high footfall corridor access, and customized showroom layouts.
+              </p>
+            </div>
+
+            <!-- Key metrics -->
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Road Frontage</span>
+                <span class="spec-val">60-Ft Main Ring Road</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Expected Yield</span>
+                <span class="spec-val">8.8% - 10.2% p.a.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Unit Layouts</span>
+                <span class="spec-val">250 to 2,400 sq.ft.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Target Audience</span>
+                <span class="spec-val">Retail, Clinics & Corporate</span>
+              </div>
+            </div>
+
+            <ul class="property-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> High-visibility double-height retail ground shops</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dedicated double-level basement visitor parking</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% DG Power backup for uninterrupted commerce</li>
+            </ul>
+
+            <div class="property-footer-actions">
+              <button class="btn btn-primary btn-sm" onclick="quickInquire('Retail Shop at Azhan Commercial Square')">
+                <i class="fa-brands fa-whatsapp"></i> Inquire Commercial
+              </button>
+              <a href="tel:+918726080001" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-phone"></i> Call Developer
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: Azhan Residency -->
+        <article class="property-card">
+          <div class="property-media">
+            <!-- Modern residential architectural image -->
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Azhan Residency Lucknow" loading="lazy" />
+            <span class="property-tag-badge">Modern Residential</span>
+            <span class="yield-badge">Appreciation: 14% p.a.</span>
+          </div>
+
+          <div class="property-body">
+            <div class="property-header-info">
+              <div class="property-location">
+                <i class="fa-solid fa-location-dot"></i> Adil Nagar, Near Tedhi Pulia, Lucknow
+              </div>
+              <h3 class="property-title">Azhan Residency</h3>
+              <p class="property-desc">
+                Boutique residential enclave offering spacious 2 BHK and 3 BHK homes with cross ventilation, private sun decks, and swift transit to central Lucknow.
+              </p>
+            </div>
+
+            <!-- Key metrics -->
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Configuration</span>
+                <span class="spec-val">2 & 3 BHK Apartments</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Size Range</span>
+                <span class="spec-val">1,150 - 1,620 sq.ft.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Vastu Orientation</span>
+                <span class="spec-val">100% Vastu Compliant</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Possession</span>
+                <span class="spec-val">Ready-to-Fit & Ongoing</span>
+              </div>
+            </div>
+
+            <ul class="property-features-list">
+              <li><i class="fa-solid fa-circle-check"></i> High-speed elevators with automatic rescue devices</li>
+              <li><i class="fa-solid fa-circle-check"></i> 24/7 Multi-tier CCTV surveillance and manned lobby</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dedicated covered reserved stilt parking for residents</li>
+            </ul>
+
+            <div class="property-footer-actions">
+              <button class="btn btn-primary btn-sm" onclick="quickInquire('Apartment at Azhan Residency')">
+                <i class="fa-brands fa-whatsapp"></i> Inquire Residential
+              </button>
+              <a href="tel:+918726080001" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-phone"></i> Call Developer
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. HIGHLIGHTS & AMENITIES
+       ======================================================== -->
+  <section class="highlights-section" id="amenities">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="section-badge">Infrastructure Excellence</div>
+        <h2 class="section-heading">Designed for <span class="gradient-text">Growth & Convenience</span></h2>
+        <p class="section-subtext">
+          Engineered with modern engineering standards to ensure frictionless operations for retail brands and uncompromised comfort for families.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        
+        <!-- Highlight 1: 60-ft Road -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-road"></i>
+          </div>
+          <h3 class="highlight-title">60-ft Wide Road Facing</h3>
+          <p class="highlight-text">
+            Unobstructed direct frontage on the Ring Road corridor guaranteeing exceptional visibility for signage and effortless vehicle ingress.
+          </p>
+        </div>
+
+        <!-- Highlight 2: Basement Parking -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-square-parking"></i>
+          </div>
+          <h3 class="highlight-title">Ample Basement Parking</h3>
+          <p class="highlight-text">
+            Multi-tier, well-ventilated parking bays designed to comfortably accommodate high customer footfalls and resident four-wheelers.
+          </p>
+        </div>
+
+        <!-- Highlight 3: High Footfall Corridor -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-users-viewfinder"></i>
+          </div>
+          <h3 class="highlight-title">High Footfall Corridor</h3>
+          <p class="highlight-text">
+            Surrounded by dense residential townships in Adil Nagar, Vikas Nagar, and Tedhi Pulia, ensuring organic daily customer visits.
+          </p>
+        </div>
+
+        <!-- Highlight 4: High-Speed Elevators -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-arrows-up-down"></i>
+          </div>
+          <h3 class="highlight-title">High-Speed Elevators</h3>
+          <p class="highlight-text">
+            Grade-A automatic passenger and stretcher lifts with ARD safety protocols connecting basement parking to all floors seamlessly.
+          </p>
+        </div>
+
+        <!-- Highlight 5: 24/7 CCTV & Security -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="highlight-title">24/7 CCTV & Security</h3>
+          <p class="highlight-text">
+            Continuous IP-based high-definition surveillance coverage with trained security guards protecting common entry and exit points.
+          </p>
+        </div>
+
+        <!-- Highlight 6: 100% Power Backup -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="highlight-title">100% DG Power Backup</h3>
+          <p class="highlight-text">
+            Dedicated automatic generator backup ensuring critical elevators, retail lighting, and common utilities run 24 hours a day without fail.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. GOOGLE REVIEWS & INVESTOR TRUST
+       ======================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="section-badge">Investor Trust</div>
+        <h2 class="section-heading">Verified <span class="gradient-text">Google Reviews</span></h2>
+        <p class="section-subtext">
+          See what commercial property buyers and home investors in Lucknow say about working with Azhan Developers.
+        </p>
+      </div>
+
+      <!-- Rating Header Badge Strip -->
+      <div class="rating-banner">
+        <div class="rating-left">
+          <i class="fa-brands fa-google google-badge-icon"></i>
+          <div class="rating-score-block">
+            <div class="score-stars">
+              <span class="score-num">4.9</span>
+              <div class="stars-group">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <span class="rating-count-text">Based on 3 Verified Google Reviews</span>
+          </div>
+        </div>
+
+        <div class="rating-right-pill">
+          <i class="fa-solid fa-certificate"></i>
+          <span>100% Verified Registry & On-Time Construction</span>
+        </div>
+      </div>
+
+      <!-- Review Cards -->
+      <div class="reviews-grid">
+        
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">
+              "Invested in a ground floor retail unit with Azhan Developers. The visibility along the Ring Road corridor is unbeatable. Seamless registry, transparent paperwork, and on-time structural delivery."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">VS</div>
+            <div class="author-info">
+              <h4>Vivek Srivastava</h4>
+              <p>Commercial Retail Investor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">
+              "Purchased our 3 BHK flat near Tedhi Pulia. Location is exceptionally convenient for commute to Munshi Pulia metro and schools. Construction quality and finishing exceeded our expectations."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">AM</div>
+            <div class="author-info">
+              <h4>Dr. Ananya Mishra</h4>
+              <p>Resident & Homeowner</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">
+              "Azhan Developers deliver what they promise. Transparent milestone-based payment plans and strong tenant demand in the Adil Nagar market. High rental returns as projected from day one."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">RV</div>
+            <div class="author-info">
+              <h4>Rajeshwar Verma</h4>
+              <p>Property Portfolio Owner</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       6. LOCATION & GOOGLE MAPS
+       ======================================================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="section-badge">Connectivity</div>
+        <h2 class="section-heading">Strategic <span class="gradient-text">North Lucknow Location</span></h2>
+        <p class="section-subtext">
+          Situated at Tedhi Pulia / Adil Nagar on the Ring Road, seamlessly connecting Gomti Nagar, Aliganj, and the Munshi Pulia metro line.
+        </p>
+      </div>
+
+      <div class="location-grid">
+        
+        <!-- Left: Address & Proximity Highlights -->
+        <div class="location-details">
+          
+          <div class="address-card">
+            <div class="address-icon">
+              <i class="fa-solid fa-building-user"></i>
+            </div>
+            <div class="address-info">
+              <h4>Azhan Developers Private Limited</h4>
+              <p>
+                LGF16-17, Ratan Plaza, Tedhi Pulia, Adil Nagar,<br />
+                Lucknow, Uttar Pradesh 226022
+              </p>
+              <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <a href="https://maps.google.com/?q=Tedhi+Pulia+Adil+Nagar+Lucknow+Uttar+Pradesh+226022" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+                </a>
+                <a href="tel:+918726080001" class="btn btn-secondary btn-sm">
+                  <i class="fa-solid fa-phone"></i> +91 87260 80001
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proximity Grid -->
+          <div class="proximity-list">
+            <div class="proximity-box">
+              <div class="prox-icon"><i class="fa-solid fa-train-subway"></i></div>
+              <div class="prox-text">
+                <span class="prox-title">Munshi Pulia Metro</span>
+                <span class="prox-time">5 Minutes Drive</span>
+              </div>
+            </div>
+
+            <div class="proximity-box">
+              <div class="prox-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="prox-text">
+                <span class="prox-title">Engg. College Chauraha</span>
+                <span class="prox-time">3 Minutes Drive</span>
+              </div>
+            </div>
+
+            <div class="proximity-box">
+              <div class="prox-icon"><i class="fa-solid fa-truck-medical"></i></div>
+              <div class="prox-text">
+                <span class="prox-title">Mayo & Divine Hospitals</span>
+                <span class="prox-time">8 Minutes Drive</span>
+              </div>
+            </div>
+
+            <div class="proximity-box">
+              <div class="prox-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="prox-text">
+                <span class="prox-title">Tedhi Pulia High Street</span>
+                <span class="prox-time">1 Minute Walk</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Responsive Embedded Google Map -->
+        <div class="map-container">
+          <iframe 
+            src="https://maps.google.com/maps?q=Tedhi+Pulia+Adil+Nagar+Lucknow+Uttar+Pradesh+226022&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            title="Google Map of Azhan Developers Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       7. INTERACTIVE FAQ ACCORDION (5 DETAILED QUESTIONS)
+       ======================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <div class="section-badge">Investor Knowledge Base</div>
+        <h2 class="section-heading">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtext">
+          Clear, straightforward answers regarding commercial rental yields, registry process, and possession timelines.
+        </p>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-header" onclick="toggleFaq(this)">
+            <span class="faq-question">What rental yields can investors anticipate on commercial retail spaces?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-body" style="max-height: 200px;">
+            <p class="faq-answer">
+              Commercial retail spaces situated on the 60-ft wide Ring Road corridor at Tedhi Pulia command projected rental yields between 8.8% to 10.5% annually. The sustained high vehicular traffic and dense residential neighborhoods surrounding Adil Nagar make these high-street units ideal for national franchises, diagnostic centers, and corporate banking outlets.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-header" onclick="toggleFaq(this)">
+            <span class="faq-question">What is the status of land title, approvals, and legal verification?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-body">
+            <p class="faq-answer">
+              All projects developed by Azhan Developers maintain 100% clean, marketable, and verified freehold land titles. Our legal and documentation cell assists every buyer with comprehensive title verification, mutation documentation, and hassle-free registry execution at the local registrar office.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-header" onclick="toggleFaq(this)">
+            <span class="faq-question">What payment plans and milestone schedules are offered?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-body">
+            <p class="faq-answer">
+              We offer flexible construction-linked payment plans (CLP) designed to match verified civil construction milestones. Standard structures include an initial booking token, installment tranches pegged to slab casting and brickwork, and the balance upon registry and physical key handover. Customized down-payment discount schemes are also available for bulk investors.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-header" onclick="toggleFaq(this)">
+            <span class="faq-question">What are the possession timelines and structural specifications?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-body">
+            <p class="faq-answer">
+              Possession timelines vary by phase, with select retail and commercial floors ready for interior fit-outs immediately. The buildings are constructed with earthquake-resistant RCC frame engineering, high-efficiency automatic lifts, wide glass elevations, and ample designated basement customer parking.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-header" onclick="toggleFaq(this)">
+            <span class="faq-question">Can NRI and out-of-city investors book units and manage leasing remotely?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-body">
+            <p class="faq-answer">
+              Yes. We provide digital site walkthroughs, video floor plan consultations, and seamless online documentation for NRI and outstation clients. Additionally, our commercial leasing desk helps landlords find reputed brand tenants once units near fit-out completion.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       8. FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-about">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 3h16v3H4V3zm2 4h3v11H6V7zm5 0h2v11h-2V7zm4 0h3v11h-3V7zM4 19h16v2H4v-2z"/>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title">AZHAN</span>
+              <span class="brand-sub">DEVELOPERS</span>
+            </div>
+          </div>
+          <p>
+            Azhan Developers Private Limited is a trusted name in North Lucknow for prime commercial retail hubs, high-street showrooms, and modern urban residential spaces on Ring Road.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#properties">Azhan Commercial Square</a></li>
+            <li><a href="#properties">Azhan Residency</a></li>
+            <li><a href="#amenities">Project Highlights</a></li>
+            <li><a href="#reviews">Google Reviews (4.9★)</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Unit Types</h4>
+          <ul class="footer-links">
+            <li><a href="#inquire" onclick="selectUnitDirect('Retail Shop')">High-Street Retail Shops</a></li>
+            <li><a href="#inquire" onclick="selectUnitDirect('Commercial Office')">Corporate Office Suites</a></li>
+            <li><a href="#inquire" onclick="selectUnitDirect('2 BHK Flat')">2 BHK Luxury Residences</a></li>
+            <li><a href="#inquire" onclick="selectUnitDirect('3 BHK Flat')">3 BHK Premium Residences</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Corporate Office</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>LGF16-17, Ratan Plaza, Tedhi Pulia, Adil Nagar, Lucknow, UP 226022</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span><a href="tel:+918726080001">+91 87260 80001</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span><a href="https://wa.me/918726080001" target="_blank" rel="noopener">+91 87260 80001 (WhatsApp)</a></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Azhan Developers Private Limited. All Rights Reserved.
+        </div>
+        <div>
+          Prime Residential & Commercial Spaces on Ring Road, Lucknow.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       9. FLOATING ACTION BUTTONS (STRICT REQUIREMENT)
+       Stacked vertically in bottom-right corner:
+       - Upper circular button: Call (+91 87260 80001)
+       - Lower circular button: WhatsApp (https://wa.me/918726080001)
+       ======================================================== -->
+  <div class="floating-fab-container" aria-label="Quick contact buttons">
+    <!-- Upper Circular Button: Call -->
+    <a href="tel:+918726080001" class="fab-btn fab-call" aria-label="Call Azhan Developers">
+      <i class="fa-solid fa-phone"></i>
+      <span class="fab-tooltip">Call +91 87260 80001</span>
+    </a>
+
+    <!-- Lower Circular Button: WhatsApp -->
+    <a href="https://wa.me/918726080001?text=Hi%20Azhan%20Developers%2C%20I%20am%20interested%20in%20your%20properties%20on%20Ring%20Road%20Lucknow." target="_blank" rel="noopener" class="fab-btn fab-whatsapp" aria-label="Chat on WhatsApp with Azhan Developers">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="fab-tooltip">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification element -->
+  <div class="toast" id="toastNotification">
+    <i class="fa-solid fa-check-circle" style="color: var(--amber-light);"></i>
+    <span id="toastMsg">Inquiry sent successfully!</span>
+  </div>
+
+  <!-- ========================================================
+       JAVASCRIPT LOGIC
+       ======================================================== -->
+  <script>
+    // 1. Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        const icon = mobileToggle.querySelector('i');
+        if (mobileMenu.classList.contains('open')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+    }
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      });
+    });
+
+    // 2. Unit Selector Chip Logic
+    function selectUnit(element, unitName) {
+      document.querySelectorAll('.unit-chip').forEach(chip => {
+        chip.classList.remove('active');
+      });
+      element.classList.add('active');
+      document.getElementById('selectedUnitInput').value = unitName;
+    }
+
+    function selectUnitDirect(unitName) {
+      const chips = document.querySelectorAll('.unit-chip');
+      chips.forEach(chip => {
+        if (chip.textContent.trim().includes(unitName)) {
+          chip.classList.add('active');
+        } else {
+          chip.classList.remove('active');
+        }
+      });
+      document.getElementById('selectedUnitInput').value = unitName;
+    }
+
+    // 3. Quick Inquire helper from property cards
+    function quickInquire(propertyName) {
+      const text = encodeURIComponent(`Hi Azhan Developers, I am interested in inquiring about ${propertyName} on Ring Road, Lucknow. Please share details, floor plans, and pricing.`);
+      window.open(`https://wa.me/918726080001?text=${text}`, '_blank');
+    }
+
+    // 4. Lead Form Submission to WhatsApp
+    function handleLeadSubmit(event) {
+      event.preventDefault();
+      const unit = document.getElementById('selectedUnitInput').value;
+      const name = document.getElementById('leadName').value.trim();
+      const phone = document.getElementById('leadPhone').value.trim();
+
+      if (!name || !phone) {
+        showToast("Please fill in both your name and phone number.");
+        return;
+      }
+
+      const messageText = `Hi Azhan Developers,\n\nI would like to inquire about properties at Tedhi Pulia / Ring Road.\n\n*Inquiry Details:*\n- *Name:* ${name}\n- *Phone:* ${phone}\n- *Selected Unit:* ${unit}\n\nPlease share floor plans, availability, and pricing.`;
+      const encodedMsg = encodeURIComponent(messageText);
+      const whatsappUrl = `https://wa.me/918726080001?text=${encodedMsg}`;
+
+      showToast("Redirecting to WhatsApp with your inquiry details...");
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 700);
+    }
+
+    // 5. Toast Notification System
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+
+    // 6. Interactive FAQ Accordion Logic
+    function toggleFaq(buttonElement) {
+      const parentItem = buttonElement.parentElement;
+      const body = parentItem.querySelector('.faq-body');
+      const isActive = parentItem.classList.contains('active');
+
+      // Close all FAQs first
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        const b = item.querySelector('.faq-body');
+        if (b) b.style.maxHeight = null;
+      });
+
+      // If it wasn't active, open it
+      if (!isActive) {
+        parentItem.classList.add('active');
+        body.style.maxHeight = body.scrollHeight + 30 + "px";
+      }
+    }
+  </script>
+</body>
+</html>
