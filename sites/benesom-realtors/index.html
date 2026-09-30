@@ -81,11 +81,9 @@
       background: #F59E0B;
     }
 
-    /* Gradient gold text */
-    .text-gold-gradient {
-      background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    /* Solid gold text */
+    .text-gold-solid {
+      color: #F59E0B;
     }
 
     /* Subtle radiant glows */
@@ -98,7 +96,7 @@
 
     /* Card background with fine border */
     .glass-card {
-      background: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%);
+      background: #0F172A;
       border: 1px solid rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(12px);
     }
@@ -131,9 +129,9 @@
         <!-- Luxury Brand Logo -->
         <a href="#hero" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Benesom Realtors Home">
           <!-- Pinnacle Emblem SVG -->
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500 via-gold-600 to-emerald-600 p-[1.5px] shadow-lg shadow-gold-500/10 group-hover:scale-105 transition-transform duration-300">
+          <div class="w-12 h-12 rounded-xl     p-[1.5px] shadow-lg shadow-gold-500/10 group-hover:scale-105 transition-transform duration-300">
             <div class="w-full h-full bg-obsidian-900 rounded-[10px] flex items-center justify-center relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-gold-500/10"></div>
+              <div class="absolute inset-0   "></div>
               <!-- Pinnacle Arch & Monogram -->
               <svg class="w-6 h-6 text-gold-400 group-hover:text-gold-300 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2L3 9v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9z"></path>
@@ -172,7 +170,7 @@
             +91 98384 40031
           </a>
 
-          <button onclick="openVisitModal()" class="relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-obsidian-950 bg-gradient-to-r from-gold-400 via-gold-500 to-emerald-400 hover:from-gold-300 hover:to-emerald-300 transition-all duration-300 shadow-md shadow-gold-500/20 active:scale-95">
+          <button onclick="openVisitModal()" class="relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-obsidian-950 bg-gold-500 hover:bg-gold-400   hover: hover: transition-all duration-300 shadow-md shadow-gold-500/20 active:scale-95">
             Book Site Visit
             <svg class="w-3.5 h-3.5 ml-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -206,7 +204,7 @@
       </div>
 
       <div class="pt-2 flex flex-col gap-3">
-        <button onclick="openVisitModal(); closeMobileMenu();" class="w-full py-3 rounded-lg text-xs font-bold uppercase tracking-wider text-obsidian-950 bg-gradient-to-r from-gold-400 to-emerald-400 text-center shadow-lg">
+        <button onclick="openVisitModal(); closeMobileMenu();" class="w-full py-3 rounded-lg text-xs font-bold uppercase tracking-wider text-obsidian-950 bg-gold-500 hover:bg-gold-400  text-center shadow-lg">
           Book Free Site Visit
         </button>
         <a href="tel:+919838440031" class="flex items-center justify-center gap-2 py-2.5 rounded-lg border border-slate-700 text-xs font-semibold text-slate-300">
@@ -224,7 +222,7 @@
   <!-- ========================================================================= -->
   <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
     <!-- Ambient Background Glows -->
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-gold-500/15 via-emerald-500/10 to-transparent blur-[120px] pointer-events-none"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px]     blur-[120px] pointer-events-none"></div>
     <div class="absolute top-1/3 -left-40 w-96 h-96 bg-emerald-600/10 rounded-full blur-[100px] pointer-events-none"></div>
     <div class="absolute top-1/4 -right-40 w-96 h-96 bg-gold-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -250,7 +248,7 @@
       <div class="text-center max-w-4xl mx-auto">
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
           North Lucknow’s Most Trusted Developer of <br class="hidden sm:inline">
-          <span class="text-gold-gradient font-display">Mega Townships & Farmhouses</span>
+          <span class="text-amber-400 font-bold font-display">Mega Townships & Farmhouses</span>
         </h1>
         <p class="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
           Benesom Realtors Pvt Ltd crafts master-planned gated enclaves, luxury highway residential plots, and serene orchard farmhouses with 100% legal clearance & instant registry.
@@ -338,7 +336,7 @@
 
             <!-- Action Buttons -->
             <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <button type="submit" class="flex-1 py-3.5 px-6 rounded-lg bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-obsidian-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
+              <button type="submit" class="flex-1 py-3.5 px-6 rounded-lg    hover: hover: text-obsidian-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
                 <!-- WhatsApp Icon -->
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                   <path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.954.563 3.774 1.536 5.318L2 22l4.81-1.492c1.474.887 3.2 1.393 5.221 1.393 5.531 0 10.031-4.5 10.031-10.031S17.562 2 12.031 2zm0 18.062c-1.745 0-3.37-.5-4.757-1.37l-.341-.215-2.852.885.9-2.775-.236-.375c-.974-1.545-1.514-3.354-1.514-5.256 0-4.43 3.601-8.031 8.031-8.031 4.43 0 8.031 3.601 8.031 8.031 0 4.43-3.601 8.031-8.031 8.031zm4.402-6.027c-.241-.12-1.428-.705-1.65-.785-.221-.08-.382-.12-.543.12-.16.241-.623.785-.764.945-.14.16-.281.18-.522.06-.241-.12-1.018-.375-1.939-1.196-.717-.639-1.201-1.429-1.342-1.67-.14-.241-.015-.371.106-.491.108-.109.241-.281.362-.422.12-.14.16-.241.241-.402.08-.16.04-.301-.02-.422-.06-.12-.543-1.306-.744-1.788-.196-.47-.395-.406-.543-.414l-.462-.008c-.16 0-.422.06-.643.301-.221.241-.844.824-.844 2.01 0 1.186.864 2.332.985 2.493.12.16 1.701 2.597 4.122 3.642.576.249 1.026.398 1.377.509.579.184 1.106.158 1.523.096.465-.07 1.428-.584 1.63-1.148.201-.563.201-1.045.14-1.146-.06-.101-.221-.161-.462-.281z"/>
@@ -381,11 +379,11 @@
         <!-- PROJECT 1: Benesom Crown Enclave -->
         <div class="glass-card rounded-2xl overflow-hidden border border-slate-700/80 hover:border-gold-500/50 transition-all duration-300 flex flex-col group">
           <!-- Project Banner / Visual Top -->
-          <div class="relative h-64 bg-gradient-to-tr from-obsidian-950 via-slate-900 to-slate-800 p-6 flex flex-col justify-between overflow-hidden">
+          <div class="relative h-64     p-6 flex flex-col justify-between overflow-hidden">
             <img src="./images/country-meadows.jpg" alt="Benesom Country Meadows" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             <img src="./images/crown-enclave.jpg" alt="Benesom Crown Enclave" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             <!-- Blueprint grid pattern overlay -->
-            <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#F59E0B 1px, transparent 1px); background-size: 24px 24px;"></div>
+            <div class="absolute inset-0 opacity-15" style="background-image: #0A1128; background-size: 24px 24px;"></div>
             
             <div class="relative z-10 flex items-start justify-between">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-500/20 text-gold-300 border border-gold-500/40">
@@ -478,9 +476,9 @@
         <!-- PROJECT 2: Benesom Country Meadows -->
         <div id="farmhouses" class="glass-card rounded-2xl overflow-hidden border border-slate-700/80 hover:border-gold-500/50 transition-all duration-300 flex flex-col group">
           <!-- Project Banner / Visual Top -->
-          <div class="relative h-64 bg-gradient-to-tr from-obsidian-950 via-emerald-950/60 to-slate-900 p-6 flex flex-col justify-between overflow-hidden">
+          <div class="relative h-64     p-6 flex flex-col justify-between overflow-hidden">
             <!-- Organic rings overlay -->
-            <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#10B981 1px, transparent 1px); background-size: 24px 24px;"></div>
+            <div class="absolute inset-0 opacity-15" style="background-image: #0A1128; background-size: 24px 24px;"></div>
             
             <div class="relative z-10 flex items-start justify-between">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
@@ -677,7 +675,7 @@
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-emerald-950/40 to-slate-900 p-3.5 rounded-lg border border-emerald-500/30">
+            <div class="bg-obsidian-900 p-3.5 rounded-lg border border-emerald-500/30">
               <div class="flex items-center justify-between">
                 <div>
                   <div class="text-[11px] uppercase tracking-wider text-emerald-300 font-semibold">Estimated Monthly EMI</div>
@@ -687,7 +685,7 @@
               </div>
             </div>
 
-            <button onclick="sendCalculatedQuoteWhatsApp()" class="w-full py-3 px-4 rounded-lg bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20">
+            <button onclick="sendCalculatedQuoteWhatsApp()" class="w-full py-3 px-4 rounded-lg    hover: hover: text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.5 2 2 6.5 2 12.031c0 1.954.563 3.774 1.536 5.318L2 22l4.81-1.492c1.474.887 3.2 1.393 5.221 1.393 5.531 0 10.031-4.5 10.031-10.031S17.562 2 12.031 2z"/></svg>
               Get This Quote on WhatsApp
             </button>
@@ -764,7 +762,7 @@
           </div>
           <h3 class="text-lg font-bold text-white mb-2">Solar Street Lights & 45% Greens</h3>
           <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Zero-grid dusk-to-dawn automated LED solar street illumination, native shade trees, flowering avenues, and jogging tracks in dedicated park belts.
+            Zero-grid dusk- automated LED solar street illumination, native shade trees, flowering avenues, and jogging tracks in dedicated park belts.
           </p>
         </div>
 
@@ -1080,7 +1078,7 @@
             </svg>
           </button>
           <div id="faq-content-2" class="hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
-            Our projects adhere to comprehensive legal due diligence, enabling financing from premier banking institutions and housing finance corporations including SBI, HDFC Bank, ICICI Bank, Bank of Baroda, and PNB Housing. We provide full end-to-end loan doorstep documentation assistance through our in-house finance desk at Beam Square.
+            Our projects adhere to comprehensive legal due diligence, enabling financing from premier banking institutions and housing finance corporations including SBI, HDFC Bank, ICICI Bank, Bank of Baroda, and PNB Housing. We provide full end- loan doorstep documentation assistance through our in-house finance desk at Beam Square.
           </div>
         </div>
 
@@ -1146,7 +1144,7 @@
         <!-- Company Info -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-500 to-emerald-500 p-[1px] flex items-center justify-center">
+            <div class="w-10 h-10 rounded-lg    p-[1px] flex items-center justify-center">
               <div class="w-full h-full bg-obsidian-900 rounded-[7px] flex items-center justify-center">
                 <span class="text-gold-400 font-display font-bold text-base">B</span>
               </div>
@@ -1228,7 +1226,7 @@
     
     <!-- Upper Circular Button: Call Button -->
     <a href="tel:+919838440031" 
-       class="relative group w-14 h-14 rounded-full bg-gradient-to-tr from-obsidian-950 via-obsidian-850 to-slate-800 text-gold-400 hover:text-gold-300 border-2 border-gold-500/70 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 glow-gold" 
+       class="relative group w-14 h-14 rounded-full bg-obsidian-900   text-gold-400 hover:text-gold-300 border-2 border-gold-500/70 shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 glow-gold" 
        aria-label="Call Benesom Realtors (+91 98384 40031)">
       <!-- Animated Pulse Ring -->
       <span class="absolute inset-0 rounded-full bg-gold-500/30 pulse-ring pointer-events-none"></span>
@@ -1324,7 +1322,7 @@
           </div>
         </div>
 
-        <button type="submit" class="w-full mt-2 py-3 px-4 rounded-lg bg-gradient-to-r from-gold-400 via-gold-500 to-emerald-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-500/20 hover:opacity-95 transition-opacity">
+        <button type="submit" class="w-full mt-2 py-3 px-4 rounded-lg     text-obsidian-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-500/20 hover:opacity-95 transition-opacity">
           Confirm Free Cab Pickup & Site Visit
         </button>
       </form>
@@ -1576,7 +1574,7 @@
         img.addEventListener('error', function() {
           if (!img.dataset.fallbackTried) {
             img.dataset.fallbackTried = 'true';
-            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+            img.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20800%20500%27%3E%3Crect%20width%3D%27800%27%20height%3D%27500%27%20fill%3D%27%230A1128%27%2F%3E%3Ctext%20x%3D%27400%27%20y%3D%27250%27%20fill%3D%27%23D4AF37%27%20font-size%3D%2724%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27bold%27%20text-anchor%3D%27middle%27%3EREAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
           }
         });
       });

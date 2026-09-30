@@ -75,18 +75,17 @@
       border: 1px solid rgba(226, 232, 240, 0.8);
     }
 
-    .gold-gradient-text {
-      background: linear-gradient(135deg, #CA8A04 0%, #F59E0B 50%, #D97706 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .gold-solid-text {
+      background: #1E3A8A;
+      
     }
 
-    .gold-gradient-bg {
-      background: linear-gradient(135deg, #CA8A04 0%, #EAB308 50%, #B45309 100%);
+    .gold-solid-bg {
+      background: #1E3A8A;
     }
 
-    .navy-gradient-bg {
-      background: linear-gradient(145deg, #070F1E 0%, #0B1A36 60%, #172E5D 100%);
+    .navy-solid-bg {
+      background: #1E3A8A;
     }
 
     /* Smooth animated pulses */
@@ -116,7 +115,7 @@
         <!-- Logo & Brand Identity -->
         <a href="#top" class="flex items-center gap-3.5 group" aria-label="REDA Developers & Builders Home">
           <!-- Shield/Crest Building Icon -->
-          <div class="w-12 h-12 rounded-xl navy-gradient-bg p-2.5 flex items-center justify-center shadow-md border border-gold-500/30 group-hover:border-gold-500 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl navy-solid-bg p-2.5 flex items-center justify-center shadow-md border border-gold-500/30 group-hover:border-gold-500 transition-all duration-300">
             <svg class="w-7 h-7 text-gold-400 group-hover:scale-105 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <path d="M9 11l3 3 5-5"/>
@@ -150,7 +149,7 @@
             +91 70846 00011
           </a>
 
-          <button onclick="openLeadModal('Expert Consultation')" class="gold-gradient-bg hover:brightness-105 active:scale-95 text-navy-950 font-bold text-sm px-5 py-2.5 rounded-xl shadow-md transition-all flex items-center gap-2">
+          <button onclick="openLeadModal('Expert Consultation')" class="gold-solid-bg hover:brightness-105 active:scale-95 text-navy-950 font-bold text-sm px-5 py-2.5 rounded-xl shadow-md transition-all flex items-center gap-2">
             <span>Consult Expert</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </button>
@@ -183,7 +182,7 @@
           <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           Call: +91 70846 00011
         </a>
-        <button onclick="toggleMobileMenu(); openLeadModal('Mobile Header Consultation');" class="w-full py-3 gold-gradient-bg text-navy-950 font-bold text-sm rounded-xl text-center shadow-md">
+        <button onclick="toggleMobileMenu(); openLeadModal('Mobile Header Consultation');" class="w-full py-3 gold-solid-bg text-navy-950 font-bold text-sm rounded-xl text-center shadow-md">
           Consult Expert Now
         </button>
       </div>
@@ -194,9 +193,9 @@
     <!-- ========================================================================= -->
     <!-- 2. HERO SECTION & HIGH-IMPACT LEAD GENERATION ENGINE                      -->
     <!-- ========================================================================= -->
-    <section class="relative navy-gradient-bg text-white pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+    <section class="relative navy-solid-bg text-white pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
       <!-- Ambient Glow & Architectural Grid Background -->
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#CA8A04_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+      <div class="absolute inset-0 opacity-10  [background-size:24px_24px] pointer-events-none"></div>
       <div class="absolute -top-32 -left-32 w-96 h-96 bg-navy-700/50 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute top-1/2 -right-32 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -223,12 +222,12 @@
 
             <!-- Main Headline -->
             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white leading-tight tracking-tight">
-              Certified Real Estate Developments & Verified Townships in <span class="gold-gradient-text">South Lucknow</span>
+              Certified Real Estate Developments & Verified Townships in <span class="gold-solid-text">South Lucknow</span>
             </h1>
 
             <!-- Subtitle -->
             <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Secure your dream home or high-yield land parcel in Lucknow’s fastest appreciating corridor. Guaranteed zero-encumbrance titles, bank loan approvals, and ready-to-build infrastructure.
+              Secure your dream home or high-yield land parcel in Lucknow’s fastest appreciating corridor. Guaranteed zero-encumbrance titles, bank loan approvals, and ready- infrastructure.
             </p>
 
             <!-- Key Quick Value Badges -->
@@ -333,7 +332,7 @@
                 </div>
 
                 <!-- Submit WhatsApp Action -->
-                <button type="submit" class="w-full py-3.5 px-4 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm hover:brightness-110 active:scale-98 transition-all shadow-lg flex items-center justify-center gap-2">
+                <button type="submit" class="w-full py-3.5 px-4 rounded-xl gold-solid-bg text-navy-950 font-bold text-sm hover:brightness-110 active:scale-98 transition-all shadow-lg flex items-center justify-center gap-2">
                   <svg class="w-5 h-5 text-navy-950" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                   </svg>
@@ -439,7 +438,7 @@
             </div>
             <h3 class="text-lg font-bold text-navy-900 mb-2">Instant Registry &amp; Dakhil Kharij</h3>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Guaranteed expedited registration at the Lucknow Sub-Registrar office with end-to-end legal paperwork support for hassle-free revenue mutation.
+              Guaranteed expedited registration at the Lucknow Sub-Registrar office with end- legal paperwork support for hassle-free revenue mutation.
             </p>
           </div>
 
@@ -480,7 +479,7 @@
             <div class="relative h-64 sm:h-72 overflow-hidden bg-navy-950">
               <img src="./images/green-park.jpg" alt="REDA Green Park Township Luxury Villas and Plots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
               
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent"></div>
+              <div class="absolute inset-0    "></div>
               
               <!-- Badges -->
               <div class="absolute top-4 left-4 flex flex-wrap gap-2">
@@ -562,7 +561,7 @@
             <div class="relative h-64 sm:h-72 overflow-hidden bg-navy-950">
               <img src="./images/elite-heights.jpg" alt="REDA Elite Heights Luxury High Rise Apartments in LDA Colony" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
               
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent"></div>
+              <div class="absolute inset-0    "></div>
               
               <!-- Badges -->
               <div class="absolute top-4 left-4 flex flex-wrap gap-2">
@@ -741,7 +740,7 @@
               <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
               View on Google Maps
             </a>
-            <button onclick="openLeadModal('Write / Inquire Review Details')" class="px-5 py-2.5 rounded-xl gold-gradient-bg text-navy-950 font-bold text-xs shadow hover:brightness-105 transition-all">
+            <button onclick="openLeadModal('Write / Inquire Review Details')" class="px-5 py-2.5 rounded-xl gold-solid-bg text-navy-950 font-bold text-xs shadow hover:brightness-105 transition-all">
               Verify Credentials
             </button>
           </div>
@@ -1040,8 +1039,8 @@
     <!-- ========================================================================= -->
     <!-- 9. FINAL CALL TO ACTION BANNER                                            -->
     <!-- ========================================================================= -->
-    <section class="py-16 navy-gradient-bg text-white text-center relative overflow-hidden">
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#CA8A04_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <section class="py-16 navy-solid-bg text-white text-center relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10  [background-size:20px_20px]"></div>
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
           Secure Your Freehold Property in South Lucknow Today
@@ -1055,7 +1054,7 @@
             <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span>Direct Call: +91 70846 00011</span>
           </a>
-          <button onclick="openLeadModal('Bottom CTA Consultation')" class="px-8 py-3.5 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm shadow-gold-glow hover:brightness-105 transition-all">
+          <button onclick="openLeadModal('Bottom CTA Consultation')" class="px-8 py-3.5 rounded-xl gold-solid-bg text-navy-950 font-bold text-sm shadow-gold-glow hover:brightness-105 transition-all">
             Schedule Free Site Inspection
           </button>
         </div>
@@ -1151,7 +1150,7 @@
     
     <!-- Upper Circular Button: Call (+91 70846 00011) -->
     <a href="tel:+917084600011" 
-       class="w-14 h-14 rounded-full navy-gradient-bg border-2 border-gold-500 text-gold-400 flex items-center justify-center fab-shadow hover:scale-110 active:scale-95 transition-all group relative"
+       class="w-14 h-14 rounded-full navy-solid-bg border-2 border-gold-500 text-gold-400 flex items-center justify-center fab-shadow hover:scale-110 active:scale-95 transition-all group relative"
        aria-label="Call REDA Developers at +91 70846 00011">
       <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
@@ -1217,7 +1216,7 @@
           </select>
         </div>
 
-        <button type="submit" class="w-full py-3.5 px-4 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm hover:brightness-105 transition-all shadow-md flex items-center justify-center gap-2">
+        <button type="submit" class="w-full py-3.5 px-4 rounded-xl gold-solid-bg text-navy-950 font-bold text-sm hover:brightness-105 transition-all shadow-md flex items-center justify-center gap-2">
           <span>Connect via WhatsApp Desk</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </button>
@@ -1352,7 +1351,7 @@
         img.addEventListener('error', function() {
           if (!img.dataset.fallbackTried) {
             img.dataset.fallbackTried = 'true';
-            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+            img.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20800%20500%27%3E%3Crect%20width%3D%27800%27%20height%3D%27500%27%20fill%3D%27%230A1128%27%2F%3E%3Ctext%20x%3D%27400%27%20y%3D%27250%27%20fill%3D%27%23D4AF37%27%20font-size%3D%2724%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27bold%27%20text-anchor%3D%27middle%27%3EREAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
           }
         });
       });

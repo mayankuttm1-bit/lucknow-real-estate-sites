@@ -94,7 +94,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Ambient Background Gradients */
+    /* Ambient Solid Background */
     body::before {
       content: "";
       position: fixed;
@@ -103,9 +103,9 @@
       width: 100vw;
       height: 100vh;
       background: 
-        radial-gradient(circle at 12% 15%, rgba(180, 83, 9, 0.09) 0%, transparent 42%),
-        radial-gradient(circle at 88% 30%, rgba(30, 41, 59, 0.45) 0%, transparent 50%),
-        radial-gradient(circle at 50% 85%, rgba(217, 119, 6, 0.06) 0%, transparent 55%);
+        #0A1128 0%, transparent 42%),
+        #0A1128 0%, transparent 50%),
+        #0A1128 0%, transparent 55%);
       pointer-events: none;
       z-index: -1;
     }
@@ -188,10 +188,8 @@
       line-height: 1.7;
     }
 
-    .bronze-gradient-text {
-      background: linear-gradient(135deg, #FFFFFF 30%, var(--bronze-gold) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .bronze-solid-text {
+      color: var(--bronze-gold);
     }
 
     /* Buttons */
@@ -213,13 +211,13 @@
     }
 
     .btn-bronze {
-      background: linear-gradient(135deg, var(--bronze-light) 0%, var(--bronze-primary) 100%);
+      background: var(--bronze-primary);
       color: #FFFFFF;
       box-shadow: 0 4px 20px rgba(180, 83, 9, 0.4);
     }
 
     .btn-bronze:hover {
-      background: linear-gradient(135deg, var(--bronze-amber) 0%, var(--bronze-light) 100%);
+      background: var(--bronze-primary);
       transform: translateY(-2px);
       box-shadow: 0 8px 28px rgba(217, 119, 6, 0.5);
     }
@@ -297,7 +295,7 @@
     .logo-icon-wrap {
       width: 44px;
       height: 44px;
-      background: linear-gradient(135deg, rgba(180, 83, 9, 0.2) 0%, rgba(30, 41, 59, 0.8) 100%);
+      background: var(--bronze-primary);
       border: 1px solid var(--border-bronze);
       border-radius: 12px;
       display: flex;
@@ -493,7 +491,7 @@
       width: 100%;
       height: 100%;
       background: 
-        linear-gradient(to right, rgba(7, 11, 20, 0.95) 0%, rgba(7, 11, 20, 0.82) 50%, rgba(7, 11, 20, 0.7) 100%),
+        rgba(7, 11, 20, 0.95) 50%, rgba(7, 11, 20, 0.7) 100%),
         url('./images/hero-bg.jpg') center/cover no-repeat;
       z-index: 1;
     }
@@ -645,7 +643,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, var(--bronze-primary), var(--bronze-gold), var(--bronze-light));
+      background: var(--bronze-primary);
     }
 
     .lead-card-header {
@@ -720,7 +718,7 @@
 
     .unit-option-btn.active {
       border-color: var(--bronze-gold);
-      background: linear-gradient(135deg, rgba(180, 83, 9, 0.35) 0%, rgba(30, 41, 59, 0.7) 100%);
+      background: var(--bronze-primary);
     }
 
     /* Form Fields */
@@ -869,7 +867,7 @@
        Lucknow Heights Phase 1 & 2 cards, sq footage, balcony views, pricing, brochure trigger.
        ========================================================================== */
     .properties-section {
-      background: linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 50%, var(--navy-950) 100%);
+      background: var(--bronze-primary);
     }
 
     .properties-filter-bar {
@@ -1155,7 +1153,7 @@
 
     .floor-tab-btn.active,
     .floor-tab-btn:hover {
-      background: linear-gradient(135deg, var(--bronze-light) 0%, var(--bronze-primary) 100%);
+      background: var(--bronze-primary);
       border-color: var(--bronze-gold);
       color: #FFFFFF;
       box-shadow: 0 4px 18px rgba(180, 83, 9, 0.35);
@@ -1302,7 +1300,7 @@
       width: 60px;
       height: 60px;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(180, 83, 9, 0.25) 0%, rgba(30, 41, 59, 0.8) 100%);
+      background: var(--bronze-primary);
       border: 1px solid var(--border-bronze);
       color: var(--bronze-gold);
       display: flex;
@@ -1314,7 +1312,7 @@
     }
 
     .amenity-card:hover .amenity-icon-box {
-      background: linear-gradient(135deg, var(--bronze-primary) 0%, var(--bronze-light) 100%);
+      background: var(--bronze-primary);
       color: #FFFFFF;
       box-shadow: 0 8px 24px rgba(180, 83, 9, 0.4);
       transform: scale(1.05);
@@ -1366,7 +1364,7 @@
 
     /* Google Rating Hero Card */
     .google-rating-banner {
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+      background: var(--bronze-primary);
       border: 1px solid var(--border-bronze);
       border-radius: var(--radius-xl);
       padding: 32px 40px;
@@ -1497,7 +1495,7 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--bronze-primary) 0%, var(--navy-800) 100%);
+      background: var(--bronze-primary);
       border: 2px solid var(--bronze-light);
       display: flex;
       align-items: center;
@@ -1869,7 +1867,7 @@
        SCHEDULE VISIT CTA BANNER
        ========================================================================== */
     .cta-banner-section {
-      background: linear-gradient(135deg, rgba(180, 83, 9, 0.2) 0%, rgba(15, 23, 42, 0.95) 50%, rgba(11, 17, 32, 1) 100%);
+      background: var(--bronze-primary);
       border-top: 1px solid var(--border-bronze);
       border-bottom: 1px solid var(--border-bronze);
       padding: 80px 0;
@@ -2047,7 +2045,7 @@
 
     /* Upper Circular Button: Call */
     .fab-call {
-      background: linear-gradient(135deg, var(--bronze-light) 0%, var(--bronze-primary) 100%);
+      background: var(--bronze-primary);
       border: 2px solid rgba(251, 191, 36, 0.4);
       animation: pulse-bronze 2.5s infinite;
     }
@@ -2322,7 +2320,7 @@
           </div>
 
           <h1 class="hero-title">
-            Ready-to-Move Flats & <span class="bronze-gradient-text">Modern Living</span> in Vibhuti Khand
+            Ready-to-Move Flats & <span class="text-amber-500 font-bold">Modern Living</span> in Vibhuti Khand
           </h1>
 
           <p class="hero-subtitle">
@@ -2468,7 +2466,7 @@
           <i class="fa-solid fa-city"></i> Architectural Excellence
         </span>
         <h2 class="section-title">
-          Signature Properties at <span class="bronze-gradient-text">Lucknow Heights</span>
+          Signature Properties at <span class="text-amber-500 font-bold">Lucknow Heights</span>
         </h2>
         <p class="section-desc">
           Strategically located in Vibhuti Khand, Gomti Nagar. Designed for families who desire spacious layouts, expansive balconies, and effortless urban connectivity.
@@ -2659,7 +2657,7 @@
           <i class="fa-solid fa-compass-drafting"></i> Intelligent Space Design
         </span>
         <h2 class="section-title">
-          Master Planned <span class="bronze-gradient-text">Floor Plans</span>
+          Master Planned <span class="text-amber-500 font-bold">Floor Plans</span>
         </h2>
         <p class="section-desc">
           Engineered for zero dead space, cross-ventilation, and maximum natural illumination across every square foot.
@@ -2835,7 +2833,7 @@
           <i class="fa-solid fa-gem"></i> Premium Lifestyle
         </span>
         <h2 class="section-title">
-          World-Class Amenities for <span class="bronze-gradient-text">Peace of Mind</span>
+          World-Class Amenities for <span class="text-amber-500 font-bold">Peace of Mind</span>
         </h2>
         <p class="section-desc">
           Every amenity is carefully curated to elevate everyday family living, security, and well-being in Vibhuti Khand.
@@ -2941,7 +2939,7 @@
           <i class="fa-solid fa-star"></i> Verified Reputation
         </span>
         <h2 class="section-title">
-          Rated <span class="bronze-gradient-text">4.5 Stars</span> on Google
+          Rated <span class="text-amber-500 font-bold">4.5 Stars</span> on Google
         </h2>
         <p class="section-desc">
           Read transparent experiences from families and investors who received keys and registered their homes with Lucknow Home Developers.
@@ -3156,7 +3154,7 @@
           <i class="fa-solid fa-map-location-dot"></i> Epicenter of Gomti Nagar
         </span>
         <h2 class="section-title">
-          Prime Connectivity in <span class="bronze-gradient-text">Vibhuti Khand</span>
+          Prime Connectivity in <span class="text-amber-500 font-bold">Vibhuti Khand</span>
         </h2>
         <p class="section-desc">
           Situated on Regency Road in Vijaipur Colony, Vibhuti Khand — minutes away from Lucknow's premier entertainment, judicial, and transit landmarks.
@@ -3271,7 +3269,7 @@
           <i class="fa-solid fa-circle-question"></i> Transparent Buying
         </span>
         <h2 class="section-title">
-          Frequently Asked <span class="bronze-gradient-text">Questions</span>
+          Frequently Asked <span class="text-amber-500 font-bold">Questions</span>
         </h2>
         <p class="section-desc">
           Everything you need to know about ready possession certificates, clearances, bank tie-ups, and registry charges.
@@ -3853,7 +3851,7 @@
         img.addEventListener('error', function() {
           if (!img.dataset.fallbackTried) {
             img.dataset.fallbackTried = 'true';
-            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+            img.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20800%20500%27%3E%3Crect%20width%3D%27800%27%20height%3D%27500%27%20fill%3D%27%230A1128%27%2F%3E%3Ctext%20x%3D%27400%27%20y%3D%27250%27%20fill%3D%27%23D4AF37%27%20font-size%3D%2724%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27bold%27%20text-anchor%3D%27middle%27%3EREAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
           }
         });
       });

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghaziabad Real Estate Developers | Live Showcase Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0A0F1D;
+            --bg-card: rgba(18, 24, 43, 0.9);
+            --accent-gold: #D4AF37;
+            --accent-blue: #38BDF8;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-title: 'Outfit', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 15, 29, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 16px 28px;
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #D4AF37; 
+            color: #0A0F1D;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .brand-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .brand-text span {
+            color: var(--accent-gold);
+        }
+
+        .city-switcher {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 4px;
+            border-radius: 10px;
+            border: 1px solid var(--border-glass);
+        }
+
+        .city-tab {
+            padding: 6px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+
+        .city-tab.active {
+            background: #D4AF37;
+            color: #0A0F1D;
+            font-weight: 700;
+        }
+
+        .city-tab:hover:not(.active) {
+            color: #FFF;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 60px 24px 40px;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--accent-blue);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 span {
+            color: #D4AF37;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 720px;
+            margin: 0 auto 30px;
+        }
+
+        .showcase-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .grid-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-glass);
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .grid-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .grid-header span {
+            color: var(--accent-gold);
+        }
+
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 28px;
+        }
+
+        .site-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 18px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-image-wrap {
+            height: 190px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            background: #111827;
+            border: 1px solid var(--border-glass);
+        }
+
+        .card-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+
+        .site-card:hover .card-image-wrap img {
+            transform: scale(1.05);
+        }
+
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .card-number {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            background: rgba(212, 175, 55, 0.12);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .rating-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(251, 191, 36, 0.12);
+            color: #FBBF24;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(251, 191, 36, 0.25);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .card-locality {
+            color: var(--accent-blue);
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .card-focus {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            border-top: 1px solid var(--border-glass);
+            padding-top: 14px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .meta-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-actions {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+        }
+
+        .btn-live {
+            background: #D4AF37;
+            color: #0A0F1D;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-live:hover {
+            filter: brightness(1.15);
+            transform: scale(1.02);
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: #FFF;
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-wa:hover {
+            transform: scale(1.08);
+            background: #20BD5A;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-glass);
+            text-align: center;
+            padding: 30px 24px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .site-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 40px 16px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">🏢</div>
+                <div class="brand-text">Ghaziabad<span>Developers</span></div>
+            </a>
+            
+            <div class="city-switcher">
+                <a href="ghaziabad.html" class="city-tab active">Ghaziabad (9)</a>
+                <a href="index.html" class="city-tab">Lucknow (10)</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-pill">
+            🎯 Zero-Gradient, High-Trust Developer Websites
+        </div>
+        <h1>Custom Websites for <span>Ghaziabad Developers</span></h1>
+        <p>Bespoke, visual-first static websites designed with local stock photos, bite-sized specifications, zero gradients, and direct WhatsApp booking for top Ghaziabad builders.</p>
+    </section>
+
+    <main class="showcase-container">
+        <div class="grid-header">
+            <h2>Live <span>Developer Showcases</span></h2>
+            <div style="color: var(--text-muted); font-size: 0.9rem;">9 Verified Google Business Developers with No Prior Website</div>
+        </div>
+
+        <div class="site-grid">
+            
+            <!-- Card 1: Shri Khatu Shayam Real Estate (Duhai) -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/shri-khatu-shayam.jpg" alt="Shri Khatu Shayam Real Estate (Duhai)" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#01</span>
+                    <span class="rating-badge">★ 4.8 (34 Reviews)</span>
+                </div>
+                <h3 class="card-title">Shri Khatu Shayam Real Estate (Duhai)</h3>
+                <div class="card-locality">📍 Duhai, RRTS Corridor, Ghaziabad</div>
+                <div class="card-focus">Premium Residential Townships & Prime Freehold Land in Duhai</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>089201 54515</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/shri-khatu-shayam/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/918920154515?text=Namaste%20Team%20Shri%20Khatu%20Shayam%20Real%20Estate%20%28Duhai%29%2C%0A%0AI%20came%20across%20your%20business%20in%20Duhai%2C%20RRTS%20Corridor%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2034%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Shri%20Khatu%20Shayam%20Real%20Estate%20%28Duhai%29%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/shri-khatu-shayam/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/shri-khatu-shayam/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 2: SK Developers -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/sk-developers.jpg" alt="SK Developers" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#02</span>
+                    <span class="rating-badge">★ 4.8 (21 Reviews)</span>
+                </div>
+                <h3 class="card-title">SK Developers</h3>
+                <div class="card-locality">📍 Lal Kuan, GT Road NH-9, Ghaziabad</div>
+                <div class="card-focus">Engineered Modern Living & Urban Infrastructure in Lal Kuan</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>099712 46898</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/sk-developers/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919971246898?text=Namaste%20Team%20SK%20Developers%2C%0A%0AI%20came%20across%20your%20business%20in%20Lal%20Kuan%2C%20GT%20Road%20NH-9%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2021%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20SK%20Developers%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/sk-developers/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/sk-developers/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 3: Gunnika properties & Developers -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/gunnika-properties.jpg" alt="Gunnika properties & Developers" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#03</span>
+                    <span class="rating-badge">★ 4.8 (28 Reviews)</span>
+                </div>
+                <h3 class="card-title">Gunnika properties & Developers</h3>
+                <div class="card-locality">📍 Sadarpur & Govindpuram, Ghaziabad</div>
+                <div class="card-focus">Curated Gated Communities & Bespoke Homes in Kailash Puram</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>099106 78209</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/gunnika-properties/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919910678209?text=Namaste%20Team%20Gunnika%20properties%20%26%20Developers%2C%0A%0AI%20came%20across%20your%20business%20in%20Sadarpur%20%26%20Govindpuram%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2028%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Gunnika%20properties%20%26%20Developers%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/gunnika-properties/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/gunnika-properties/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 4: Ghaziabad Properties -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/ghaziabad-properties.jpg" alt="Ghaziabad Properties" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#04</span>
+                    <span class="rating-badge">★ 4.8 (18 Reviews)</span>
+                </div>
+                <h3 class="card-title">Ghaziabad Properties</h3>
+                <div class="card-locality">📍 Pandav Nagar & Diamond Flyover, Ghaziabad</div>
+                <div class="card-focus">Industrial Logistics Hubs & Prime Commercial Estates</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>070113 24253</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/ghaziabad-properties/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/917011324253?text=Namaste%20Team%20Ghaziabad%20Properties%2C%0A%0AI%20came%20across%20your%20business%20in%20Pandav%20Nagar%20%26%20Diamond%20Flyover%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2018%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Ghaziabad%20Properties%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/ghaziabad-properties/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/ghaziabad-properties/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 5: Horizon Heaven Estate -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/horizon-heaven-estate.jpg" alt="Horizon Heaven Estate" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#05</span>
+                    <span class="rating-badge">★ 4.8 (30 Reviews)</span>
+                </div>
+                <h3 class="card-title">Horizon Heaven Estate</h3>
+                <div class="card-locality">📍 Nehru Nagar III, Central Ghaziabad, Ghaziabad</div>
+                <div class="card-focus">Architectural Elegance & Luxury Urban Residences in Nehru Nagar</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>095991 49928</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/horizon-heaven-estate/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919599149928?text=Namaste%20Team%20Horizon%20Heaven%20Estate%2C%0A%0AI%20came%20across%20your%20business%20in%20Nehru%20Nagar%20III%2C%20Central%20Ghaziabad%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2030%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Horizon%20Heaven%20Estate%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/horizon-heaven-estate/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/horizon-heaven-estate/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 6: Sangam Properties -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/sangam-properties.jpg" alt="Sangam Properties" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#06</span>
+                    <span class="rating-badge">★ 4.8 (110 Reviews)</span>
+                </div>
+                <h3 class="card-title">Sangam Properties</h3>
+                <div class="card-locality">📍 Mohan Nagar & Sahibabad, Ghaziabad</div>
+                <div class="card-focus">Trusted Commercial Centers & Prime Residential Spaces in Mohan Nagar</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>088829 62162</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/sangam-properties/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/918882962162?text=Namaste%20Team%20Sangam%20Properties%2C%0A%0AI%20came%20across%20your%20business%20in%20Mohan%20Nagar%20%26%20Sahibabad%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%20110%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Sangam%20Properties%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/sangam-properties/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/sangam-properties/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 7: Goodwill Builders & Developers -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/goodwill-builders.jpg" alt="Goodwill Builders & Developers" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#07</span>
+                    <span class="rating-badge">★ 4.8 (13 Reviews)</span>
+                </div>
+                <h3 class="card-title">Goodwill Builders & Developers</h3>
+                <div class="card-locality">📍 Panchwati Colony, Bhatia Mod, Ghaziabad</div>
+                <div class="card-focus">Quality Construction & Transparent Family Homes in Panchwati</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>081305 02081</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/goodwill-builders/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/918130502081?text=Namaste%20Team%20Goodwill%20Builders%20%26%20Developers%2C%0A%0AI%20came%20across%20your%20business%20in%20Panchwati%20Colony%2C%20Bhatia%20Mod%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2013%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Goodwill%20Builders%20%26%20Developers%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/goodwill-builders/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/goodwill-builders/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 8: White house builders and developers -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/white-house-builders.jpg" alt="White house builders and developers" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#08</span>
+                    <span class="rating-badge">★ 4.8 (10 Reviews)</span>
+                </div>
+                <h3 class="card-title">White house builders and developers</h3>
+                <div class="card-locality">📍 Gyan Khand, Indirapuram, Ghaziabad</div>
+                <div class="card-focus">Ultra-Luxury Bespoke Builder Floors in Indirapuram</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>098181 59381</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/white-house-builders/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919818159381?text=Namaste%20Team%20White%20house%20builders%20and%20developers%2C%0A%0AI%20came%20across%20your%20business%20in%20Gyan%20Khand%2C%20Indirapuram%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%2010%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20White%20house%20builders%20and%20developers%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/white-house-builders/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/white-house-builders/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+            <!-- Card 9: Mangalam Properties -->
+            <div class="site-card">
+                <div class="card-image-wrap">
+                    <img src="images/showcase/mangalam-properties.jpg" alt="Mangalam Properties" loading="lazy">
+                </div>
+                <div class="card-top">
+                    <span class="card-number">#09</span>
+                    <span class="rating-badge">★ 4.8 (148 Reviews)</span>
+                </div>
+                <h3 class="card-title">Mangalam Properties</h3>
+                <div class="card-locality">📍 Govindpuram & Signature Street, Ghaziabad</div>
+                <div class="card-focus">Govindpuram's Premier Developer for Gated Townships & Freehold Homes</div>
+                <div class="card-meta">
+                    <div class="meta-row">📞 <span>098105 20676</span></div>
+                    <div class="meta-row">🛡️ <span>Verified Title & Registry Ready</span></div>
+                </div>
+                <div class="card-actions">
+                    <a href="sites/mangalam-properties/index.html" class="btn-live">View Live Website →</a>
+                    <a href="https://wa.me/919810520676?text=Namaste%20Team%20Mangalam%20Properties%2C%0A%0AI%20came%20across%20your%20business%20in%20Govindpuram%20%26%20Signature%20Street%20on%20Google%20and%20noticed%20your%20strong%20reputation%20%284.8%E2%98%85%20across%20148%20reviews%29.%0A%0ASince%20most%20serious%20homebuyers%20and%20investors%20in%20Ghaziabad%20look%20for%20floor%20plans%2C%20carpet%20area%20specs%2C%20and%20project%20brochures%20before%20calling%2C%20having%20an%20official%20web%20presence%20helps%20capture%20direct%20high-intent%20buyers%20without%20middleman%20broker%20fees.%0A%0AI%20took%20the%20initiative%20to%20design%20a%20modern%2C%20high-speed%20sample%20website%20tailored%20for%20Mangalam%20Properties%3A%0A%F0%9F%91%89%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/mangalam-properties/%0A%0AKey%20features%20in%20your%20live%20preview%3A%0A%E2%80%A2%20Featured%20Projects%20%26%20Floor%20Plan%20Specs%0A%E2%80%A2%20Direct%201-Click%20WhatsApp%20%26%20Call%20Booking%0A%E2%80%A2%20Verified%20Google%20Reviews%20%26%20Location%20Map%0A%E2%80%A2%20100%25%20Mobile%20Responsive%20%28Zero%20Gradients%2C%20Fast%20Loading%29%0A%0AFeel%20free%20to%20check%20it%20on%20your%20phone%3A%20https%3A//mayankuttm1-bit.github.io/lucknow-real-estate-sites/sites/mangalam-properties/%0AIf%20you%20like%20the%20direction%2C%20I%27d%20be%20happy%20to%20update%20it%20with%20your%20actual%20floor%20plans%20and%20latest%20site%20photos.%0A%0ABest%20regards%2C%0AMayank" target="_blank" class="btn-wa" title="Pitch on WhatsApp">💬</a>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Ghaziabad Real Estate Developers Portfolio. All sample websites built to client specifications.</p>
+    </footer>
+
+</body>
+</html>

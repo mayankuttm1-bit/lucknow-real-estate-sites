@@ -171,13 +171,13 @@
     }
 
     .btn-copper {
-      background: linear-gradient(135deg, var(--copper) 0%, #B45B41 100%);
+      background: var(--copper);
       color: var(--white);
       box-shadow: 0 4px 16px rgba(200, 109, 81, 0.35);
     }
 
     .btn-copper:hover {
-      background: linear-gradient(135deg, var(--copper-hover) 0%, var(--copper) 100%);
+      background: var(--copper-hover);
       box-shadow: 0 8px 24px rgba(200, 109, 81, 0.45);
       transform: translateY(-2px);
     }
@@ -248,7 +248,7 @@
     .logo-mark {
       width: 44px;
       height: 44px;
-      background: linear-gradient(135deg, var(--copper) 0%, #A9553B 100%);
+      background: var(--copper);
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
@@ -394,7 +394,7 @@
       position: relative;
       background-color: var(--navy-deep);
       background-image: 
-        linear-gradient(135deg, rgba(16, 22, 38, 0.94) 0%, rgba(26, 34, 56, 0.88) 50%, rgba(11, 14, 23, 0.95) 100%),
+        rgba(16, 22, 38, 0.94) 50%, rgba(11, 14, 23, 0.95) 100%),
         url('./images/hero-bg.jpg');
       background-size: cover;
       background-position: center;
@@ -411,7 +411,7 @@
       right: -10%;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, rgba(200, 109, 81, 0.15) 0%, transparent 70%);
+      background: rgba(200, 109, 81, 0.08);
       pointer-events: none;
     }
 
@@ -452,9 +452,9 @@
     }
 
     .hero-title span {
-      background: linear-gradient(135deg, #FFAC94 0%, var(--copper) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--copper);
+      
+      
     }
 
     .hero-subtitle {
@@ -523,7 +523,7 @@
       left: 10%;
       right: 10%;
       height: 3px;
-      background: linear-gradient(90deg, transparent, var(--copper), transparent);
+      background: var(--copper);
     }
 
     .hero-card-head {
@@ -899,7 +899,7 @@
       left: -10%;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(200, 109, 81, 0.12) 0%, transparent 70%);
+      background: rgba(200, 109, 81, 0.08);
       pointer-events: none;
     }
 
@@ -1119,7 +1119,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, var(--copper), #E38D73);
+      background: var(--copper);
       opacity: 0;
       transition: var(--transition);
     }
@@ -1331,7 +1331,7 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary-navy) 0%, var(--navy-light) 100%);
+      background: var(--primary-navy);
       color: var(--white);
       font-weight: 700;
       display: flex;
@@ -1700,7 +1700,7 @@
 
     /* Upper Circular Button: Call */
     .fab-call {
-      background: linear-gradient(135deg, var(--call-blue) 0%, #0369A1 100%);
+      background: var(--call-blue);
       box-shadow: 0 8px 22px rgba(2, 132, 199, 0.4);
     }
 
@@ -1717,7 +1717,7 @@
 
     /* Lower Circular Button: WhatsApp */
     .fab-whatsapp {
-      background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-hover) 100%);
+      background: var(--whatsapp-green);
       box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
     }
 
@@ -2662,21 +2662,15 @@
         <div class="masterplan-diagram-wrap">
           <svg class="masterplan-svg-visual" viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#2A3654" />
-                <stop offset="100%" stop-color="#1A2238" />
-              </linearGradient>
-              <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#1B4D3E" />
-                <stop offset="100%" stop-color="#0F2B22" />
-              </linearGradient>
+              
+              
             </defs>
 
             <!-- Base Canvas -->
             <rect width="600" height="420" rx="12" fill="#121826" />
             
             <!-- Amar Shaheed Path Access Highway -->
-            <rect x="0" y="360" width="600" height="50" fill="url(#roadGrad)" />
+            <rect x="0" y="360" width="600" height="50" fill="#334155" />
             <line x1="0" y1="385" x2="600" y2="385" stroke="#F59E0B" stroke-dasharray="16,12" stroke-width="2" />
             <text x="300" y="402" fill="#E2E8F0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">AMAR SHAHEED PATH 45M HIGHWAY CORRIDOR</text>
 
@@ -2694,7 +2688,7 @@
             <text x="130" y="145" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" text-anchor="middle">2 & 3 BHK Luxury Towers</text>
 
             <!-- Central Park & Jogging Track Loop -->
-            <rect x="60" y="240" width="140" height="90" rx="45" fill="url(#greenGrad)" stroke="#10B981" stroke-width="2" />
+            <rect x="60" y="240" width="140" height="90" rx="45" fill="#10B981" stroke="#10B981" stroke-width="2" />
             <text x="130" y="280" fill="#A7F3D0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" text-anchor="middle">CENTRAL PARK</text>
             <text x="130" y="296" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="middle">800m Jogging Loop</text>
 
@@ -3331,7 +3325,7 @@
         img.addEventListener('error', function() {
           if (!img.dataset.fallbackTried) {
             img.dataset.fallbackTried = 'true';
-            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+            img.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20800%20500%27%3E%3Crect%20width%3D%27800%27%20height%3D%27500%27%20fill%3D%27%230A1128%27%2F%3E%3Ctext%20x%3D%27400%27%20y%3D%27250%27%20fill%3D%27%23D4AF37%27%20font-size%3D%2724%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27bold%27%20text-anchor%3D%27middle%27%3EREAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
           }
         });
       });

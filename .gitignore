@@ -1,0 +1,5 @@
+__pycache__/
+stock_cache/
+temp_copy.xlsx
+~$*
+*.tmp

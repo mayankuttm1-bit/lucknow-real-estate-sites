@@ -75,9 +75,9 @@
       width: 100vw;
       height: 100vh;
       background: 
-        radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.07) 0%, transparent 45%),
-        radial-gradient(circle at 85% 65%, rgba(16, 24, 47, 0.8) 0%, transparent 60%),
-        radial-gradient(circle at 50% 90%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+        #0A1128 0%, transparent 45%),
+        #0A1128 0%, transparent 60%),
+        #0A1128 0%, transparent 50%);
       pointer-events: none;
       z-index: -1;
     }
@@ -143,10 +143,8 @@
       margin: 0 auto;
     }
 
-    .gradient-text {
-      background: linear-gradient(135deg, #FFFFFF 20%, var(--amber-light) 90%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .amber-solid-text {
+      color: var(--amber-light);
     }
 
     /* BUTTONS */
@@ -167,14 +165,14 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--amber-primary) 0%, var(--amber-dark) 100%);
+      background: var(--amber-primary);
       color: #070B14;
       box-shadow: 0 8px 24px rgba(245, 158, 11, 0.28);
       font-weight: 700;
     }
 
     .btn-primary:hover {
-      background: linear-gradient(135deg, #FFAE19 0%, #E68500 100%);
+      background: var(--amber-primary);
       transform: translateY(-2px);
       box-shadow: 0 12px 30px rgba(245, 158, 11, 0.4);
     }
@@ -234,7 +232,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(21, 31, 61, 0.8) 100%);
+      background: rgba(245, 158, 11, 0.15);
       border: 1px solid var(--amber-primary);
       border-radius: var(--radius-sm);
       color: var(--amber-light);
@@ -362,7 +360,7 @@
       right: 5%;
       width: 450px;
       height: 450px;
-      background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, transparent 70%);
+      background: rgba(245, 158, 11, 0.08);
       filter: blur(50px);
       z-index: 0;
       pointer-events: none;
@@ -374,7 +372,7 @@
       left: 0%;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(30, 41, 75, 0.6) 0%, transparent 70%);
+      background: rgba(30, 41, 75, 0.3);
       filter: blur(60px);
       z-index: 0;
       pointer-events: none;
@@ -466,7 +464,7 @@
 
     /* 3. HERO FORM / LEAD GENERATION SYSTEM */
     .lead-box-card {
-      background: linear-gradient(145deg, rgba(21, 31, 61, 0.95) 0%, rgba(13, 20, 42, 0.95) 100%);
+      background: #111827;
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
       padding: 32px 28px;
@@ -482,7 +480,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--amber-dark), var(--amber-light));
+      background: var(--amber-primary);
     }
 
     .form-header {
@@ -598,7 +596,7 @@
     /* 4. PROPERTIES SHOWCASE */
     .properties-section {
       padding: 100px 0;
-      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-midnight) 50%, var(--bg-darkest) 100%);
+      background: var(--bg-darkest);
     }
 
     .property-cards-wrapper {
@@ -796,7 +794,7 @@
       width: 52px;
       height: 52px;
       border-radius: var(--radius-sm);
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(21, 31, 61, 0.4) 100%);
+      background: #111827;
       border: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
@@ -827,7 +825,7 @@
     /* 6. GOOGLE REVIEWS & TRUST */
     .reviews-section {
       padding: 100px 0;
-      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-surface) 50%, var(--bg-darkest) 100%);
+      background: var(--bg-darkest);
     }
 
     .rating-banner {
@@ -946,7 +944,7 @@
       width: 42px;
       height: 42px;
       border-radius: var(--radius-full);
-      background: linear-gradient(135deg, var(--amber-primary), var(--amber-dark));
+      background: var(--amber-primary);
       color: #070B14;
       display: flex;
       align-items: center;
@@ -1075,7 +1073,7 @@
     /* 8. FAQ ACCORDION */
     .faq-section {
       padding: 100px 0;
-      background: linear-gradient(180deg, var(--bg-darkest) 0%, var(--bg-midnight) 100%);
+      background: var(--bg-darkest);
     }
 
     .faq-accordion-wrap {
@@ -1265,7 +1263,7 @@
 
     /* Upper circular button: Call */
     .fab-call {
-      background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+      background: #2563EB;
       border: 2px solid rgba(255, 255, 255, 0.25);
     }
 
@@ -1275,7 +1273,7 @@
 
     /* Lower circular button: WhatsApp */
     .fab-whatsapp {
-      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      background: #25D366;
       border: 2px solid rgba(255, 255, 255, 0.25);
       animation: pulse-ring 2.4s infinite;
     }
@@ -1483,7 +1481,7 @@
           </div>
 
           <h1 class="hero-title">
-            Prime Residential & <span class="gradient-text">Commercial Spaces</span> on Ring Road
+            Prime Residential & <span class="text-amber-400 font-bold">Commercial Spaces</span> on Ring Road
           </h1>
 
           <p class="hero-subhead">
@@ -1574,7 +1572,7 @@
       
       <div class="section-title-wrap">
         <div class="section-badge">Flagship Projects</div>
-        <h2 class="section-heading">High-Yield <span class="gradient-text">Developments</span></h2>
+        <h2 class="section-heading">High-Yield <span class="text-amber-400 font-bold">Developments</span></h2>
         <p class="section-subtext">
           Strategically engineered for maximum commercial visibility and peaceful residential serenity on the booming Ring Road corridor.
         </p>
@@ -1708,7 +1706,7 @@
       
       <div class="section-title-wrap">
         <div class="section-badge">Infrastructure Excellence</div>
-        <h2 class="section-heading">Designed for <span class="gradient-text">Growth & Convenience</span></h2>
+        <h2 class="section-heading">Designed for <span class="text-amber-400 font-bold">Growth & Convenience</span></h2>
         <p class="section-subtext">
           Engineered with modern engineering standards to ensure frictionless operations for retail brands and uncompromised comfort for families.
         </p>
@@ -1795,7 +1793,7 @@
       
       <div class="section-title-wrap">
         <div class="section-badge">Investor Trust</div>
-        <h2 class="section-heading">Verified <span class="gradient-text">Google Reviews</span></h2>
+        <h2 class="section-heading">Verified <span class="text-amber-400 font-bold">Google Reviews</span></h2>
         <p class="section-subtext">
           See what commercial property buyers and home investors in Lucknow say about working with Azhan Developers.
         </p>
@@ -1911,7 +1909,7 @@
       
       <div class="section-title-wrap">
         <div class="section-badge">Connectivity</div>
-        <h2 class="section-heading">Strategic <span class="gradient-text">North Lucknow Location</span></h2>
+        <h2 class="section-heading">Strategic <span class="text-amber-400 font-bold">North Lucknow Location</span></h2>
         <p class="section-subtext">
           Situated at Tedhi Pulia / Adil Nagar on the Ring Road, seamlessly connecting Gomti Nagar, Aliganj, and the Munshi Pulia metro line.
         </p>
@@ -2004,7 +2002,7 @@
       
       <div class="section-title-wrap">
         <div class="section-badge">Investor Knowledge Base</div>
-        <h2 class="section-heading">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <h2 class="section-heading">Frequently Asked <span class="text-amber-400 font-bold">Questions</span></h2>
         <p class="section-subtext">
           Clear, straightforward answers regarding commercial rental yields, registry process, and possession timelines.
         </p>
@@ -2303,7 +2301,7 @@
         img.addEventListener('error', function() {
           if (!img.dataset.fallbackTried) {
             img.dataset.fallbackTried = 'true';
-            img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20500%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230A1128%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231A264F%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22url(%23bg)%22%2F%3E%3Cg%20stroke%3D%22%23D4AF37%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22%20opacity%3D%220.4%22%3E%3Crect%20x%3D%22220%22%20y%3D%22120%22%20width%3D%22140%22%20height%3D%22280%22%2F%3E%3Crect%20x%3D%22390%22%20y%3D%2280%22%20width%3D%22180%22%20height%3D%22320%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22150%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22245%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22305%22%20y%3D%22220%22%20width%3D%2230%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22120%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22420%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Crect%20x%3D%22495%22%20y%3D%22200%22%20width%3D%2245%22%20height%3D%2250%22%2F%3E%3Cline%20x1%3D%22100%22%20y1%3D%22400%22%20x2%3D%22700%22%20y2%3D%22400%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%22400%22%20y%3D%22445%22%20fill%3D%22%23D4AF37%22%20font-family%3D%22sans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%223%22%3EPREMIUM%20REAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
+            img.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20800%20500%27%3E%3Crect%20width%3D%27800%27%20height%3D%27500%27%20fill%3D%27%230A1128%27%2F%3E%3Ctext%20x%3D%27400%27%20y%3D%27250%27%20fill%3D%27%23D4AF37%27%20font-size%3D%2724%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27bold%27%20text-anchor%3D%27middle%27%3EREAL%20ESTATE%20DEVELOPMENT%3C%2Ftext%3E%3C%2Fsvg%3E';
           }
         });
       });
